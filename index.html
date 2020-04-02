@@ -46,11 +46,19 @@
         <img  id="shark" alt="shark" src="img/header_scroll.svg">
     </header>
 
-    <section class="first_section">
-        <div class="title_page">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u75famG4HSI" allow="autoplay" allowfullscreen></iframe>
+    <section id="play" class="first_section">
+        <div  class="title_page">
+            <img class="btn_play" alt="play button" src="img/play_btn.svg"/>
         </div>
     </section>
+
+
+    <div id="back_video">
+
+        <div onclick="close_video()" class="background"></div>
+        <iframe  width="100%"  height="100%" src="https://www.youtube.com/embed/u75famG4HSI" allowfullscreen></iframe>
+    </div>
+
 
     <section class="idea_section">
         <span class="header_idea_sec">COME WITH AN IDEA, GET A WORKING PRODUCTION LINE</span>
@@ -690,9 +698,20 @@ function openService( num) {
         description[num].classList.remove("open_service")
         plus[num].src = "img/plus.svg"
     }
+
 }
 
+function play_video() {
+    let video = document.getElementById("back_video")
+    video.style.display = "grid"
+}
 
+function close_video() {
+    let video = document.getElementById("back_video")
+    video.style.display = "none"
+}
+
+document.getElementById("play").addEventListener("click", play_video)
 
 </script>
 </body>

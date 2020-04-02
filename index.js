@@ -67,5 +67,10 @@ function openService( num) {
     }
 }
 
+function play_video() {
+    let video = document.getElementById("back_video")
+    video.style.display = "grid"
+}
+
 
 

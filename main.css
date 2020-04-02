@@ -80,13 +80,45 @@ header .mail_header span{
 
 .first_section{
     padding: 0 8%;
+    cursor: pointer;
+
+}
+
+#back_video{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+#back_video iframe{
+    z-index: 500;
+    position: relative;
+}
+
+#back_video .background{
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 
 }
 
 .first_section .title_page{
     height: calc(100vh - 121px);
     display: grid;
+    background-image: url("img/back_video.svg");
     border: none;
+}
+
+.first_section .title_page .btn_play{
+    justify-self: center;
+    align-self: center;
 }
 
 .all_content_two{
