@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Woodenshark</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Lato|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <header>
+
+        <div class="logo">
+            <img class="scroll_remove" alt="logotype" src="img/Group.svg">
+            <div class="text_logo">
+                <img alt="text logo" src="img/top_logo.svg">
+                <img id="small_text" alt="text logo" src="img/bottom_logo.svg">
+            </div>
+
+        </div>
+
+        <div id="bands">
+            <img id="bandOne" alt="band" src="img/band.svg">
+            <img id="bandTwo" alt="band" src="img/band.svg">
+            <img id="bandThree" alt="band" src="img/band.svg">
+        </div>
+            <div id="nav" class="navbar">
+                    <nav>
+                        <a>About us</a>
+                        <a>Our Approach</a>
+                        <a>Our Projects</a>
+                        <a>Contacts</a>
+                    </nav>
+
+                    <a href="mailto:hi@woodenshark.com" class="mail_header">
+                        <img alt="mail_img" src="img/blue_mail.svg">
+                        <span class="scroll_remove">hi@woodenshark.com</span>
+                    </a>
+            </div>
+        <img  id="shark" alt="shark" src="img/header_scroll.svg">
+    </header>
+
+    <section class="first_section">
+        <div class="title_page">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u75famG4HSI" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="idea_section">
+        <span class="header_idea_sec">COME WITH AN IDEA, GET A WORKING PRODUCTION LINE</span>
+        <div class="icons">
+            <div>
+                <img alt="icon head" src="img/icon_head.svg"/>
+                <span>CONCEPT</span>
+            </div>
+
+            <div>
+                <img alt="icon bottle" src="img/icon_botle.svg"/>
+                <span>DEVELOPMENT</span>
+            </div>
+
+            <div>
+                <img alt="icon fabric" src="img/icon_fabric.svg"/>
+                <span>PRODUCTION</span>
+            </div>
+        </div>
+        <span class="text_idea_sec">We connect functional products to users on an emotional level. While offering a range of services, Woodenshark specializes in providing complete, turnkey solutions working with startups, entrepreneurs, and brands.</span>
+    </section>
+
+    <section class="how_it_work_sect">
+        <div class="title_how_it_work">
+            <img class="icon_small" alt="rocket" src="img/racet.svg"/>
+            <div class="header_how_it">
+                <span>How </span>
+                <span>it Works</span>
+            </div>
+        </div>
+
+        <img alt="chart" src="img/graf.png"/>
+
+        <div class="descriptions">
+            <div class="description">
+                <div class="cube"></div>
+                <span>Management</span>
+            </div>
+
+            <div class="description">
+                <div class="cube cube_blue"></div>
+                <span>Hardware & Software</span>
+            </div>
+
+            <div class="description ">
+                <div class="cube cube_purple"></div>
+                <span>Design</span>
+            </div>
+
+            <div class="description">
+                <div class="cube cube_red"></div>
+                <span>Global Sourcing</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services_section">
+        <div class="title_services_section">
+            <span>Services</span>
+            <img class="icon_small" alt="bird" src="img/bird_icon.svg"/>
+        </div>
+
+        <div  class="list">
+            <div id="list_item_one" class="list_item">
+                <div onclick="openService(0)" class="lock">
+                    <img alt="icon_lamp" src="img/icon_lamp.svg"/>
+                    <span>> IDEA</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService ">
+                    <span class="text_descr">Even vague idea needs to be worked through from the very beginning. We adopt and nurture it so to become solid basis for future implementation.</span>
+                    <div class="content">
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Product & Resources Planning</span>
+                                <span class="text">Mapping out your product’s realization will save you time and resources for the following development phases. When it comes to implementation it’s crucial to evaluate resources you possess so to be sure you’re ready to bring your concept into being.</span>
+                            </div>
+
+                            <div>
+                                <span class="title">Intellectual property and patenting</span>
+                                <span class="text">We care about intellectual property so NDA can be signed if needed before our first meeting. We will also support you in creating your own, unique product and patenting any innovative solutions.</span>
+                            </div>
+
+                            <div>
+                                <span class="title">Due Diligence </span>
+                                <span class="text">We care about intellectual property so NDA can be signed if needed before our first meeting. We will also support you in creating your own, unique product and patenting any innovative solutions.</span>
+                            </div>
+                        </div>
+                        <img alt="photo service" class="photo_one" src="img/service_photo1.png">
+                    </div>
+                </div>
+            </div>
+
+            <div  class="list_item">
+                <div onclick="openService(1)" class="lock">
+                    <img alt="icon_lamp" src="img/icon_glass.svg"/>
+                    <span>> PROOF OF CONCEPT</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService">
+                    <span class="text_descr">Any idea must be proved to be feasible. Here comes PoC — an initial embodiment of your mental project made up from off-the-shelf components which is supposed to justify concept.</span>
+                    <div class="content">
+                        <img alt="photo service" src="img/service_photo2.png">
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Product design</span>
+                                <span class="text">Modern design means that all aspects are taken into account: the technical issues as well as the appearance and ergonomics.</span>
+                                <span class="text">Our team of designers, technicians and engineers ensures the optimal solution for both the form and the content of the device. We go all the way from sketches, 3D-modeling, and visualization to production-ready samples.</span>
+                            </div>
+                            <div class="content">
+                            <div>
+                                <span class="title">Engineering Expertise</span>
+                                <span class="text">Our specialists analyse prototypes and countertypes of the new design in accordance with customer specifications and the latest market trends.</span>
+                            </div>
+
+                                <div>
+                                    <span class="title">Cost Review</span>
+                                    <span class="text">Even with incomplete data we can provide you with a range of costs based on our experience.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list_item">
+                <div onclick="openService(2)" class="lock">
+                    <img alt="icon_lamp" src="img/icon_three.svg"/>
+                    <span>> PROTOTYPING</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService">
+                    <div class="content">
+                        <div class="all_content">
+
+                                <div>
+                                    <span class="title">Consulting Factories with Designs & Blueprints</span>
+                                    <span class="text">Our managers’ team collaborates with our partners all over the world (China, UK...) and can get a quick response on the provided data for test sample manufacturing.</span>
+                                </div>
+
+                                <div>
+                                    <span class="title">Cost Estimation</span>
+                                    <span class="text">With prototype you’ll get more precise evaluation of a full manufacturing cost that is essential for pricing and financial planning. Be aware of the fact that a cost for a prototype itself is always much higher than for a batch because of large number of manually performed operations related to the production and assembly of the product’s components.</span>
+                                </div>
+
+                        </div>
+                        <img alt="photo service" class="photo_one" src="img/service_photo3.png">
+                    </div>
+
+                    <div class="content">
+                        <img alt="photo service" src="img/service_photo4.png">
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Sourcing/Schedule</span>
+                                <span class="text">Our designated specialists are in charge for selecting components, keeping information on them up-to-date, checking their availability and scheduling delivery dates. They also reveal critical and high-value components and perform additional research on them including replaceability, sourcing, support level, shelf life, lead time and so on.</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Quality Control Planning</span>
+                                <span class="text">Working out an early strategy for quality control procedures is essential. At this phase the following steps for functional control and assembly testing are accomplished: • development of testing systems and quality control criteria during production stages; • design and manufacturing of JTAG/ICT testing benches; • development of automated or manual testing processes.</span>
+                            </div>
+                        </div>
+
+                        <div class="all_content">
+                            <div>
+                                <span class="title">BOM Planning</span>
+                                <span class="text">During prototyping phase BOM usually is subject to continuous change as different concepts are being tested, same parts may be produced by different vendors or even at bench scale e.t.c. But when things settle down and it comes to refining the design then the amount of possible changes drastically reduces, it’s time to create more detailed manufacturing BOM that will provide data for: • Lead-time for the materials • Cost of Goods Sold(COGS) • Manufacturing processes • Quality of the Design for Assembly • Supply chain robustness • Cash flow requirements</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list_item">
+                <div onclick="openService(3)"  class="lock">
+                    <img alt="icon_lamp" src="img/icon_four.svg"/>
+                    <span>> FACTORY SEARCH AND SELECTION</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService">
+                    <span class="text_descr">We balance business cases, trade-off features, and select appropriate manufacturing processes to create a strong market fit for your product.</span>
+                        <div class="three_block">
+                            <div class="all_content_two">
+                                <span class="title">Factory Selection</span>
+                                <span class="text">Choosing a reliable manufacturing partner is a decision can’t be made without sufficient experience and established manufacturers’ base. Being already involved in your project at development stage, our managers have a deep understanding of the product and can promptly perform factory search. So you’ll get access to production sites in Europe and South-East Asia.</span>
+                            </div>
+
+                            <div class="all_content_two">
+                                <span class="title">Factory Audit</span>
+                                <span class="text">We accomplish factories audit regarding legal, quality, materials aspects. Our designated specialists provides deep insight on all the pros and cons of selected partners so to narrow the search and make a decision.</span>
+                            </div>
+
+                            <div class="all_content_two">
+                                <span class="title">Quality Control System Approval</span>
+                                <span class="text">Implementing functional and assembling testing protocols on production site adopting them to the specific product requirements and production capabilities.</span>
+                            </div>
+                        </div>
+                    <img style="justify-self: center" alt="birds" src="img/birds.svg">
+                </div>
+            </div>
+
+            <div class="list_item">
+                <div onclick="openService(4)" class="lock">
+                    <img alt="icon_lamp" src="img/icon_five.svg"/>
+                    <span>> PRODUCING SETUP</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService ">
+                    <span class="text_descr">The outcomes can range from a first works-like looks-like prototype to share with investors, to a pilot production run to be used in market testing.</span>
+                    <div class="content">
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Sourcing Assistance and/or Setup</span><br>
+                                <span class="text">WS may help in supply chain optimization and in reducing risks along the way. Our team can assist you in sourcing, assessing and verifying your supply chain so you can make credible, fact-based sourcing decisions.</span>
+                            </div>
+
+                            <div>
+                                <span class="title">Production Control</span><br>
+                                <span class="text">WS seasoned managers and engineers can be your eyes and ears on manufacturing site to ensure all production stages are held properly. If any quality problems are found at this stage, managers can force the supplier to work on a corrective action plan. It is a way to document an issue to make sure it is repaired appropriately and also avoided for repeat orders.</span>
+                            </div>
+
+                            <div>
+                                <span class="title">Quality Control System Enforcement </span><br>
+                                <span class="text">As the product and brand owner, you more than anyone are interested in maintaining a constant level of quality established and approved at the production setup stage. However, there is a common tendency for a contractors to make small changes, guided by their own benefits, which ultimately leads to a gradual degradation of the quality of the final product. That’s why routine QC enforcement is a must-to-do thing.</span>
+                            </div>
+                        </div>
+                        <img alt="photo service" class="photo_one" src="img/service_photo6.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="list_item">
+                <div onclick="openService(5)" class="lock">
+                    <img alt="icon_lamp" src="img/icon_six.svg"/>
+                    <span>> ONGOING PRODUCTION</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService ">
+                    <span class="text_descr">With our prototype-driven approach, our goal is make product as real as possible, as fast as possible.</span>
+                    <div class="content">
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Ongoing Production Control & Tuning</span>
+                                <span class="text">When production has started you still need someone on the ground to perform oversight, improvements and urgent remedies if something goes wrong. After attaining a steady processes it’s time for production optimization and implementation of quality improvements.</span>
+                            </div>
+
+                            <div>
+                                <span class="title">Shipment Planning</span>
+                                <span class="text">Proper shipment planning takes into consideration various factors: procuring the goods, storage facilities, and delivery of products to the exact location. Apart from these, the other parameters are – time, transportation, and the costs. A supply chain manager should be able to devise the flow chart for the whole operation. On the other hand experienced manager must be able to prepare for the unforeseen circumstances as well. For this, an emergency plan should be there to avoid any logistics failure.</span>
+                            </div>
+                        </div>
+
+                        <div style="display: grid">
+                            <div>
+                                <span class="title">Quality Control Enforcement & Audit</span>
+                            </div>
+
+                            <div>
+                                <span class="title">Product Global Logistics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="list_item">
+                <div onclick="openService(6)" class="lock">
+                    <img alt="icon_lamp" src="img/icon_seven.svg"/>
+                    <span>> AFTER PRODUCTION</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService ">
+                    <span class="text_descr">Any idea must be proved to be feasible. Here comes PoC — an initial embodiment of your mental project made up from off-the-shelf components which is supposed to justify concept.</span>
+                    <div class="content">
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Customer support</span><br>
+                            </div>
+                        </div>
+
+                        <div class="all_content">
+                            <div>
+                                <span class="title">Project Engineering Revision</span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="list_item">
+                <div onclick="openService(7)" class="lock">
+                    <img alt="icon_lamp" src="img/icon_eight.svg"/>
+                    <span>> PROMOTION</span>
+                    <img alt="plus" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService">
+                    <span class="text_descr">Any idea must be proved to be feasible. Here comes PoC — an initial embodiment of your menta</span>
+                    <div class="three_block">
+                        <div>
+                            <span class="title">Branding</span><br>
+                        </div>
+
+                        <div>
+                            <span class="title">Visual Design</span><br>
+                        </div>
+
+                        <div>
+                            <span class="title">Marketing</span><br>
+                        </div>
+
+                        <div>
+                            <span class="title">PR</span><br>
+                        </div>
+
+                        <div>
+                            <span class="title">Advertisement Production</span><br>
+                        </div>
+
+                        <div>
+                            <span class="title">Media Kit</span><br>
+                        </div>
+
+                        <div>
+                            <span class="title">Event management</span><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tell_us_section">
+        <span>Tell us about your project</span>
+
+        <form>
+            <label>
+                <input placeholder="Your Name">
+            </label>
+            <label>
+                <input placeholder="Project Name">
+            </label>
+            <label>
+                <input type="email" placeholder="E-mail">
+            </label>
+
+
+            <div class="buttons_tell_us">
+                <button>I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more</button>
+                <button>Say&nbsp;Hey</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="our_project_section">
+        <div class="title_our_project_section">
+            <div>
+                <span>Our</span><br>
+                <span>Projects</span>
+            </div>
+            <img class="icon_small" alt="icon chicken" src="img/icon_cheecken.svg">
+        </div>
+
+        <div class="block_one">
+            <img alt="bottles" src="img/block_img_one.png">
+
+            <div class="description_block">
+                <div class="description">
+                    <span class="timeline">Timeline: 2018</span>
+
+                    <div>
+                        <span class="title_block_one first">Boxy </span> <span class="title_block_one"> Vending Machine</span>
+                    </div>
+
+                    <span class="text_description">Convenient tiny badge-like camera that blends in your outfit and looks like an elegant accessory.</span>
+
+                    <button>More ></button>
+                </div>
+
+                <div class="icon_block">
+                    <span class="text_services">Services:</span>
+                    <div class="icons" >
+                        <img alt="icon" src="img/icon_one.svg">
+                        <img alt="icon" src="img/icon_two.svg">
+                        <img alt="icon" src="img/icon_three.svg">
+                        <img alt="icon" src="img/icon_four.svg">
+                        <img alt="icon" src="img/icon_five.svg">
+                        <img alt="icon" src="img/icon_six.svg">
+                        <img alt="icon" src="img/icon_seven.svg">
+                        <img alt="icon" src="img/icon_eight.svg">
+                    </div>
+                </div>
+                <button class="small_btn_more">More ></button>
+            </div>
+        </div>
+
+
+        <div class="block_one block_two">
+            <div class="description_block">
+                <div class="description">
+                    <span class="timeline timeline_two">Timeline: 2018</span>
+
+                    <div>
+                        <span class="title_block_one title_block_two first">Moeco </span> <span class="title_block_one title_block_two">People Counter</span>
+                    </div>
+
+                    <span class="text_description">BLE-based counter is designed to collect traffic data in stores, common areas, parking spots, public places like parks, squares stations.</span>
+
+                    <button class="button_two">More ></button>
+                </div>
+
+                <div class="icon_block">
+                    <span class="text_services text_services_two">Services:</span>
+                    <div class="icons" >
+                        <img alt="icon" src="img/icon_red_one.svg">
+                        <img alt="icon" src="img/icon_red_two.svg">
+                        <img alt="icon" src="img/icon_red_three.svg">
+                        <img alt="icon" src="img/icon_red_four.svg">
+                        <img alt="icon" src="img/icon_red_five.svg">
+
+                    </div>
+                    <button class="small_btn_more btn_two">More ></button>
+
+                </div>
+            </div>
+
+            <img alt="boxy" src="img/block_img_two.png">
+
+        </div>
+
+
+        <div class="block_one">
+            <img alt="boxy" src="img/boxy_1.png">
+
+            <div class="description_block">
+                <div class="description">
+                    <span class="timeline">Timeline: 2018</span>
+
+                    <div>
+                        <span class="title_block_one first">Soundsight </span>
+                    </div>
+
+                    <span class="text_description">Midrange class wireless headphones with cameras and microphone built in ear caps that allows capture 1080p FullHD 180 degree video and audio.</span>
+
+                    <button>More ></button>
+                </div>
+
+                <div class="icon_block">
+                    <span class="text_services">Services:</span>
+                    <div class="icons" >
+                        <img alt="icon" src="img/icon_one.svg">
+                        <img alt="icon" src="img/icon_two.svg">
+                        <img alt="icon" src="img/icon_three.svg">
+                        <img alt="icon" src="img/icon_four.svg">
+                        <img alt="icon" src="img/icon_five.svg">
+
+                    </div>
+                </div>
+                <button class="small_btn_more">More ></button>
+
+            </div>
+        </div>
+
+        <div class="block_one block_two">
+
+            <img alt="boxy" src="img/camera.png">
+
+            <div class="description_block">
+                <div class="description">
+                    <span class="timeline timeline_two">Timeline: 2018</span>
+
+                    <div>
+                        <span class="title_block_one title_block_two first">Mini Camera </span> <span class="title_block_one title_block_two">Tiny badge-like camera</span>
+                    </div>
+
+                    <span class="text_description">Convenient tiny badge-like camera that blends in your outfit and looks like an elegant accessory..</span>
+
+                    <button class="button_two">More ></button>
+                </div>
+
+                <div class="icon_block">
+                    <span class="text_services text_services_two">Services:</span>
+                    <div class="icons" >
+                        <img alt="icon" src="img/icon_red_one.svg">
+                        <img alt="icon" src="img/icon_red_two.svg">
+                        <img alt="icon" src="img/icon_red_three.svg">
+                        <img alt="icon" src="img/icon_red_four.svg">
+                        <img alt="icon" src="img/icon_red_five.svg">
+
+                    </div>
+                    <button class="small_btn_more btn_two">More ></button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block_one">
+            <div class="description_block">
+                <div class="description">
+                    <span class="timeline">Timeline: 2018</span>
+
+                    <div>
+                        <span class="title_block_one first">Moeco </span> <span class="title_block_one">People Counter</span>
+                    </div>
+
+                    <span class="text_description">BLE-based counter is designed to collect traffic data in stores, common areas, parking spots, public places like parks, squares stations.</span>
+
+                    <button>More ></button>
+                </div>
+
+                <div class="icon_block">
+                    <span class="text_services">Services:</span>
+                    <div class="icons" >
+                        <img alt="icon" src="img/icon_one.svg">
+                        <img alt="icon" src="img/icon_two.svg">
+                        <img alt="icon" src="img/icon_three.svg">
+                        <img alt="icon" src="img/icon_four.svg">
+                        <img alt="icon" src="img/icon_five.svg">
+
+                    </div>
+                    <button class="small_btn_more">More ></button>
+
+                </div>
+            </div>
+
+            <img alt="boxy" src="img/img_block.png">
+
+        </div>
+
+         <button class="button_portfolio">Full&nbsp;Portfolio&nbsp;></button>
+    </section>
+
+    <section class="work_with_us_section">
+        <div class="title_work_with_us_section">
+            <img class="icon_small" alt="duck icon" src="img/duck_icon.svg" />
+            <div>
+                <span>Work</span><br>
+                <span>With us</span>
+            </div>
+        </div>
+
+        <div class="blocks">
+            <div class="block">
+                <span class="title">About us</span> <br>
+                <span class="text">We offer a range of services and specialize in providing complete, turnkey solutions working with startups, entrepreneurs and brands worldwide.</span>
+                <button>Learn more ></button>
+            </div>
+            <div class="block">
+                <span class="title">Join&nbsp;our&nbsp;team</span> <br>
+                <span class="text">Woodenshark is a team of dedicated designers, technicians and engineers with a passion for innovation.</span>
+                <button>Learn more ></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <img alt="logotype" src="img/footer_logo.svg">
+            <div class="text_logo">
+                <span>WOODENSHARK</span>
+                <span>Dream Engineering</span>
+            </div>
+        </div>
+        <span class="footer_text">© Woodenshark, LLC 2020</span>
+    </footer>
+
+<script >let burger_menu = document.getElementById("nav");
+let band = document.getElementById("bands");
+let counter = 1;
+let header = document.getElementsByTagName("header")[0];
+let remove_in_scroll = document.getElementsByClassName("scroll_remove");
+let bandOne = document.getElementById("bandOne");
+let bandTwo = document.getElementById("bandTwo");
+let bandThree = document.getElementById("bandThree");
+
+
+function openBurger() {
+    if(counter === 1) {
+        burger_menu.classList.remove("nonactive_burger");
+        burger_menu.classList.add("active_burger");
+        bandTwo.classList.add("bandTwo");
+        bandOne.classList.add("bandOne");
+        bandThree.classList.add("bandThree");
+        counter = 0
+    }else{
+        burger_menu.classList.add("nonactive_burger");
+        burger_menu.classList.remove("active_burger");
+        bandTwo.classList.remove("bandTwo");
+        bandOne.classList.remove("bandOne");
+        bandThree.classList.remove("bandThree");
+        counter = 1
+    }
+
+}
+
+band.addEventListener("click", openBurger);
+
+window.onscroll = function header_change() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(scrollTop)
+    if(window.innerWidth >= 1024 && document.documentElement.scrollTop > 20) {
+        header.classList.add("scroll_header");
+        for (let i = 0; i < remove_in_scroll.length; i++) {
+            remove_in_scroll[i].style.display = "none"
+        }
+        document.getElementById("small_text").style.display = "none";
+        document.getElementById("shark").style.display = "block";
+    }
+    if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
+        header.classList.remove("scroll_header");
+        document.getElementById("small_text").style.display = "block";
+        document.getElementById("shark").style.display = "none";
+        for (let i = 0; i < remove_in_scroll.length; i++) {
+            remove_in_scroll[i].style.display = "block"
+        }
+    }
+};
+
+
+
+let description = document.getElementsByClassName("descriptionService");
+let plus = document.getElementsByClassName("plus");
+console.log(description[1])
+
+function openService( num) {
+    if(!description[num].classList.contains('open_service')) {
+        description[num].classList.add("open_service")
+        plus[num].src = "img/minus.svg"
+    }else{
+        description[num].classList.remove("open_service")
+        plus[num].src = "img/plus.svg"
+    }
+}
+
+
+
+</script>
+</body>
+</html>

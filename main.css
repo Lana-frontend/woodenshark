@@ -1,0 +1,1122 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 1% 10%;
+    box-sizing: border-box;
+}
+
+header .logo{
+    display: flex;
+    justify-self: start;
+    z-index: 1;
+}
+
+header .text_logo{
+    display: grid;
+    align-content: center;
+    margin-left: 15px;
+}
+
+header .text_logo span{
+    justify-self: start;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+header .text_logo span:last-child{
+    font-size: 12px;
+}
+
+header .navbar{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+header nav{
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A8A8A8;
+    z-index: 1;
+}
+
+header nav a{
+    cursor: pointer;
+}
+
+header .mail_header{
+    align-self: center;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: #00A2D2;
+    transition: 2s;
+}
+
+header .mail_header span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #00A2D2;
+    font-family: 'Ubuntu', sans-serif;
+    align-self: center;
+}
+
+.first_section{
+    padding: 0 8%;
+
+}
+
+.first_section .title_page{
+    height: calc(100vh - 121px);
+    display: grid;
+    border: none;
+}
+
+.all_content_two{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.first_section .title_page{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 90px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.first_section .title_page div{
+    align-self: end;
+    margin-bottom: 20%;
+}
+
+.idea_section{
+    background: #F2F8FC;
+    text-align: center;
+    display: grid;
+    padding: 4% 20%;
+
+}
+
+.idea_section .header_idea_sec{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 67px;
+    color: #00A2D2;
+    font-family: 'Ubuntu', sans-serif;
+    justify-self: center;
+}
+
+.idea_section .icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5%;}
+
+.idea_section .icons div{
+    display: grid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #00A2D3;
+    font-family: 'Ubuntu', sans-serif;
+    grid-gap: 30px;
+}
+
+.idea_section .icons div img , .idea_section .icons div span{
+    justify-self: center;
+}
+
+.idea_section .text_idea_sec{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 5%;
+    color: #00A2D2;
+    font-family: 'Ubuntu', sans-serif;
+    justify-self: center;
+}
+
+
+
+.how_it_work_sect{
+    padding: 4% 15%;
+}
+
+.how_it_work_sect .title_how_it_work , .services_section .title_services_section{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #00A2D2;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-gap: 30px;
+}
+
+.how_it_work_sect .title_how_it_work span{
+    align-self: center;
+}
+
+.how_it_work_sect .title_how_it_work .header_how_it{
+    display: grid;
+}
+
+.how_it_work_sect .title_how_it_work .header_how_it span:first-child{
+    align-self: end;
+}
+
+.how_it_work_sect .title_how_it_work .header_how_it span:last-child{
+    align-self: start;
+}
+
+.how_it_work_sect img{
+    width: 100%;
+    margin-top: 4%;
+}
+
+.how_it_work_sect .descriptions{
+    margin-top: 4%;
+}
+
+.how_it_work_sect .descriptions .description .cube{
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(90deg, #FFCB4E 0%, #FCC74C 41.46%, #F4BB45 86.5%, #F1B642 100%);
+}
+
+.how_it_work_sect .descriptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.how_it_work_sect .descriptions .description{
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-gap: 10px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #B1B3B6;
+}
+
+.how_it_work_sect .descriptions .description .cube_blue{
+    background: #75C2E3;
+}
+
+.how_it_work_sect .descriptions .description .cube_purple{
+    background: #8071B4;
+}
+
+.how_it_work_sect .descriptions .description .cube_red{
+    background: #F2665D;
+}
+
+.how_it_work_sect .descriptions .description span{
+    justify-self: start;
+}
+
+.how_it_work_sect{
+    border-bottom: 2px solid #00A2D3;
+    border-top: 2px solid #00A2D3;
+}
+
+.services_section{
+    padding: 4% 0;
+}
+
+.services_section .title_services_section{
+    padding: 0 23%;
+}
+
+.services_section .list{
+    background: #F2F8FC;
+    margin-top: 4%;
+    padding: 0 10%;
+
+}
+
+.services_section .list .list_item .lock{
+    padding: 1% 10%;
+    border-top: 2px solid #00A2D3;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 40px;
+}
+
+.services_section .list .list_item{
+    cursor: pointer;
+}
+
+.services_section .list .list_item img , .services_section .list .list_item span{
+    align-self: center;
+}
+
+.services_section .list .list_item span{
+    font-style: normal;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #00A2D2;
+}
+
+.services_section .list .list_item .descriptionService{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#description1{
+}
+
+.open_service{
+    height: auto!important;
+    padding: 5%!important;
+}
+
+.services_section .list .list_item .descriptionService .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 5%;
+}
+
+.services_section .list .list_item .descriptionService .three_block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 5%;
+}
+
+.services_section .list .list_item .descriptionService .content img{
+    width: 100%;
+}
+
+.services_section .list .list_item .descriptionService .content .all_content{
+    grid-gap: 5%;
+}
+
+.services_section .list .list_item .descriptionService .content .all_content, .services_section .list .list_item .descriptionService .content .all_content div{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: start;
+}
+
+.services_section .list .list_item .descriptionService .content .title , .services_section .list .list_item .descriptionService .three_block .title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #636466;
+    font-family: 'Ubuntu', sans-serif;
+    align-self: start;
+}
+
+.services_section .list .list_item .descriptionService .content .text , .services_section .list .list_item .descriptionService .three_block .text{
+    font-style: normal;
+    font-size: 22px;
+    line-height: 32px;
+    color: #B1B3B6;    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    align-self: start;
+}
+
+.services_section .list .list_item .descriptionService .text_descr{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #00A2D2;
+    font-family: 'Ubuntu', sans-serif;
+    justify-self: center;
+}
+
+.tell_us_section{
+    background: #FEF9F8;
+    padding: 4% 15%;
+    border-top: 2px solid #F48777;
+    border-bottom: 2px solid #F48777;
+}
+
+.tell_us_section span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 78px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #F48777;
+    margin-left: 30px;
+}
+
+.tell_us_section form{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
+    margin-top: 4%;
+}
+
+.tell_us_section form label input {
+    width: 100%;
+    padding: 20px;
+    color: rgba(244, 135, 119, 0.7);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    border:  none;
+}
+
+.tell_us_section form .buttons_tell_us{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10%;
+    grid-gap: 20px;
+    grid-column: 3;
+}
+
+.tell_us_section form .buttons_tell_us button{
+    padding: 10px 30px;
+    border: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+.tell_us_section form .buttons_tell_us button:first-child{
+    color: #F48777;
+    background: #FBD9E2;
+}
+
+.tell_us_section form .buttons_tell_us button:last-child{
+    background: #F48777;
+    color: white;
+}
+
+.our_project_section{
+    margin-top: 4%;
+    padding: 0 0 0 0.5%;
+    display: grid;
+    border-bottom: 2px solid #00A2D2;;
+}
+
+.our_project_section .title_our_project_section{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 78px;
+    color: #00A2D2;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-right: 50px;
+    margin-bottom: 5%;
+
+}
+
+.our_project_section .title_our_project_section div {
+    align-self: start;
+    justify-self: center;
+}
+
+.our_project_section .title_our_project_section img{
+    align-self: end;
+}
+
+.our_project_section .block_one{
+    background: #E4F1F9;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0.5%;
+}
+
+.our_project_section .block_one img{
+    width: 100%;
+}
+
+.our_project_section .block_one .description_block{
+    padding: 10% 12%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.our_project_section .block_one .description_block .description .timeline{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #75C2E3;
+}
+
+.our_project_section .block_one .description_block .description{
+    display: grid;
+}
+
+.our_project_section .block_one .description_block .description .title_block_one{
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    line-height: 48px;
+    color: #00A2D3;
+}
+
+.our_project_section .block_one .description_block .description .first{
+    font-weight: bold;
+}
+
+.our_project_section .block_one .description_block .description .text_description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    color: #636466;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.our_project_section .block_one .description_block .description button{
+    border: 3px solid #4CB9E1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    width: 50%;
+    height: 50px;
+    color: #08A9D8;
+    background: transparent;
+    align-self: end;
+    cursor: pointer;
+}
+
+.our_project_section .block_one .icon_block .text_services{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: right;
+    font-family: 'Ubuntu', sans-serif;
+    color: #00A2D3;
+    margin-right: 5%;
+}
+
+.our_project_section .block_one .icon_block{
+    display: grid;
+}
+
+.our_project_section .block_one .icon_block .icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+    grid-gap: 5%;
+
+}
+
+.our_project_section .block_one .icon_block .icons img{
+    width: 70%;
+    justify-self: end;
+}
+
+.our_project_section .block_two{
+    background: #FEF9F8;
+}
+
+.our_project_section .block_one .description_block .description .timeline_two{
+    color: rgba(244, 135, 119, 0.6);
+}
+
+.our_project_section .block_one .description_block .description .title_block_two , .our_project_section .block_one .icon_block .text_services_two{
+    color: #F48777;
+}
+
+.our_project_section .block_one .description_block .description .button_two{
+    color: #F48777;
+    border: 3px solid #F48777;
+}
+
+.our_project_section .button_portfolio{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: #4CB9E1;
+    border: 3px solid #4CB9E1;
+    font-style: normal;
+    font-weight: 300;
+    box-sizing: content-box;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    justify-self: center;
+    margin: 4% 0;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.work_with_us_section {
+    padding: 4% 10%;
+}
+
+.work_with_us_section .title_work_with_us_section{
+     display: grid;
+     grid-template-columns: auto 1fr;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 78px;
+    color: #00A2D2;
+    grid-gap: 5%;
+}
+
+.work_with_us_section .title_work_with_us_section div{
+    align-self: end;
+}
+
+.work_with_us_section .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+    margin-top: 4%;
+}
+
+.work_with_us_section .blocks .block{
+    background: rgba(255, 203, 78, 0.05);
+    border-bottom: 2px solid #F1B642;
+    border-top: 2px solid #F1B642;
+    padding: 15%;
+    display: grid;
+}
+
+.work_with_us_section .blocks .block .title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 78px;
+    color: #B1B3B6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.work_with_us_section .blocks .block .text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 46px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #B1B3B6;
+}
+
+.work_with_us_section .blocks .block button{
+    background: transparent;
+    color: #B1B3B6;
+    border: 3px solid #B1B3B6;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 28px;
+    justify-self: end;
+    padding: 10px 10px;
+    align-self: end;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+footer{
+    background: #00A2D2;
+    display: grid;
+    grid-template-columns: auto  auto;
+    padding: 1% 10%;
+}
+
+footer .logo{
+    display: flex;
+    justify-self: start;
+}
+
+footer .text_logo{
+    display: grid;
+    align-content: center;
+    margin-left: 15px;
+}
+
+footer .text_logo span{
+    justify-self: start;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+footer .text_logo span:last-child{
+    font-size: 12px;
+}
+
+footer .footer_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    justify-self: end;
+    align-self: end;
+}
+
+.small_btn_more{
+    display: none;
+}
+
+.mobi_header{
+    display: none;
+}
+
+
+.scroll_header{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    padding: 1% 10%;
+}
+
+#shark{
+    position: fixed;
+    display: none;
+    margin-left: -10%;
+
+}
+
+#bands{
+    display: none;
+}
+
+#bandOne{
+    transition: 0.5s;
+}
+
+#bandTwo{
+
+}
+
+#bandThree{
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1380px) {
+    header nav{
+        font-size: 17px;
+    }
+
+    header{
+        padding: 1% 8%;
+    }
+
+    .our_project_section .block_one .description_block .description .title_block_one{
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .our_project_section .block_one .description_block .description .text_description{
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .our_project_section .block_one .description_block .description button{
+        font-size: 18px;
+        height: 35px;
+    }
+
+    .our_project_section .block_one .description_block .description .timeline{
+        font-size: 16px;
+    }
+
+    .tell_us_section form label input{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .tell_us_section form .buttons_tell_us button{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    #small_text{
+        display: none;
+    }
+
+    .first_section{
+        padding: 0 ;
+    }
+
+    .idea_section{
+        padding: 4% 2%;
+    }
+
+    .first_section .title_page{
+        grid-template-columns: 1fr;
+    }
+
+    .idea_section .header_idea_sec{
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .idea_section .icons{
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+    }
+
+    .idea_section .text_idea_sec{
+        font-size: 16px;
+    }
+
+    .how_it_work_sect .descriptions{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .how_it_work_sect{
+        padding: 4% 2%;
+    }
+
+    .how_it_work_sect .title_how_it_work, .services_section .title_services_section{
+        font-size: 36px;
+        grid-gap: 0;
+        grid-template-columns: auto 1fr;
+    }
+
+    .services_section .title_services_section{
+        padding: 0 2%;
+    }
+
+    .first_section .title_page div{
+        align-self: center;
+        margin-top: 0;
+    }
+
+    .services_section .list{
+        padding: 0;
+    }
+
+    .services_section .list .list_item{
+        padding: 1% 5%;
+    }
+
+    .tell_us_section{
+        padding: 4% 2%;
+    }
+
+    .tell_us_section span{
+        font-size: 36px;
+    }
+
+    .tell_us_section form{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .tell_us_section form label input{
+        box-sizing: border-box;
+    }
+
+    .tell_us_section form .buttons_tell_us{
+        grid-column: 1;
+        justify-self: normal;
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .our_project_section .title_our_project_section{
+        font-size: 36px;
+        line-height: normal;
+        margin-right: 0;
+        grid-template-columns: auto 1fr;
+        padding: 0 2%;
+        grid-gap: 20px;
+    }
+
+    .our_project_section .block_one{
+        grid-template-columns: 1fr;
+    }
+
+    .our_project_section .block_one .icon_block .icons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .our_project_section .block_one .description_block{
+        grid-template-columns: 1fr;
+    }
+
+    .our_project_section .block_one{
+        padding: 0;
+    }
+
+    .our_project_section .block_one .icon_block .text_services, .our_project_section .block_one .icon_block .icons img{
+        justify-self: start;
+        font-size: 18px;
+    }
+
+    .our_project_section .block_one .icon_block .icons{
+        padding: 5% 0;
+    }
+
+    .our_project_section .block_one .description_block{
+        padding: 3%;
+        grid-row: 2;
+    }
+
+    .our_project_section .block_one .description_block .description button{
+        display: none;
+    }
+
+    .our_project_section .block_one .description_block .description .text_description{
+        margin: 3% 0;
+        font-size: 18px;
+    }
+
+    .our_project_section .block_one .description_block .description .timeline{
+        margin-bottom: 2%;
+        font-size: 18px;
+    }
+
+    .our_project_section .block_one .description_block .description .title_block_one{
+        font-size: 28px;
+    }
+
+    .work_with_us_section{
+        padding: 4% 2%;
+    }
+
+    .work_with_us_section .title_work_with_us_section{
+        font-size: 36px;
+        line-height: normal;
+        margin: 30px 0;
+
+    }
+
+    .work_with_us_section .blocks .block .title{
+        font-size: 36px;
+    }
+
+    .work_with_us_section .blocks .block .text{
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .work_with_us_section .blocks .block button{
+        margin-top: 40px;
+    }
+
+    .work_with_us_section .blocks{
+        grid-template-columns: 1fr;
+    }
+
+    .icon_small{
+        width: 100px!important;
+    }
+
+    .first_section .title_page{
+        font-size: 48px;
+        line-height: normal;
+    }
+
+    .small_btn_more{
+        display: block;
+        border: 3px solid #4CB9E1;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 28px;
+        width: 50%;
+        height: 50px;
+        color: #08A9D8;
+        background: transparent;
+        align-self: end;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .btn_two{
+        color: #F48777;
+        border: 3px solid #F48777;
+    }
+
+    footer{
+        margin-top: 50px;
+        padding: 2% 5%;
+    }
+
+    .scroll_remove{
+        display: none!important;
+    }
+
+    .scroll_header img:last-child{
+        display: none!important;
+    }
+
+    .scroll_remove:last-child{
+        display: block;
+    }
+
+    footer .footer_text{
+        font-size: 12px;
+    }
+
+    .work_with_us_section .blocks .block{
+        padding: 5% 3%;
+    }
+
+    footer .text_logo span:first-child{
+        font-size: 12px;
+    }
+
+    footer .text_logo span:last-child{
+        font-size: 8px;
+    }
+
+    footer .logo img{
+        width: 26%;
+    }
+
+    .services_section .list .list_item span{
+        font-size: 14px;
+    }
+
+    .how_it_work_sect .descriptions .description{
+        font-size: 16px;
+    }
+
+    @keyframes open_burger {
+        from {
+            top: -500px;
+        }
+        to {
+            top: 45px;
+        }
+    }
+
+    @keyframes close_burger {
+        from {
+            top: 45px;
+        }
+        to {
+            top: -500px;
+        }
+    }
+
+    .active_burger{
+        top: 45px!important;
+        animation: open_burger 0.5s ease;
+    }
+
+    .nonactive_burger{
+        animation: close_burger 0.5s ease;
+    }
+
+    header .navbar{
+        grid-template-columns: 1fr;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        background: white;
+        top: -500px;
+        padding: 5% 0;
+        grid-gap: 20px;
+    }
+
+    header .navbar nav{
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+
+    header{
+        padding: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    #shark{
+        display: block;
+        left: -185px;
+        margin-left: 10%;
+        padding: 0;
+    }
+
+    header nav a{
+        justify-self: center;
+    }
+
+    header .mail_header{
+        justify-self: center;
+        text-decoration: none;
+    }
+
+    header .text_logo span{
+        margin-top: 17px;
+    }
+
+    #bands{
+        display: grid;
+        justify-self: end;
+        z-index: 1;
+        align-self: center;
+        grid-gap: 5px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .bandOne{
+        transform: rotate(45deg);
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .bandThree{
+        transform: rotate(-45deg);
+        margin-top: -7.55px;
+        transition: 0.5s;
+    }
+
+    .bandTwo{
+        display: none;
+    }
+
+    .services_section .list .list_item .descriptionService .content, .services_section .list .list_item .descriptionService .three_block{
+        grid-template-columns: 1fr;
+    }
+
+    .photo_one{
+        grid-row: 1;
+    }
+
+    .services_section .list .list_item .descriptionService .text_descr, .services_section .list .list_item .descriptionService .content .text, .services_section .list .list_item .descriptionService .three_block .text{
+        font-size: 16px;
+    }
+
+    .services_section .list .list_item .descriptionService .content .title, .services_section .list .list_item .descriptionService .three_block .title{
+        font-size: 24px;
+    }
+}
