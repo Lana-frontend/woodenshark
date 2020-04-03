@@ -112,7 +112,7 @@ header .mail_header span{
 .first_section .title_page{
     height: calc(100vh - 121px);
     display: grid;
-    background-image: url("img/back_video.svg");
+  
     border: none;
 }
 
