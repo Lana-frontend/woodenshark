@@ -95,7 +95,7 @@ header .mail_header span{
     box-sizing: border-box;
 }
 
-#back_video iframe{
+#back_video video{
     z-index: 500;
     position: relative;
 }
@@ -742,6 +742,13 @@ footer .footer_text{
     display: none;
 }
 
+#bands2{
+    position: absolute;
+    z-index: 500;
+    right: 20px;
+    top: 20px;
+}
+
 #bandOne{
     transition: 0.5s;
 }
@@ -752,6 +759,22 @@ footer .footer_text{
 
 #bandThree{
     transition: 0.5s;
+}
+
+.bandOne{
+    transform: rotate(45deg);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.bandThree{
+    transform: rotate(-45deg);
+    margin-top: -7.55px;
+    transition: 0.5s;
+}
+
+.bandTwo{
+    display: none;
 }
 
 @media screen and (max-width: 1380px) {
