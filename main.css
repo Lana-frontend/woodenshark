@@ -122,6 +122,11 @@ header .mail_header span{
     align-self: center;
 }
 
+.first_section .title_page video{
+    width: 100%;
+    height: 100%;
+}
+
 .all_content_two{
     display: grid;
     grid-template-rows: auto 1fr;
@@ -1182,5 +1187,6 @@ footer .footer_text{
         height: 100vh;
         left: 50%;
         transform: translateX(-50%);
+        width: auto;
     }
 }
