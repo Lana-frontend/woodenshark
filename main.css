@@ -1174,4 +1174,12 @@ footer .footer_text{
     .services_section .list .list_item .descriptionService .content .title, .services_section .list .list_item .descriptionService .three_block .title{
         font-size: 24px;
     }
+
+    .first_section .title_page video{
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
