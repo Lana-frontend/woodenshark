@@ -10,7 +10,6 @@ body{
 }
 
 
-
 header{
     display: grid;
     grid-template-columns: auto auto ;
@@ -217,7 +216,7 @@ header .mail_header span{
     color: #00A2D2;
     display: grid;
     grid-template-columns: 200px auto;
-    grid-gap: 30px;
+    grid-gap: 60px!important;
 }
 
 .how_it_work_sect .title_how_it_work span{
@@ -398,6 +397,10 @@ header .mail_header span{
     justify-self: center;
 }
 
+.icon_small{
+    margin-left: 30px!important;
+}
+
 .tell_us_section{
     background: #FEF9F8;
     padding: 4% 15%;
@@ -429,6 +432,7 @@ header .mail_header span{
     font-family: 'Ubuntu', sans-serif;
     font-size: 28px;
     border:  none;
+    box-sizing: border-box;
 }
 
 .tell_us_section form .buttons_tell_us{
