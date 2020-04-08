@@ -211,7 +211,7 @@ header .mail_header span{
     font-style: normal;
     font-weight: bold;
     font-size: 68px;
-
+    justify-content: center;
     font-family: 'Ubuntu', sans-serif;
     color: #00A2D2;
     display: grid;
@@ -477,6 +477,7 @@ header .mail_header span{
     font-weight: bold;
     font-size: 68px;
     line-height: 78px;
+    justify-content: center;
     color: #00A2D2;
     display: grid;
     grid-template-columns: auto auto;
@@ -628,8 +629,9 @@ header .mail_header span{
 }
 
 .work_with_us_section .title_work_with_us_section{
-     display: grid;
-     grid-template-columns: auto 1fr;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 68px;
@@ -878,6 +880,7 @@ footer .footer_text{
     .how_it_work_sect .title_how_it_work, .services_section .title_services_section{
         font-size: 36px;
         grid-gap: 0;
+        justify-content: center;
         grid-template-columns: auto 1fr;
     }
 
@@ -926,6 +929,7 @@ footer .footer_text{
         font-size: 36px;
         line-height: normal;
         margin-right: 0;
+        justify-content: center;
         grid-template-columns: auto 1fr;
         padding: 0 2%;
         grid-gap: 20px;
