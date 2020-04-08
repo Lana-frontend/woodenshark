@@ -215,7 +215,7 @@ header .mail_header span{
     font-family: 'Ubuntu', sans-serif;
     color: #00A2D2;
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: auto auto;
     grid-gap: 60px!important;
 }
 
