@@ -15,6 +15,7 @@ header{
     grid-template-columns: auto auto ;
     padding: 1% 10%;
     box-sizing: border-box;
+    z-index: 6;
 }
 
 header .logo{
@@ -24,6 +25,12 @@ header .logo{
 }
 
 header .text_logo{
+    display: grid;
+    align-content: center;
+    margin-left: 15px;
+}
+
+header a{
     display: grid;
     align-content: center;
     margin-left: 15px;
@@ -59,6 +66,9 @@ header nav{
 
 header nav a{
     cursor: pointer;
+    text-decoration: none;
+    color: #A8A8A8;
+
 }
 
 header .mail_header{
@@ -225,6 +235,7 @@ header .mail_header span{
 
 .how_it_work_sect .title_how_it_work .header_how_it{
     display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .how_it_work_sect .title_how_it_work .header_how_it span:first-child{
@@ -797,6 +808,79 @@ footer .footer_text{
     display: none;
 }
 
+.how_it_work_sect .title_how_it_work .header_how_it_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    color: #F48777 ;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.end_sections{
+    padding: 0 10% 5% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.end_sections img{
+    width: 100%;
+}
+
+.end_sections .photo_with_text{
+    display: grid;
+    align-content: end;
+    grid-gap: 5%;
+    padding: 15% 0 0 0;
+}
+
+.end_sections span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #636466;
+}
+
+.wont_to_work{
+    padding: 0 10%;
+}
+
+.wont_to_work .content{
+    border-top: 2px solid #F1B642;
+    padding: 5% 0;
+    display: grid;
+    grid-gap: 50px;
+}
+
+.wont_to_work .content span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 68px;
+    line-height: 76px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #F1B642;
+}
+
+.wont_to_work .content .contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wont_to_work .content .contact button{
+    color: #F1B642;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 28px;
+    border: 2px solid #F1B642;
+    justify-self: start;
+    padding: 10px;
+    align-self: start;
+}
 @media screen and (max-width: 1380px) {
     header nav{
         font-size: 17px;
@@ -835,15 +919,18 @@ footer .footer_text{
     }
 }
 
-
-
 @media screen and (max-width: 1024px) {
     #small_text{
         display: none;
     }
 
+    header .mail_header{
+        grid-template-columns: auto;
+    }
+
     .first_section{
         padding: 0 ;
+        height: 100vh;
     }
 
     .idea_section{
@@ -879,7 +966,7 @@ footer .footer_text{
 
     .how_it_work_sect .title_how_it_work, .services_section .title_services_section{
         font-size: 36px;
-        grid-gap: 0;
+        grid-gap: 10px!important;
         justify-content: center;
         grid-template-columns: auto 1fr;
     }
@@ -1204,5 +1291,37 @@ footer .footer_text{
         left: 50%;
         transform: translateX(-50%);
         width: auto;
+    }
+
+    .mobile_approach{
+        grid-template-columns: 1fr!important;
+    }
+
+    .mobile_text{
+        font-size: 16px!important;
+        line-height: normal!important;
+    }
+
+    .end_sections{
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+
+    .end_sections span{
+        font-size: 16px;
+        line-height: 150%
+    }
+
+    .end_sections img{
+        grid-row: 1;
+    }
+
+    .end_sections .photo_with_text{
+        padding: 0;
+    }
+
+    .wont_to_work .content span{
+        font-size: 36px;
+        line-height: normal;
     }
 }
