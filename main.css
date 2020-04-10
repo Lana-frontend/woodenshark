@@ -976,7 +976,6 @@ footer .footer_text{
     justify-self: end;
     align-self: end;
     padding: 1% 5%;
-
 }
 
 .descriptionService_two form input::placeholder{
@@ -1456,5 +1455,6 @@ footer .footer_text{
         padding: 0 5% !important;
         margin-top: 100px;
     }
+
 
 }
