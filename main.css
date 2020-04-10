@@ -964,7 +964,6 @@ footer .footer_text{
 
 .descriptionService_two button{
     border: 3px solid #F1B642;
-    box-sizing: border-box;
     cursor: pointer;
     background: #FFE095;
     font-style: normal;
@@ -975,11 +974,15 @@ footer .footer_text{
     font-family: 'Ubuntu', sans-serif;
     justify-self: end;
     align-self: end;
-    padding: 1% 5%;
+    padding: 10px 40px;
 }
 
 .descriptionService_two form input::placeholder{
     color: white;
+}
+
+.our_project_section a{
+    justify-self: center;
 }
 
 @media screen and (max-width: 1380px) {
