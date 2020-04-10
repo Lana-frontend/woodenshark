@@ -879,8 +879,110 @@ footer .footer_text{
     border: 2px solid #F1B642;
     justify-self: start;
     padding: 10px;
+    cursor: pointer;
+    background: white;
     align-self: start;
 }
+
+.our_project_page_text{
+    justify-content: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 10% 5% 10%;
+}
+.our_project_page_text img{
+    align-self: end;
+    margin-top: 150px;
+}
+
+
+.our_project_page_text span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 74px;
+    color: #F48777;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.our_project_section .block_three .timeline_three{
+    color: rgba(255, 194, 14, 0.5)!important;
+}
+
+.our_project_section .block_three{
+    background: #FEFBF5;
+}
+
+.our_project_section .block_three .title_block_three{
+    color: #F1B642!important;
+}
+
+.our_project_section .block_three .btn_three{
+    color: #F1B642!important;
+    border: 2px solid #F1B642!important;
+}
+
+.list_two{
+    background: transparent!important;
+}
+
+.our_project_page{
+    padding: 0 10% !important;
+    border: none;
+}
+
+.services_section .list .list_item .lock_two{
+    border-top: 2px solid #F1B642!important;
+    background: rgba(255, 203, 78, 0.6);
+    padding: 4% 5% !important;
+}
+
+.descriptionService_two{
+    border-bottom: 2px solid #F1B642!important;
+    background: rgba(255, 203, 78, 0.6);
+    grid-template-columns: 1fr 1fr!important;
+}
+
+.descriptionService_two form{
+    display: grid;
+    grid-gap: 50px;
+}
+
+.descriptionService_two form input{
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 46px;
+    color: white!important;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2%;
+    box-sizing: border-box;
+    background: #FFCB4E;
+    border: none;
+}
+
+.descriptionService_two button{
+    border: 3px solid #F1B642;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #FFE095;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F1B642;
+    font-family: 'Ubuntu', sans-serif;
+    justify-self: end;
+    align-self: end;
+    padding: 1% 5%;
+
+}
+
+.descriptionService_two form input::placeholder{
+    color: white;
+}
+
 @media screen and (max-width: 1380px) {
     header nav{
         font-size: 17px;
@@ -1324,4 +1426,35 @@ footer .footer_text{
         font-size: 36px;
         line-height: normal;
     }
+
+    .our_project_page_text{
+        grid-template-columns: 1fr;
+    }
+
+    .our_project_page_text span{
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .our_project_page_text img{
+        margin-top: 30px;
+    }
+
+    .descriptionService_two{
+        grid-template-columns: 1fr!important;
+        grid-gap: 50px;
+    }
+
+    .descriptionService_two button{
+        justify-self: start;
+    }
+
+    .text_form_close{
+        font-size: 36px!important;
+    }
+
+    .our_project_page{
+        padding: 0 5% !important;
+        margin-top: 100px;
+    }
+
 }
