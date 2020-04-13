@@ -370,7 +370,7 @@ header .mail_header span{
 }
 
 .services_section .list .list_item .descriptionService .content .all_content{
-    grid-gap: 5%;
+    grid-gap: 2%;
 }
 
 .services_section .list .list_item .descriptionService .content .all_content, .services_section .list .list_item .descriptionService .content .all_content div{
@@ -395,6 +395,7 @@ header .mail_header span{
     line-height: 32px;
     color: #B1B3B6;    font-family: 'Ubuntu', sans-serif;
     margin-top: 20px;
+    margin-bottom: 20px;
     align-self: start;
 }
 
@@ -1148,6 +1149,94 @@ footer .footer_text{
     cursor: pointer;
     justify-self: start;
     background: white;
+}
+
+.connect{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 5%;
+    padding: 5% 10%;
+}
+
+.connect .title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 78px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #F1B642;
+}
+
+.connect .photo{
+    width: 100%;
+}
+
+.connect .business span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #636466;
+}
+
+.connect .business{
+    margin-top: 50px;
+}
+
+.connect .text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #636466;
+}
+
+.connect .header{
+    display: grid;
+}
+
+.connect .header button{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #F1B642;
+    border: 3px solid #F1B642;
+    justify-self: end;
+    padding: 0 20px;
+}
+
+.careers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+    grid-gap: 50px;
+}
+
+.careers img{
+    width: 100%;
+}
+
+.careers .title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #636466;
+}
+
+.careers .text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #636466;
 }
 
 
