@@ -1169,6 +1169,7 @@ footer .footer_text{
 
 .connect .photo{
     width: 100%;
+    align-self: center;
 }
 
 .connect .business span{
@@ -1207,7 +1208,7 @@ footer .footer_text{
     color: #F1B642;
     border: 3px solid #F1B642;
     justify-self: end;
-    padding: 0 20px;
+    padding: 6px 20px;
 }
 
 .careers{
@@ -1239,6 +1240,89 @@ footer .footer_text{
     color: #636466;
 }
 
+.careers .descrip{
+    display: grid;
+    margin-top: 10%;
+    grid-gap: 5%;
+}
+
+.careers .descrip button{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #F1B642;
+    border: 3px solid #F1B642;
+    justify-self: end;
+    padding: 10px 20px;
+    margin-bottom: 10%;
+}
+
+.contact_submit span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #00A2D3;
+}
+
+.contact_submit{
+    padding: 5% 15%;
+}
+
+.contact_submit form{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.contact_submit form input{
+    background: #B5D7E5;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 46px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    width: 70%;
+    padding: 10px 20px;
+}
+
+.contact_submit form input::placeholder{
+    color: white;
+}
+
+.contact_submit div{
+    background: #F2F8FC;
+    padding: 8% 10%;
+}
+
+.contact_submit button{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    border: 3px solid #00A2D3;
+    padding: 10px 20px;
+    color: #00A2D3;
+    background: #F2F8FC;
+    margin-top: 30px;
+}
+
+.connect .duck2 {
+    display: none;
+}
+
+.small_btn_submit{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+}
 
 @media screen and (max-width: 1380px) {
     header nav{
@@ -1279,99 +1363,99 @@ footer .footer_text{
 }
 
 @media screen and (max-width: 1024px) {
-    #small_text{
+    #small_text {
         display: none;
     }
 
-    header .mail_header{
+    header .mail_header {
         grid-template-columns: auto;
     }
 
-    .first_section{
-        padding: 0 ;
+    .first_section {
+        padding: 0;
         height: 100vh;
     }
 
-    .idea_section{
+    .idea_section {
         padding: 4% 2%;
     }
 
-    .first_section .title_page{
+    .first_section .title_page {
         grid-template-columns: 1fr;
     }
 
-    .idea_section .header_idea_sec{
+    .idea_section .header_idea_sec {
         font-size: 24px;
         line-height: normal;
     }
 
-    .idea_section .icons{
+    .idea_section .icons {
         grid-template-columns: 1fr;
         grid-row-gap: 50px;
     }
 
-    .idea_section .text_idea_sec{
+    .idea_section .text_idea_sec {
         font-size: 16px;
     }
 
-    .how_it_work_sect .descriptions{
+    .how_it_work_sect .descriptions {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
 
-    .how_it_work_sect{
+    .how_it_work_sect {
         padding: 4% 2%;
     }
 
-    .how_it_work_sect .title_how_it_work, .services_section .title_services_section{
+    .how_it_work_sect .title_how_it_work, .services_section .title_services_section {
         font-size: 36px;
-        grid-gap: 10px!important;
+        grid-gap: 10px !important;
         justify-content: center;
         grid-template-columns: auto 1fr;
     }
 
-    .services_section .title_services_section{
+    .services_section .title_services_section {
         padding: 0 2%;
     }
 
-    .first_section .title_page div{
+    .first_section .title_page div {
         align-self: center;
         margin-top: 0;
     }
 
-    .services_section .list{
+    .services_section .list {
         padding: 0;
     }
 
-    .services_section .list .list_item{
+    .services_section .list .list_item {
         padding: 1% 5%;
     }
 
-    .tell_us_section{
+    .tell_us_section {
         padding: 4% 2%;
     }
 
-    .tell_us_section span{
+    .tell_us_section span {
         font-size: 36px;
     }
 
-    .tell_us_section form{
+    .tell_us_section form {
         grid-template-columns: 1fr;
         grid-gap: 30px;
     }
 
-    .tell_us_section form label input{
+    .tell_us_section form label input {
         box-sizing: border-box;
     }
 
-    .tell_us_section form .buttons_tell_us{
+    .tell_us_section form .buttons_tell_us {
         grid-column: 1;
         justify-self: normal;
         grid-template-columns: 1fr;
         margin-top: 0;
     }
 
-    .our_project_section .title_our_project_section{
+    .our_project_section .title_our_project_section {
         font-size: 36px;
         line-height: normal;
         margin-right: 0;
@@ -1381,92 +1465,92 @@ footer .footer_text{
         grid-gap: 20px;
     }
 
-    .our_project_section .block_one{
+    .our_project_section .block_one {
         grid-template-columns: 1fr;
     }
 
-    .our_project_section .block_one .icon_block .icons{
+    .our_project_section .block_one .icon_block .icons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .our_project_section .block_one .description_block{
+    .our_project_section .block_one .description_block {
         grid-template-columns: 1fr;
     }
 
-    .our_project_section .block_one{
+    .our_project_section .block_one {
         padding: 0;
     }
 
-    .our_project_section .block_one .icon_block .text_services, .our_project_section .block_one .icon_block .icons img{
+    .our_project_section .block_one .icon_block .text_services, .our_project_section .block_one .icon_block .icons img {
         justify-self: start;
         font-size: 18px;
     }
 
-    .our_project_section .block_one .icon_block .icons{
+    .our_project_section .block_one .icon_block .icons {
         padding: 5% 0;
     }
 
-    .our_project_section .block_one .description_block{
+    .our_project_section .block_one .description_block {
         padding: 3%;
         grid-row: 2;
     }
 
-    .our_project_section .block_one .description_block .description button{
+    .our_project_section .block_one .description_block .description button {
         display: none;
     }
 
-    .our_project_section .block_one .description_block .description .text_description{
+    .our_project_section .block_one .description_block .description .text_description {
         margin: 3% 0;
         font-size: 18px;
     }
 
-    .our_project_section .block_one .description_block .description .timeline{
+    .our_project_section .block_one .description_block .description .timeline {
         margin-bottom: 2%;
         font-size: 18px;
     }
 
-    .our_project_section .block_one .description_block .description .title_block_one{
+    .our_project_section .block_one .description_block .description .title_block_one {
         font-size: 28px;
     }
 
-    .work_with_us_section{
+    .work_with_us_section {
         padding: 4% 2%;
     }
 
-    .work_with_us_section .title_work_with_us_section{
+    .work_with_us_section .title_work_with_us_section {
         font-size: 36px;
         line-height: normal;
         margin: 30px 0;
 
     }
 
-    .work_with_us_section .blocks .block .title{
+    .work_with_us_section .blocks .block .title {
         font-size: 36px;
     }
 
-    .work_with_us_section .blocks .block .text{
+    .work_with_us_section .blocks .block .text {
         font-size: 16px;
         line-height: normal;
     }
 
-    .work_with_us_section .blocks .block button{
+    .work_with_us_section .blocks .block button {
         margin-top: 40px;
     }
 
-    .work_with_us_section .blocks{
+    .work_with_us_section .blocks {
         grid-template-columns: 1fr;
     }
 
-    .icon_small{
-        width: 100px!important;
+    .icon_small {
+        width: 100px !important;
     }
 
-    .first_section .title_page{
+    .first_section .title_page {
         font-size: 48px;
         line-height: normal;
     }
 
-    .small_btn_more{
+    .small_btn_more {
         display: block;
         border: 3px solid #4CB9E1;
         font-weight: 300;
@@ -1482,53 +1566,53 @@ footer .footer_text{
         margin-top: 20px;
     }
 
-    .btn_two{
+    .btn_two {
         color: #F48777;
         border: 3px solid #F48777;
     }
 
-    footer{
+    footer {
         margin-top: 50px;
         padding: 2% 5%;
     }
 
-    .scroll_remove{
-        display: none!important;
+    .scroll_remove {
+        display: none !important;
     }
 
-    .scroll_header img:last-child{
-        display: none!important;
+    .scroll_header img:last-child {
+        display: none !important;
     }
 
-    .scroll_remove:last-child{
+    .scroll_remove:last-child {
         display: block;
     }
 
-    footer .footer_text{
+    footer .footer_text {
         font-size: 12px;
     }
 
-    .work_with_us_section .blocks .block{
+    .work_with_us_section .blocks .block {
         padding: 5% 3%;
     }
 
-    footer .text_logo span:first-child{
+    footer .text_logo span:first-child {
         font-size: 12px;
     }
 
-    footer .text_logo span:last-child{
+    footer .text_logo span:last-child {
         font-size: 8px;
     }
 
-    footer .logo img{
+    footer .logo img {
         width: 26%;
     }
 
-    .services_section .list .list_item span{
+    .services_section .list .list_item span {
         font-size: 14px;
     }
 
-    .how_it_work_sect .descriptions .description{
+    .how_it_work_sect .descriptions .description {
         font-size: 16px;
     }
 
@@ -1550,16 +1634,16 @@ footer .footer_text{
         }
     }
 
-    .active_burger{
-        top: 45px!important;
+    .active_burger {
+        top: 45px !important;
         animation: open_burger 0.5s ease;
     }
 
-    .nonactive_burger{
+    .nonactive_burger {
         animation: close_burger 0.5s ease;
     }
 
-    header .navbar{
+    header .navbar {
         grid-template-columns: 1fr;
         position: fixed;
         width: 100%;
@@ -1570,38 +1654,38 @@ footer .footer_text{
         grid-gap: 20px;
     }
 
-    header .navbar nav{
+    header .navbar nav {
         grid-template-columns: 1fr;
         grid-gap: 16px;
     }
 
-    header{
+    header {
         padding: 0;
         position: fixed;
         width: 100%;
     }
 
-    #shark{
+    #shark {
         display: block;
         left: -185px;
         margin-left: 10%;
         padding: 0;
     }
 
-    header nav a{
+    header nav a {
         justify-self: center;
     }
 
-    header .mail_header{
+    header .mail_header {
         justify-self: center;
         text-decoration: none;
     }
 
-    header .text_logo img{
+    header .text_logo img {
         margin-top: 17px;
     }
 
-    #bands{
+    #bands {
         display: grid;
         justify-self: end;
         z-index: 1;
@@ -1611,39 +1695,39 @@ footer .footer_text{
         margin-top: 10px;
     }
 
-    .bandOne{
+    .bandOne {
         transform: rotate(45deg);
         z-index: 1;
         transition: 0.5s;
     }
 
-    .bandThree{
+    .bandThree {
         transform: rotate(-45deg);
         margin-top: -7.55px;
         transition: 0.5s;
     }
 
-    .bandTwo{
+    .bandTwo {
         display: none;
     }
 
-    .services_section .list .list_item .descriptionService .content, .services_section .list .list_item .descriptionService .three_block{
+    .services_section .list .list_item .descriptionService .content, .services_section .list .list_item .descriptionService .three_block {
         grid-template-columns: 1fr;
     }
 
-    .photo_one{
+    .photo_one {
         grid-row: 1;
     }
 
-    .services_section .list .list_item .descriptionService .text_descr, .services_section .list .list_item .descriptionService .content .text, .services_section .list .list_item .descriptionService .three_block .text{
+    .services_section .list .list_item .descriptionService .text_descr, .services_section .list .list_item .descriptionService .content .text, .services_section .list .list_item .descriptionService .three_block .text {
         font-size: 16px;
     }
 
-    .services_section .list .list_item .descriptionService .content .title, .services_section .list .list_item .descriptionService .three_block .title{
+    .services_section .list .list_item .descriptionService .content .title, .services_section .list .list_item .descriptionService .three_block .title {
         font-size: 24px;
     }
 
-    .first_section .title_page video{
+    .first_section .title_page video {
         position: absolute;
         z-index: -1;
         height: 100vh;
@@ -1652,103 +1736,174 @@ footer .footer_text{
         width: auto;
     }
 
-    .mobile_approach{
-        grid-template-columns: 1fr!important;
+    .mobile_approach {
+        grid-template-columns: 1fr !important;
     }
 
-    .mobile_text{
-        font-size: 16px!important;
-        line-height: normal!important;
+    .mobile_text {
+        font-size: 16px !important;
+        line-height: normal !important;
     }
 
-    .end_sections{
+    .end_sections {
         grid-template-columns: 1fr;
         margin-bottom: 50px;
     }
 
-    .end_sections span{
+    .end_sections span {
         font-size: 16px;
         line-height: 150%
     }
 
-    .end_sections img{
+    .end_sections img {
         grid-row: 1;
     }
 
-    .end_sections .photo_with_text{
+    .end_sections .photo_with_text {
         padding: 0;
     }
 
-    .wont_to_work .content span{
+    .wont_to_work .content span {
         font-size: 36px;
         line-height: normal;
     }
 
-    .our_project_page_text{
+    .our_project_page_text {
         grid-template-columns: 1fr;
     }
 
-    .our_project_page_text span{
+    .our_project_page_text span {
         font-size: 24px;
         line-height: 120%;
     }
-    .our_project_page_text img{
+
+    .our_project_page_text img {
         margin-top: 30px;
     }
 
-    .descriptionService_two{
-        grid-template-columns: 1fr!important;
+    .descriptionService_two {
+        grid-template-columns: 1fr !important;
         grid-gap: 50px;
     }
 
-    .descriptionService_two button{
+    .descriptionService_two button {
         justify-self: start;
     }
 
-    .text_form_close{
-        font-size: 36px!important;
+    .text_form_close {
+        font-size: 36px !important;
     }
 
-    .our_project_page{
+    .our_project_page {
         padding: 0 5% !important;
         margin-top: 100px;
     }
 
-    .about_us_section .about_us_text{
+    .about_us_section .about_us_text {
         grid-template-columns: 1fr;
     }
 
-    .about_us_section .about_us_text span:first-child{
+    .about_us_section .about_us_text span:first-child {
         font-size: 48px;
     }
 
-    .about_us_section .about_us_text span:last-child{
+    .about_us_section .about_us_text span:last-child {
         font-size: 24px;
         line-height: 150%;
     }
 
-    .about_us_section .icon_block, .our_team .team{
+    .about_us_section .icon_block, .our_team .team {
         grid-template-columns: 1fr;
         grid-gap: 50px;
     }
 
-    .our_team .team div{
+    .our_team .team div {
         justify-self: center;
     }
 
-    .location .title_location{
+    .location .title_location {
         font-size: 48px;
     }
 
-    .location .get_in_touch span{
+    .location .get_in_touch span {
         font-size: 36px;
         line-height: 41px;
         text-transform: uppercase;
     }
 
-    .location .get_in_touch button{
+    .location .get_in_touch button {
         font-size: 24px;
         padding: 10px 20px;
     }
 
+    .connect {
+        grid-template-columns: 1fr;
+        padding: 5% 3%;
+    }
+
+    .connect .title {
+        font-size: 48px;
+        margin-top: 50px;
+    }
+
+    .connect .business span {
+        font-size: 24px;
+    }
+
+    .connect .text {
+        font-size: 16px;
+    }
+
+    .connect .header button {
+        justify-self: start!important;
+        align-self: start;
+    }
+
+    .connect .duck {
+        display: none;
+    }
+
+    .connect .duck2 {
+        display: block;
+        justify-self: end;
+    }
+
+    .careers {
+        grid-template-columns: 1fr;
+        padding: 3%;
+    }
+
+    .careers .title {
+        font-size: 24px;
+    }
+
+    .careers .text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .careers .descrip button {
+        justify-self: start;
+    }
+
+    .contact_submit {
+        padding: 10% 3%
+    }
+
+    .contact_submit div{
+        padding: 3%;
+    }
+
+    .contact_submit span{
+        font-size: 24px;
+    }
+
+    .contact_submit form input{
+        font-size: 24px;
+    }
+
+    .connect .small_btn_submit{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
