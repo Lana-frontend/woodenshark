@@ -239,7 +239,6 @@ band.addEventListener("click", openBurger);
 
 window.onscroll = function header_change() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scrollTop)
     if(window.innerWidth >= 1024 && document.documentElement.scrollTop > 20) {
         header.classList.add("scroll_header");
         for (let i = 0; i < remove_in_scroll.length; i++) {
@@ -258,11 +257,22 @@ window.onscroll = function header_change() {
     }
 };
 
+window.onresize = function( ) {
+   if(window.innerWidth <= 1024){
+       header.classList.remove("scroll_header");
+       document.getElementById("small_text").style.display = "none";
+       document.getElementById("shark").style.display = "block";
+   }else if(window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
+       document.getElementById("small_text").style.display = "block";
+       document.getElementById("shark").style.display = "none";
+   }
+};
+
 
 
 let description = document.getElementsByClassName("descriptionService");
 let plus = document.getElementsByClassName("plus");
-console.log(description[1])
+
 
 function openService( num) {
     if(!description[num].classList.contains('open_service')) {

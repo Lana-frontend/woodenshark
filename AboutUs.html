@@ -328,6 +328,17 @@ function openService( num) {
 
 }
 
+window.onresize = function( ) {
+    if(window.innerWidth <= 1024){
+        header.classList.remove("scroll_header");
+        document.getElementById("small_text").style.display = "none";
+        document.getElementById("shark").style.display = "block";
+    }else if(window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
+        document.getElementById("small_text").style.display = "block";
+        document.getElementById("shark").style.display = "none";
+    }
+};
+
 function play_video() {
     let video = document.getElementById("back_video")
     video.style.display = "grid"
