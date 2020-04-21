@@ -490,6 +490,7 @@ header .mail_header span{
     display: grid;
     grid-template-columns: auto auto;
     margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 .our_project_section .title_our_project_section div {
@@ -1267,7 +1268,7 @@ footer .footer_text{
 
 .careers .descrip{
     display: grid;
-    grid-gap: 5%;
+    grid-gap: 50px;
 }
 
 .careers .descrip button{
@@ -1786,7 +1787,7 @@ footer .footer_text{
     }
 
     .services_section .list .list_item {
-        padding: 1% 5%;
+        padding: 0 5%;
     }
 
     .tell_us_section {
