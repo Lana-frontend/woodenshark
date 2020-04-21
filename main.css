@@ -167,7 +167,9 @@ header .mail_header span{
     text-align: center;
     display: grid;
     padding: 4% 20%;
-
+    grid-gap: 50px;
+    border-top: 2px solid #00A2D3;
+    border-bottom: 2px solid #00A2D3;
 }
 
 .idea_section .header_idea_sec{
@@ -342,7 +344,7 @@ header .mail_header span{
 
 .open_service{
     height: auto!important;
-    padding: 3% 10% 5% 10%!important;
+    padding:0 16px 50px 16px!important;
 }
 
 .services_section .list .list_item .descriptionService .content{
@@ -359,6 +361,7 @@ header .mail_header span{
 
 .services_section .list .list_item .descriptionService .content img{
     width: 100%;
+    align-self: start;
 }
 
 .services_section .list .list_item .descriptionService .content .all_content{
@@ -485,12 +488,12 @@ header .mail_header span{
     font-weight: bold;
     font-size: 56px;
     line-height: 78px;
-    justify-content: center;
+    justify-content: left;
     color: #00A2D2;
     display: grid;
+    padding: 0 20% 0 10%;
     grid-template-columns: auto auto;
     margin-right: 50px;
-    margin-bottom: 50px;
 }
 
 .our_project_section .title_our_project_section div {
@@ -745,7 +748,7 @@ footer .footer_text{
     font-family: 'Ubuntu', sans-serif;
     color: white;
     justify-self: end;
-    align-self: end;
+    align-self: center;
 }
 
 .blocks .block .title_block{
@@ -823,7 +826,7 @@ footer .footer_text{
 .how_it_work_sect .title_how_it_work .header_how_it_text{
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 28px;
     line-height: 60px;
     color: #F48777 ;
     font-family: 'Ubuntu', sans-serif;
@@ -1055,6 +1058,7 @@ footer .footer_text{
 
 .flag .icon_block div img{
     justify-self: center;
+    width: 100%;
 }
 
 .flag{
@@ -1746,6 +1750,7 @@ footer .footer_text{
     .idea_section .header_idea_sec {
         font-size: 24px;
         line-height: normal;
+        margin-top: 40px;
     }
 
     .idea_section .icons {
@@ -1755,6 +1760,7 @@ footer .footer_text{
 
     .idea_section .text_idea_sec {
         font-size: 16px;
+        margin-bottom: 40px;
     }
 
     .how_it_work_sect .descriptions {
@@ -1792,6 +1798,7 @@ footer .footer_text{
 
     .tell_us_section {
         padding: 4% 2%;
+        margin-top: 30px;
     }
 
     .tell_us_section span {
@@ -1850,7 +1857,7 @@ footer .footer_text{
     }
 
     .our_project_section .block_one .description_block {
-        padding: 3%;
+        padding: 20px;
         grid-row: 2;
     }
 
@@ -1944,6 +1951,10 @@ footer .footer_text{
         display: none !important;
     }
 
+    .block_mail{
+        display: block;!important;
+    }
+
     .scroll_remove:last-child {
         display: block;
     }
@@ -2010,7 +2021,7 @@ footer .footer_text{
         box-sizing: border-box;
         background: white;
         top: -500px;
-        padding: 5% 0;
+        padding: 50px 0;
         grid-gap: 20px;
     }
 
@@ -2115,10 +2126,6 @@ footer .footer_text{
         line-height: 150%
     }
 
-    .end_sections img {
-        grid-row: 1;
-    }
-
     .end_sections .photo_with_text {
         padding: 0;
     }
@@ -2147,7 +2154,7 @@ footer .footer_text{
     }
 
     .text_form_close {
-        font-size: 36px !important;
+        font-size: 19px !important;
     }
 
     .our_project_page {
@@ -2161,6 +2168,7 @@ footer .footer_text{
 
     .about_us_section .about_us_text span:first-child {
         font-size: 48px;
+        margin-top: 50px;
     }
 
     .about_us_section .about_us_text span:last-child {
@@ -2335,5 +2343,136 @@ footer .footer_text{
 
     .f_section .title_page{
         margin-top: 70px;
+    }
+
+    .about_us_section{
+        padding: 7% 16px;
+    }
+
+    .flag{
+        margin: 0 16px;
+    }
+
+    .our_team{
+        padding: 0 16px;
+    }
+
+    .location{
+        padding: 5% 16px;
+        border-bottom: none;
+    }
+
+    .services_section{
+        margin-top: 40px;
+    }
+
+    .connect .title{
+        line-height: 120%;
+    }
+
+    .connect .header{
+        grid-gap: 15px;
+    }
+
+    .connect .small_btn_submit, .our_project_page_text, .wont_to_work .content .contact{
+        grid-gap: 15px;
+    }
+
+    .connect .header button{
+        align-self: center;
+    }
+
+    .small_btn_submit{
+        margin: 0;
+    }
+
+    .our_project_section .title_our_project_section,  .our_project_page_text{
+        padding: 0;
+    }
+
+    .end_sections .photo_with_text{
+        grid-template-columns: 1fr;
+    }
+
+    .end_sections {
+        padding: 0 16px 5% 16px;
+        grid-gap: 75px;
+    }
+
+    .services_section{
+        padding: 40px 0;
+    }
+
+    .bird_img{
+        display: none;
+    }
+
+    .location .get_in_touch span{
+        margin-top: 40px;
+    }
+
+    .our_team .title_section_our_team img{
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    .our_team .title_section_our_team span{
+        font-size: 56px;
+        line-height: 120%;
+        justify-self: start;
+    }
+
+    .our_team .title_section_our_team{
+        grid-gap: 10px;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 40px;
+    }
+
+    .work_with_us_section .blocks .block button{
+        justify-self: left;
+        margin: 0;
+    }
+
+    .title_our_project_section{
+        margin: 30px;
+    }
+
+    .services_section .list{
+        margin-top: 50px;
+    }
+
+    .how_it_work_sect .title_how_it_work, .services_section .title_services_section{
+        margin-top: 50px;
+    }
+
+    .block_mail{
+        display: block!important;
+    }
+
+    header .mail_header{
+        grid-template-columns: auto 1fr;
+        justify-content: center;
+    }
+
+    .services_section .list .list_item .lock{
+        grid-gap: 5px;
+    }
+
+
+    .services_section .list .list_item span{
+        line-height: normal;
+    }
+
+    .services_section .list .list_item .lock{
+        padding: 10px 10%;
+    }
+
+    .connect .header{
+        padding: 0 16px;
+    }
+
+    .bird_iamg{
+        width: 70%;
     }
 }
