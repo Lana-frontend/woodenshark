@@ -173,7 +173,7 @@ header .mail_header span{
 .idea_section .header_idea_sec{
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 42px;
     line-height: 67px;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
@@ -189,7 +189,7 @@ header .mail_header span{
     display: grid;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: #00A2D3;
     font-family: 'Ubuntu', sans-serif;
@@ -203,7 +203,7 @@ header .mail_header span{
 .idea_section .text_idea_sec{
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 5%;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
@@ -219,10 +219,10 @@ header .mail_header span{
 .how_it_work_sect .title_how_it_work , .services_section .title_services_section{
     font-style: normal;
     font-weight: bold;
-    font-size: 68px;
+    font-size: 56px;
     justify-content: center;
     font-family: 'Ubuntu', sans-serif;
-    color: #00A2D2;
+    color: #F48777;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 60px!important;
@@ -290,11 +290,6 @@ header .mail_header span{
     justify-self: start;
 }
 
-.how_it_work_sect{
-    border-bottom: 2px solid #00A2D3;
-    border-top: 2px solid #00A2D3;
-}
-
 .services_section{
     padding: 4% 0;
 }
@@ -328,7 +323,7 @@ header .mail_header span{
 
 .services_section .list .list_item span{
     font-style: normal;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 30px;
     font-family: 'Ubuntu', sans-serif;
     color: #00A2D2;
@@ -347,7 +342,7 @@ header .mail_header span{
 
 .open_service{
     height: auto!important;
-    padding: 5%!important;
+    padding: 3% 10% 5% 10%!important;
 }
 
 .services_section .list .list_item .descriptionService .content{
@@ -359,8 +354,6 @@ header .mail_header span{
 
 .services_section .list .list_item .descriptionService .three_block{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
     margin-top: 5%;
 }
 
@@ -381,7 +374,7 @@ header .mail_header span{
 .services_section .list .list_item .descriptionService .content .title , .services_section .list .list_item .descriptionService .three_block .title{
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 40px;
     color: #636466;
     font-family: 'Ubuntu', sans-serif;
@@ -401,7 +394,7 @@ header .mail_header span{
 .services_section .list .list_item .descriptionService .text_descr{
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 40px;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
@@ -415,6 +408,7 @@ header .mail_header span{
 .tell_us_section{
     background: #FEF9F8;
     padding: 4% 15%;
+    display: grid;
     border-top: 2px solid #F48777;
     border-bottom: 2px solid #F48777;
 }
@@ -422,7 +416,8 @@ header .mail_header span{
 .tell_us_section span{
     font-style: normal;
     font-weight: bold;
-    font-size: 68px;
+    font-size: 56px;
+    justify-self: center;
     line-height: 78px;
     font-family: 'Ubuntu', sans-serif;
     color: #F48777;
@@ -439,11 +434,15 @@ header .mail_header span{
 .tell_us_section form label input {
     width: 100%;
     padding: 20px;
-    color: rgba(244, 135, 119, 0.7);
+    color: rgba(244, 135, 119);
     font-family: 'Ubuntu', sans-serif;
     font-size: 28px;
     border:  none;
     box-sizing: border-box;
+}
+
+.tell_us_section form label input::placeholder{
+    color: rgba(244, 135, 119, 0.7);
 }
 
 .tell_us_section form .buttons_tell_us{
@@ -478,23 +477,19 @@ header .mail_header span{
 
 .our_project_section{
     margin-top: 4%;
-    padding: 0 0 0 0.5%;
     display: grid;
-    border-bottom: 2px solid #00A2D2;;
 }
 
 .our_project_section .title_our_project_section{
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 68px;
+    font-size: 56px;
     line-height: 78px;
     justify-content: center;
     color: #00A2D2;
     display: grid;
     grid-template-columns: auto auto;
     margin-right: 50px;
-    margin-bottom: 5%;
-
 }
 
 .our_project_section .title_our_project_section div {
@@ -504,6 +499,7 @@ header .mail_header span{
 
 .our_project_section .title_our_project_section img{
     align-self: end;
+    width: 50%;
 }
 
 .our_project_section .block_one{
@@ -511,7 +507,6 @@ header .mail_header span{
     padding: 0 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 0.5%;
 }
 
 .our_project_section .block_one img{
@@ -527,7 +522,7 @@ header .mail_header span{
 .our_project_section .block_one .description_block .description .timeline{
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 25px;
     font-family: 'Ubuntu', sans-serif;
     color: #75C2E3;
@@ -540,8 +535,8 @@ header .mail_header span{
 .our_project_section .block_one .description_block .description .title_block_one{
     font-style: normal;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 120%;
     color: #00A2D3;
 }
 
@@ -552,7 +547,7 @@ header .mail_header span{
 .our_project_section .block_one .description_block .description .text_description{
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     color: #636466;
     font-family: 'Ubuntu', sans-serif;
@@ -580,7 +575,7 @@ header .mail_header span{
 .our_project_section .block_one .icon_block .text_services{
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 25px;
     text-align: right;
     font-family: 'Ubuntu', sans-serif;
@@ -635,7 +630,7 @@ header .mail_header span{
     font-family: 'Ubuntu', sans-serif;
     color: white;
     justify-self: center;
-    margin: 4% 0;
+    margin: 30px 0;
     padding: 10px 30px;
     cursor: pointer;
 }
@@ -673,14 +668,16 @@ header .mail_header span{
     border-top: 2px solid #F1B642;
     padding: 15%;
     display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 30px;
 }
 
 .work_with_us_section .blocks .block .title{
     font-style: normal;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 56px;
     line-height: 78px;
-    color: #B1B3B6;
+    color: #F1B642;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -703,7 +700,7 @@ header .mail_header span{
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
     line-height: 28px;
-    justify-self: end;
+    justify-self: center;
     padding: 10px 10px;
     align-self: end;
     margin-top: 3%;
@@ -742,12 +739,21 @@ footer .text_logo span:last-child{
 footer .footer_text{
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
     font-family: 'Ubuntu', sans-serif;
     color: white;
     justify-self: end;
     align-self: end;
+}
+
+.blocks .block .title_block{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.blocks .block .title_block img{
+    width: 60%;
 }
 
 .small_btn_more{
@@ -825,7 +831,6 @@ footer .footer_text{
 .end_sections{
     padding: 0 10% 5% 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
 }
 
@@ -835,16 +840,17 @@ footer .footer_text{
 
 .end_sections .photo_with_text{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     align-content: end;
     grid-gap: 5%;
-    padding: 15% 0 0 0;
+    padding: 5% 0 0 0;
 }
 
 .end_sections span{
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 28px;
+    line-height: 150%;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
 }
@@ -892,20 +898,16 @@ footer .footer_text{
 .our_project_page_text{
     justify-content: left;
     display: grid;
+    grid-gap: 30px;
     grid-template-columns: auto auto;
-    padding: 0 10% 5% 10%;
+    padding: 0 20% 5% 10%;
 }
-.our_project_page_text img{
-    align-self: end;
-    margin-top: 150px;
-}
-
 
 .our_project_page_text span{
     font-style: normal;
     font-weight: normal;
-    font-size: 46px;
-    line-height: 74px;
+    align-self: center;
+    font-size: 28px;
     color: #F48777;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -932,20 +934,21 @@ footer .footer_text{
 }
 
 .our_project_page{
-    padding: 0 4% !important;
     border: none;
 }
 
+
+
 .services_section .list .list_item .lock_two{
-    border-top: 2px solid #F1B642!important;
-    background: rgba(255, 203, 78, 0.6);
+    border-top: 2px solid #F1B642;
+    background: #FFF6DC;
     padding: 4% 5% !important;
 }
 
 .descriptionService_two{
-    border-bottom: 2px solid #F1B642!important;
-    background: rgba(255, 203, 78, 0.6);
-    grid-template-columns: 1fr 1fr!important;
+    border-bottom: 2px solid #F1B642;
+    background: #FFF6DC;
+    grid-template-columns: 1.5fr 1fr!important;
 }
 
 .descriptionService_two form{
@@ -970,7 +973,7 @@ footer .footer_text{
 .descriptionService_two button{
     border: 3px solid #F1B642;
     cursor: pointer;
-    background: #FFE095;
+    background: #FFF6DC;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -1003,7 +1006,7 @@ footer .footer_text{
 .about_us_section .about_us_text span:first-child{
     font-style: normal;
     font-weight: bold;
-    font-size: 68px;
+    font-size: 56px;
     font-family: 'Ubuntu', sans-serif;
     color: #08A9D8;
     line-height: 78px;
@@ -1012,15 +1015,14 @@ footer .footer_text{
 .about_us_section .about_us_text span:last-child{
     font-style: normal;
     font-weight: normal;
-    font-size: 46px;
-    line-height: 74px;
+    font-size: 30px;
+    line-height: 150%;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
 }
 
 .about_us_section .about_us_text .text{
     display: grid;
-    grid-gap: 50px;
 
 }
 
@@ -1028,7 +1030,7 @@ footer .footer_text{
     width: 100%;
 }
 
-.about_us_section .icon_block{
+.flag .icon_block{
     background: #F2F8FC;
     border-bottom: 2px solid #00A2D3;
     margin-top: 50px;
@@ -1037,21 +1039,27 @@ footer .footer_text{
     padding: 7%;
 }
 
-.about_us_section .icon_block div{
+.flag .icon_block div{
     justify-self: center;
     display: grid;
     justify-content: center;
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 34px;
     color: #00A2D3;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about_us_section .icon_block div img{
+.flag .icon_block div img{
     justify-self: center;
+}
+
+.flag{
+    padding: 0 10% 0 10%;
+    background: #F2F8FC;
+    margin-bottom: 5%;
 }
 
 .our_team{
@@ -1062,6 +1070,7 @@ footer .footer_text{
     font-style: normal;
     font-weight: bold;
     font-size: 68px;
+    justify-self: end;
     line-height: 78px;
     font-family: 'Ubuntu', sans-serif;
     color: #08A9D8;
@@ -1069,32 +1078,34 @@ footer .footer_text{
 
 .our_team .title_section_our_team{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .our_team .title_section_our_team img{
-    margin-top: 100px;
+    align-self: center
 }
 
 .our_team .team{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
+    padding-bottom: 5%;
+    border-bottom: 2px solid #B1B3B6;
     grid-gap: 50px;
 }
 
 .our_team .team .name, .our_team .team .position{
     font-style: normal;
     font-weight: 900;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 14px;
     color: #636466;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .our_team .team .position{
     font-weight: 100;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .our_team .team img{
@@ -1103,14 +1114,16 @@ footer .footer_text{
 
 .location{
     padding: 5% 10%;
+    display: grid;
     border-bottom: 2px solid #B1B3B6;
 }
 
 .location .title_location{
     font-style: normal;
     font-weight: bold;
-    font-size: 68px;
+    font-size: 56px;
     line-height: 78px;
+    justify-self: center;
     color: #08A9D8;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -1157,15 +1170,15 @@ footer .footer_text{
 
 .connect{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
-    padding: 5% 10%;
+    padding: 5% 5% 0 5%;
 }
 
 .connect .title{
     font-style: normal;
     font-weight: bold;
-    font-size: 68px;
+    font-size: 56px;
     line-height: 78px;
     font-family: 'Ubuntu', sans-serif;
     color: #F1B642;
@@ -1173,26 +1186,31 @@ footer .footer_text{
 
 .connect .photo{
     width: 100%;
-    align-self: center;
+    align-self: end;
 }
 
 .connect .business span{
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 50px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
 }
 
 .connect .business{
-    margin-top: 50px;
+    display: grid;
+}
+
+.connect .business img{
+    grid-row: 1;
+    justify-self: end;
 }
 
 .connect .text{
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
@@ -1200,6 +1218,8 @@ footer .footer_text{
 
 .connect .header{
     display: grid;
+    grid-gap: 50px;
+    padding: 0 13%;
 }
 
 .connect .header button{
@@ -1212,7 +1232,7 @@ footer .footer_text{
     color: #F1B642;
     background: white;
     border: 3px solid #F1B642;
-    justify-self: end;
+    justify-self: center;
     padding: 6px 20px;
 }
 
@@ -1220,7 +1240,7 @@ footer .footer_text{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5%;
-    grid-gap: 50px;
+    grid-gap: 5%;
 }
 
 .careers img{
@@ -1247,7 +1267,6 @@ footer .footer_text{
 
 .careers .descrip{
     display: grid;
-    margin-top: 10%;
     grid-gap: 5%;
 }
 
@@ -1260,7 +1279,7 @@ footer .footer_text{
     font-family: 'Ubuntu', sans-serif;
     color: #F1B642;
     border: 3px solid #F1B642;
-    justify-self: end;
+    justify-self: center;
     padding: 10px 20px;
     background: white;
     margin-bottom: 10%;
@@ -1276,7 +1295,8 @@ footer .footer_text{
 }
 
 .contact_submit{
-    padding: 5% 15%;
+    padding: 0 15%;
+    background: #F2F8FC;
 }
 
 .contact_submit form{
@@ -1294,7 +1314,7 @@ footer .footer_text{
     line-height: 46px;
     font-family: 'Ubuntu', sans-serif;
     color: #FFFFFF;
-    width: 70%;
+    width: 100%;
     padding: 10px 20px;
 }
 
@@ -1305,6 +1325,8 @@ footer .footer_text{
 .contact_submit div{
     background: #F2F8FC;
     padding: 8% 10%;
+    border-bottom: 2px solid #00A2D3;
+    border-top: 2px solid #00A2D3;
 }
 
 .contact_submit button{
@@ -1484,6 +1506,10 @@ footer .footer_text{
     color: #636466;
 
 }
+.text_services_three{
+    color: #FFCB4E!important;
+}
+
 
 .development .description .text_one img:last-child{
     margin-left: 20px;
@@ -1882,6 +1908,7 @@ footer .footer_text{
         line-height: normal;
     }
 
+
     .small_btn_more {
         display: block;
         border: 3px solid #4CB9E1;
@@ -2109,10 +2136,6 @@ footer .footer_text{
         line-height: 120%;
     }
 
-    .our_project_page_text img {
-        margin-top: 30px;
-    }
-
     .descriptionService_two {
         grid-template-columns: 1fr !important;
         grid-gap: 50px;
@@ -2144,7 +2167,7 @@ footer .footer_text{
         line-height: 150%;
     }
 
-    .about_us_section .icon_block, .our_team .team {
+    .flag .icon_block, .our_team .team {
         grid-template-columns: 1fr;
         grid-gap: 50px;
     }
@@ -2219,7 +2242,8 @@ footer .footer_text{
     }
 
     .contact_submit {
-        padding: 10% 3%
+        padding: 0;
+        background: #F2F8FC!important;
     }
 
     .contact_submit div{

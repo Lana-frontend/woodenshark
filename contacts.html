@@ -73,24 +73,30 @@
         </div>
     </section>
 
-    <section class="contact_submit">
-        <div>
-            <span>hi@woodenshark.com</span>
+    <section class="services_section">
+        <div  class="list" style="background: #F2F8FC">
+            <div id="list_item_one" class="list_item" style=" background: #F2F8FC;">
+                <div onclick="openService(0)" class="lock lock_two" style=" background: #F2F8FC; border-top: 2px solid #00A2D3;">
+                    <span style="color: #00A2D3; font-size: 50px" class="text_form_close">hi@woodenshark.com </span>
+                    <img alt="plus" style="justify-self: end" class="plus" src="img/plus.svg"/>
+                </div>
+                <div class="descriptionService descriptionService_two contact_submit" style="border-bottom: 2px solid #00A2D3;">
+                    <form>
+                        <label>
+                            <input placeholder="Email">
+                        </label>
 
-            <form>
-                <label>
-                    <input placeholder="Email">
-                </label>
+                        <label>
+                            <input placeholder="First Name">
+                        </label>
 
-                <label>
-                    <input placeholder="First Name">
-                </label>
-
-                <label>
-                    <input placeholder="Last Name">
-                </label>
-            </form>
-            <button>Submit ></button>
+                        <label>
+                            <input placeholder="Last Name">
+                        </label>
+                    </form>
+                    <button>Submit ></button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -166,10 +172,10 @@ console.log(description[1])
 function openService( num) {
     if(!description[num].classList.contains('open_service')) {
         description[num].classList.add("open_service")
-        plus[num].src = "img/minus_yellow.svg"
+        plus[num].src = "img/minus.svg"
     }else{
         description[num].classList.remove("open_service")
-        plus[num].src = "img/plus_yellow.svg"
+        plus[num].src = "img/plus.svg"
     }
 
 }
@@ -184,6 +190,7 @@ window.onresize = function( ) {
         document.getElementById("shark").style.display = "none";
     }
 };
+
 
 function play_video() {
     let video = document.getElementById("back_video")
