@@ -47,7 +47,7 @@
         </div>
         <img  id="shark" alt="shark" src="img/header_scroll.svg">
     </header>
-
+    <div class="body_content">
     <section id="play" class="first_section f_section">
         <div  class="title_page">
             <img alt="photo camera" style="width: 100%" src="img/mini_camera_img.png"/>
@@ -194,7 +194,7 @@
             <button>Contact Us ></button>
         </div>
     </section>
-
+</div>
     <footer>
         <div class="logo">
             <img alt="logotype" src="img/footer_logo.svg">
@@ -246,11 +246,13 @@ window.onscroll = function header_change() {
         }
         document.getElementById("small_text").style.display = "none";
         document.getElementById("shark").style.display = "block";
+        document.getElementsByClassName("body_content")[0].style.marginTop = "100px"
     }
     if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
         header.classList.remove("scroll_header");
         document.getElementById("small_text").style.display = "block";
         document.getElementById("shark").style.display = "none";
+        document.getElementsByClassName("body_content")[0].style.marginTop = "0px"
         for (let i = 0; i < remove_in_scroll.length; i++) {
             remove_in_scroll[i].style.display = "block"
         }

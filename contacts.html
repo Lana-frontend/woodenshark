@@ -46,7 +46,7 @@
         </div>
         <img  id="shark" alt="shark" src="img/header_scroll.svg">
     </header>
-
+    <div class="body_content">
     <section class="connect">
         <div class="header">
             <span class="title">Let's connect.</span>
@@ -80,7 +80,7 @@
                     <span style="color: #00A2D3; font-size: 50px" class="text_form_close">hi@woodenshark.com </span>
                     <img alt="plus" style="justify-self: end" class="plus" src="img/plus.svg"/>
                 </div>
-                <div class="descriptionService descriptionService_two contact_submit" style="border-bottom: 2px solid #00A2D3;">
+                <div class="descriptionService descriptionService_two contact_submit" style="border-bottom: 2px solid #00A2D3; ">
                     <form>
                         <label>
                             <input placeholder="Email">
@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-
+</div>
     <footer>
         <div class="logo">
             <img alt="logotype" src="img/footer_logo.svg">
@@ -152,9 +152,11 @@ window.onscroll = function header_change() {
         }
         document.getElementById("small_text").style.display = "none";
         document.getElementById("shark").style.display = "block";
+        document.getElementsByClassName("body_content")[0].style.marginTop = "100px"
     }
     if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
         header.classList.remove("scroll_header");
+        document.getElementsByClassName("body_content")[0].style.marginTop = "0"
         document.getElementById("small_text").style.display = "block";
         document.getElementById("shark").style.display = "none";
         for (let i = 0; i < remove_in_scroll.length; i++) {

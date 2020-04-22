@@ -167,6 +167,7 @@ header .mail_header span{
     text-align: center;
     display: grid;
     padding: 4% 20%;
+    margin-top: 50px;
     grid-gap: 50px;
     border-top: 2px solid #00A2D3;
     border-bottom: 2px solid #00A2D3;
@@ -344,7 +345,7 @@ header .mail_header span{
 
 .open_service{
     height: auto!important;
-    padding:0 16px 50px 16px!important;
+    padding:0 10% 50px 10%!important;
 }
 
 .services_section .list .list_item .descriptionService .content{
@@ -957,6 +958,7 @@ footer .footer_text{
 
 .descriptionService_two form{
     display: grid;
+    margin-top: 30px;
     grid-gap: 50px;
 }
 
@@ -2474,5 +2476,9 @@ footer .footer_text{
 
     .bird_iamg{
         width: 70%;
+    }
+
+    .open_service{
+        padding:0 16px 50px 16px!important;
     }
 }

@@ -46,7 +46,7 @@
         </div>
         <img  id="shark" alt="shark" src="img/header_scroll.svg">
     </header>
-
+    <div class="body_content">
     <section class="our_project_section our_project_page">
         <div style="margin: 30px 30px 30px 0" class="title_our_project_section">
             <div>
@@ -446,6 +446,7 @@
             </div>
         </div>
     </section>
+</div>
 
 
     <footer>
@@ -500,9 +501,11 @@ window.onscroll = function header_change() {
         }
         document.getElementById("small_text").style.display = "none";
         document.getElementById("shark").style.display = "block";
+        document.getElementsByClassName("body_content")[0].style.marginTop = "180px"
     }
     if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
         header.classList.remove("scroll_header");
+        document.getElementsByClassName("body_content")[0].style.marginTop = "0"
         document.getElementById("small_text").style.display = "block";
         document.getElementById("shark").style.display = "none";
         for (let i = 0; i < remove_in_scroll.length; i++) {

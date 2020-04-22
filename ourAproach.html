@@ -23,7 +23,6 @@
                 <img id="small_text" alt="text logo" src="img/bottom_logo.svg">
             </div>
             </a>
-
         </div>
 
         <div id="bands">
@@ -47,6 +46,7 @@
         <img  id="shark" alt="shark" src="img/header_scroll.svg">
     </header>
 
+    <div class="body_content">
     <section id="play" class="first_section">
         <div  class="title_page">
             <video
@@ -396,6 +396,7 @@
         <span>We embrace the word ‘invention’ and obsessively prototype inside and outside of our client work. Continually prototyping allows us to author the future and develop useful technical knowledge which can work its way into client projects.
             </span>
     </section>
+    </div>
 
     <section class="wont_to_work">
         <div class="content">
@@ -459,11 +460,13 @@ window.onscroll = function header_change() {
         }
         document.getElementById("small_text").style.display = "none";
         document.getElementById("shark").style.display = "block";
+        document.getElementsByClassName("body_content")[0].style.marginTop = "110px"
     }
     if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
         header.classList.remove("scroll_header");
         document.getElementById("small_text").style.display = "block";
         document.getElementById("shark").style.display = "none";
+        document.getElementsByClassName("body_content")[0].style.marginTop = "0"
         for (let i = 0; i < remove_in_scroll.length; i++) {
             remove_in_scroll[i].style.display = "block"
         }
