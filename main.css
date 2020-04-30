@@ -787,6 +787,7 @@ footer .footer_text{
     position: fixed;
     display: none;
     margin-left: -10%;
+    width: 120vw;
 
 }
 
