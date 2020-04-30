@@ -185,7 +185,7 @@ header .mail_header span{
 
 .idea_section .icons{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 5%;}
 
 .idea_section .icons div{
@@ -201,6 +201,7 @@ header .mail_header span{
 
 .idea_section .icons div img , .idea_section .icons div span{
     justify-self: center;
+    align-self: end;
 }
 
 .idea_section .text_idea_sec{
@@ -291,6 +292,7 @@ header .mail_header span{
 
 .how_it_work_sect .descriptions .description span{
     justify-self: start;
+    align-self: center;
 }
 
 .services_section{
@@ -304,7 +306,7 @@ header .mail_header span{
 .services_section .list{
     background: #F2F8FC;
     margin-top: 4%;
-    padding: 0 10%;
+
 
 }
 
@@ -387,8 +389,8 @@ header .mail_header span{
 
 .services_section .list .list_item .descriptionService .content .text , .services_section .list .list_item .descriptionService .three_block .text{
     font-style: normal;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
     color: #B1B3B6;    font-family: 'Ubuntu', sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -438,7 +440,7 @@ header .mail_header span{
 .tell_us_section form label input {
     width: 100%;
     padding: 20px;
-    color: rgba(244, 135, 119);
+    color: rgba(244, 135, 119, 1);
     font-family: 'Ubuntu', sans-serif;
     font-size: 28px;
     border:  none;
@@ -489,12 +491,12 @@ header .mail_header span{
     font-weight: bold;
     font-size: 56px;
     line-height: 78px;
-    justify-content: left;
+    justify-content: center;
     color: #00A2D2;
     display: grid;
-    padding: 0 20% 0 10%;
+    margin-bottom: 30px;
     grid-template-columns: auto auto;
-    margin-right: 50px;
+
 }
 
 .our_project_section .title_our_project_section div {
@@ -535,6 +537,8 @@ header .mail_header span{
 
 .our_project_section .block_one .description_block .description{
     display: grid;
+    align-content: center;
+    grid-gap: 6%;
 }
 
 .our_project_section .block_one .description_block .description .title_block_one{
@@ -568,6 +572,7 @@ header .mail_header span{
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 28px;
     width: 50%;
     height: 50px;
@@ -828,7 +833,7 @@ footer .footer_text{
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    line-height: 60px;
+    line-height: 150%;
     color: #F48777 ;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -1021,7 +1026,7 @@ footer .footer_text{
 .about_us_section .about_us_text span:last-child{
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 150%;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
@@ -1029,6 +1034,8 @@ footer .footer_text{
 
 .about_us_section .about_us_text .text{
     display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 40px;
 
 }
 
@@ -1042,7 +1049,7 @@ footer .footer_text{
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 7%;
+    padding: 4%;
 }
 
 .flag .icon_block div{
@@ -1060,7 +1067,7 @@ footer .footer_text{
 
 .flag .icon_block div img{
     justify-self: center;
-    width: 100%;
+    width: 60%;
 }
 
 .flag{
@@ -1086,7 +1093,7 @@ footer .footer_text{
 .our_team .title_section_our_team{
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
 }
 
 .our_team .title_section_our_team img{
@@ -2174,7 +2181,7 @@ footer .footer_text{
     }
 
     .about_us_section .about_us_text span:last-child {
-        font-size: 24px;
+        font-size: 24px!important;
         line-height: 150%;
     }
 
@@ -2443,11 +2450,6 @@ footer .footer_text{
     .services_section .list{
         margin-top: 50px;
     }
-
-    .how_it_work_sect .title_how_it_work, .services_section .title_services_section{
-        margin-top: 50px;
-    }
-
     .block_mail{
         display: block!important;
     }
