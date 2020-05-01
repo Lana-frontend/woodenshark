@@ -167,7 +167,6 @@ header .mail_header span{
     text-align: center;
     display: grid;
     padding: 4% 20%;
-    margin-top: 50px;
     grid-gap: 50px;
     border-top: 2px solid #00A2D3;
     border-bottom: 2px solid #00A2D3;
@@ -177,7 +176,7 @@ header .mail_header span{
     font-style: normal;
     font-weight: normal;
     font-size: 42px;
-    line-height: 67px;
+    line-height: 120%;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
     justify-self: center;
@@ -212,6 +211,7 @@ header .mail_header span{
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
     justify-self: center;
+    line-height: 150%;
 }
 
 
@@ -295,9 +295,7 @@ header .mail_header span{
     align-self: center;
 }
 
-.services_section{
-    padding: 4% 0;
-}
+
 
 .services_section .title_services_section{
     padding: 0 23%;
@@ -315,7 +313,8 @@ header .mail_header span{
     border-top: 2px solid #00A2D3;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-gap: 40px;
+    grid-gap: 100px;
+    justify-content: center;
 }
 
 .services_section .list .list_item{
@@ -502,6 +501,7 @@ header .mail_header span{
 .our_project_section .title_our_project_section div {
     align-self: start;
     justify-self: center;
+    line-height: 60px;
 }
 
 .our_project_section .title_our_project_section img{
@@ -537,8 +537,8 @@ header .mail_header span{
 
 .our_project_section .block_one .description_block .description{
     display: grid;
-    align-content: center;
-    grid-gap: 6%;
+    grid-gap: 50px;
+    grid-template-rows: 10px 65px;
 }
 
 .our_project_section .block_one .description_block .description .title_block_one{
@@ -595,6 +595,8 @@ header .mail_header span{
 
 .our_project_section .block_one .icon_block{
     display: grid;
+    grid-template-rows: 10px;
+    grid-gap: 38px;
 }
 
 .our_project_section .block_one .icon_block .icons{
@@ -695,7 +697,7 @@ header .mail_header span{
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-    line-height: 46px;
+    line-height: 40px;
     font-family: 'Ubuntu', sans-serif;
     color: #B1B3B6;
 }
@@ -1008,7 +1010,7 @@ footer .footer_text{
 .about_us_section .about_us_text{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 100px;
 }
 
 .about_us_section{
@@ -1056,6 +1058,7 @@ footer .footer_text{
 .flag .icon_block div{
     justify-self: center;
     display: grid;
+    grid-template-rows: 1fr 63px;
     justify-content: center;
     text-align: center;
     font-style: normal;
@@ -1195,6 +1198,7 @@ footer .footer_text{
     font-weight: bold;
     font-size: 56px;
     line-height: 78px;
+    justify-self: right;
     font-family: 'Ubuntu', sans-serif;
     color: #F1B642;
 }
@@ -1235,6 +1239,8 @@ footer .footer_text{
     display: grid;
     grid-gap: 50px;
     padding: 0 13%;
+    width: 355px;
+    justify-self: center;
 }
 
 .connect .header button{
@@ -1254,7 +1260,7 @@ footer .footer_text{
 .careers{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5%;
+    padding: 5% 5% 0 5%;
     grid-gap: 5%;
 }
 
@@ -1770,7 +1776,7 @@ footer .footer_text{
 
     .idea_section .text_idea_sec {
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 88px;
     }
 
     .how_it_work_sect .descriptions {
@@ -1779,14 +1785,13 @@ footer .footer_text{
     }
 
     .how_it_work_sect {
-        padding: 4% 2%;
+        padding: 48px 2%;
     }
 
     .how_it_work_sect .title_how_it_work, .services_section .title_services_section {
         font-size: 36px;
         grid-gap: 10px !important;
         justify-content: center;
-        grid-template-columns: auto 1fr;
     }
 
     .services_section .title_services_section {
@@ -1807,12 +1812,14 @@ footer .footer_text{
     }
 
     .tell_us_section {
-        padding: 4% 2%;
+        padding: 48px 2%;
         margin-top: 30px;
+        grid-gap: 40px;
     }
 
     .tell_us_section span {
         font-size: 36px;
+        line-height: 46px;
     }
 
     .tell_us_section form {
@@ -2164,7 +2171,7 @@ footer .footer_text{
     }
 
     .text_form_close {
-        font-size: 19px !important;
+        font-size: 24px !important;
     }
 
     .our_project_page {
@@ -2409,10 +2416,6 @@ footer .footer_text{
         grid-gap: 75px;
     }
 
-    .services_section{
-        padding: 40px 0;
-    }
-
     .bird_img{
         display: none;
     }
@@ -2428,8 +2431,8 @@ footer .footer_text{
     }
 
     .our_team .title_section_our_team span{
-        font-size: 56px;
-        line-height: 120%;
+        font-size: 36px;
+        line-height: normal;
         justify-self: start;
     }
 
@@ -2456,12 +2459,11 @@ footer .footer_text{
     }
 
     header .mail_header{
-        grid-template-columns: auto 1fr;
         justify-content: center;
     }
 
     .services_section .list .list_item .lock{
-        grid-gap: 5px;
+        grid-gap: 100px;
     }
 
 
@@ -2484,4 +2486,41 @@ footer .footer_text{
     .open_service{
         padding:0 16px 50px 16px!important;
     }
-}
+
+    .our_project_section .block_one .icon_block{
+        margin-top: 40px;
+    }
+
+    #shark{
+        width: auto;
+    }
+
+    .title_box{
+        padding: 0!important;
+        margin-bottom: 30px!important;
+    }
+
+    .our_project_section .title_our_project_section div {
+        line-height: normal;
+    }
+
+    .flag .icon_block div img{
+        width: 50%;
+    }
+
+    .flag{
+        border-bottom: 3px solid #00A2D3;
+    }
+
+    .flag .icon_block{
+        border: none;
+    }
+
+    header .mail_header {
+        grid-auto-columns: 1fr!important;
+    }
+
+    .services_section .list .list_item img{
+        width: 60%;
+    }
+    }
