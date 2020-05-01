@@ -2542,7 +2542,7 @@ footer .footer_text{
         padding-bottom: 30px;
     }
 
-    .production .description .desc_one .icons img{
+    .production .description .desc_one .icons img, .concept .description .text img{
         width: 60px;
     }
 
