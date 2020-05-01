@@ -1423,7 +1423,7 @@ footer .footer_text{
     line-height: 32px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
-    margin-top: 30px;
+    margin-top: 24px;
 }
 
 .first_section .description .text{
@@ -1463,7 +1463,7 @@ footer .footer_text{
 }
 
 .concept .description .text img{
-    width: 100%;
+    width: 85%;
 }
 
 .concept img{
@@ -1559,6 +1559,7 @@ footer .footer_text{
     line-height: 32px;
     font-family: 'Ubuntu', sans-serif;
     color: #B1B3B6;
+    align-self: center;
 }
 
 .development .buttons{
@@ -1679,8 +1680,8 @@ footer .footer_text{
 .other_projects .wont_to_work{
     padding: 0;
     display: grid;
-    grid-gap: 30px;
-    margin-top: 80px;
+    grid-gap: 40px;
+    margin-top: 56px;
 }
 
 .other_projects .wont_to_work button{
@@ -1737,6 +1738,10 @@ footer .footer_text{
 
     .tell_us_section form .buttons_tell_us button{
         font-size: 18px;
+    }
+
+    .development .description .text_one img{
+        width: 60px;
     }
 
 }
@@ -2326,7 +2331,7 @@ footer .footer_text{
     }
 
     .concept, .development, .production, .other_projects{
-        padding: 5% 3%;
+        padding: 40px 3% 0 3%;
     }
 
     .photo_camera{
@@ -2359,7 +2364,7 @@ footer .footer_text{
     }
 
     .f_section .title_page{
-        margin-top: 70px;
+        margin-top: 90px;
     }
 
     .about_us_section{
@@ -2522,5 +2527,34 @@ footer .footer_text{
 
     .services_section .list .list_item img{
         width: 60%;
+    }
+
+    .two_section .description .title_desc {
+        line-height: 150%;
+        margin-top: 25px;
+    }
+
+    .two_section .description .title_desc{
+        grid-gap: 16px;
+    }
+
+    .two_section .description{
+        padding-bottom: 30px;
+    }
+
+    .production .description .desc_one .icons img{
+        width: 60px;
+    }
+
+    .production .description .desc_one, .production .description .desc_two{
+        grid-gap: 24px;
+    }
+
+    .development .description, .production .description .desc_one .icons{
+        margin-top: 24px;
+    }
+
+    .concept .number_slide span{
+        align-self: center;
     }
     }
