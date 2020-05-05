@@ -400,7 +400,6 @@ header .mail_header span{
     line-height: 28px;
     color: #B1B3B6;    font-family: 'Ubuntu', sans-serif;
     margin-top: 20px;
-    margin-bottom: 20px;
     align-self: start;
 }
 
@@ -1714,6 +1713,15 @@ footer .footer_text{
 @media screen and (max-width: 1400px) {
     header nav{
         font-size: 17px;
+    }
+
+    .our_project_section .block_one .icon_block .icons img{
+        width: 50%;
+    }
+
+    .our_project_section .block_one .description_block .description{
+        grid-template-rows: auto ;
+        grid-gap: 0;
     }
 
     #shark{
