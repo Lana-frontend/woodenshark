@@ -1104,7 +1104,8 @@ footer .footer_text{
 .our_team .title_section_our_team{
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: auto 1fr;
+    justify-content: center;
+    grid-template-columns: auto auto;
 }
 
 .our_team .title_section_our_team img{
