@@ -2518,6 +2518,12 @@ footer .footer_text{
         padding: 10px 10%;
     }
 
+    .many_title{
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-gap: 40px;
+    }
+
     .connect .header{
         padding: 0 16px;
     }
@@ -2536,6 +2542,10 @@ footer .footer_text{
 
     #shark{
         width: auto;
+    }
+
+    .project_card_end{
+        margin-top: 100px!important;
     }
 
     .title_box{
@@ -2561,10 +2571,6 @@ footer .footer_text{
 
     header .mail_header {
         grid-auto-columns: 1fr!important;
-    }
-
-    .services_section .list .list_item img{
-        width: 60%;
     }
 
     .two_section .description .title_desc {
