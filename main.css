@@ -1408,10 +1408,10 @@ footer .footer_text{
 
 .two_section .description_two .title_desc{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
-.two_section .description_two .title_desc span:first-child{
+.two_section .description_two .two_desc span{
     font-style: normal;
     font-weight: normal;
     font-size: 46px;
@@ -1420,9 +1420,12 @@ footer .footer_text{
     color: #636466;
 }
 
-.two_section .description_two .title_desc span:last-child{
-    justify-self: end;
+.small_slider{
+    grid-template-columns: auto auto auto!important;
+    justify-self: start!important;
 }
+
+
 
 .two_section .description_two .text{
     font-style: normal;
@@ -1709,6 +1712,20 @@ footer .footer_text{
 .f_section , .f_section .title_page{
     height: auto;!important;
     padding: 2%;
+}
+
+.many_title{
+    display: grid;
+    grid-template-columns: auto auto auto 0.5fr;
+    margin: 50px 0;
+}
+
+.slider_desc{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #636466;
+
 }
 
 @media screen and (max-width: 1400px) {
