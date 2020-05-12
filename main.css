@@ -1421,10 +1421,19 @@ footer .footer_text{
 }
 
 .small_slider{
-    grid-template-columns: auto auto auto!important;
+    grid-template-columns: 1fr 1fr 1fr 1fr!important;
     justify-self: start!important;
 }
 
+.slider .dots, .photo_camera .dots, .title_page .dots
+{
+    position: absolute;
+    justify-self: center;
+    bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
 
 
 .two_section .description_two .text{
@@ -1656,7 +1665,7 @@ footer .footer_text{
 
 .other_projects .projects .project{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 

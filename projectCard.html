@@ -51,7 +51,14 @@
     <div class="body_content" style="max-width: 1912px;justify-self: center">
     <section id="play" class="first_section f_section">
         <div  class="title_page">
-            <img alt="photo camera" style="width: 100%" src="img/mini_camera_img.png"/>
+            <div style="position: relative; display: grid; margin: 0">
+                <img alt="photo camera" style="width: 100%" src="img/mini_camera_img.png"/>
+                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr" >
+                    <img onclick="titleSwipe(0)" class="slid_t active" alt="slider_dot" src="img/one_dot.svg"/>
+                    <img onclick="titleSwipe(1)" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
+                    <img onclick="titleSwipe(2)" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -110,13 +117,21 @@
         </div>
 
         <div  class="photo_camera">
-            <img  alt="photo camera" src="img/camera_slice.png"/>
+            <div style="position: relative; display: grid">
+                <img  alt="photo camera" src="img/camera_slice.png"/>
+                <div class="dots" >
+                    <img class="slid active" alt="slider_dot" src="img/one_dot.svg"/>
+                    <img class="slid " alt="slider_dot" src="img/dot.svg"/>
+                    <img class="slid " alt="slider_dot" src="img/dot.svg"/>
+                    <img class="slid " alt="slider_dot" src="img/dot.svg"/>
+                </div>
+            </div>
             <div class="number_slide">
-                <span>01 / 02</span>
+                <span></span>
 
                 <div class="buttons">
-                    <img alt="arrow prev" src="img/btn_prev.svg">
-                    <img alt="arrow next" src="img/btn_next.svg">
+                    <img onclick="clickSliderPrev()" alt="arrow prev" src="img/btn_prev.svg">
+                    <img onclick="clickSliderNext()" alt="arrow next" src="img/btn_next.svg">
                 </div>
             </div>
         </div>
@@ -140,12 +155,21 @@
         </div>
 
         <div class="slider">
-            <img alt="camera photo" src="img/camera_slice.png">
+            <div style="position: relative; display: grid">
+                <img id="new_photo" alt="camera photo" src="img/camera_slice.png">
+                <div class="dots" >
+                    <img class="dots_two active" alt="slider_dot" src="img/one_dot.svg"/>
+                    <img class="dots_two active" alt="slider_dot" src="img/dot.svg"/>
+                    <img class="dots_two active" alt="slider_dot" src="img/dot.svg"/>
+                    <img class="dots_two active" alt="slider_dot" src="img/dot.svg"/>
+                </div>
+            </div>
             <div class="number_slide" style="grid-template-columns: auto">
                 <div class="buttons small_slider">
-                    <img alt="small img" src="img/small_slider.png">
-                    <img alt="small img" src="img/small_slider.png">
-                    <img alt="small img" src="img/small_slider.png">
+                    <img onclick="sliderTwo(0, this.src)" alt="small img" src="img/camera_slice.png">
+                    <img onclick="sliderTwo(1, this.src)" alt="small img" src="img/camera_slice.png">
+                    <img onclick="sliderTwo(2, this.src)" alt="small img" src="img/camera_slice.png">
+                    <img onclick="sliderTwo(3, this.src)" alt="small img" src="img/camera_slice.png">
                 </div>
             </div>
         </div>
@@ -242,6 +266,78 @@ let remove_in_scroll = document.getElementsByClassName("scroll_remove");
 let bandOne = document.getElementById("bandOne");
 let bandTwo = document.getElementById("bandTwo");
 let bandThree = document.getElementById("bandThree");
+
+function titleSwipe(index) {
+    let slide = document.getElementsByClassName("slid_t")
+    for(let i = 0; i < slide.length; i++){
+        if(slide[i].classList.contains('active')){
+            slide[i].src = "img/dot.svg";
+            slide[index].src = "img/one_dot.svg";
+            slide[i].classList.remove("active");
+            slide[index].classList.add("active");
+        }
+    }
+}
+
+function sliderTwo(index, src) {
+    document.getElementById("new_photo").src = src;
+    console.log(src);
+    let dot = document.getElementsByClassName("dots_two");
+    for(let i = 0; i < dot.length; i++){
+        if(dot[i].classList.contains('active')){
+            dot[i].src = "img/dot.svg";
+            dot[index].src = "img/one_dot.svg";
+            dot[i].classList.remove("active");
+            dot[index].classList.add("active");
+
+        }
+    }
+}
+
+
+function clickSliderNext() {
+    let slide = document.getElementsByClassName("slid");
+    for(let i = 0; i < slide.length; i++){
+        if(slide[i].classList.contains('active')){
+            if(i === 3){
+                slide[0].classList.add("active");
+                slide[3].classList.remove("active");
+                slide[3].src = "img/dot.svg";
+                slide[0].src = "img/one_dot.svg";
+                break
+            } else {
+                slide[i+1].classList.add("active");
+                slide[i].classList.remove("active");
+                slide[i].src = "img/dot.svg";
+                slide[i+1].src = "img/one_dot.svg";
+                break
+            }
+
+        }
+    }
+}
+
+function clickSliderPrev() {
+    let slide = document.getElementsByClassName("slid");
+    for(let i = 0; i < slide.length; i++){
+        if(slide[i].classList.contains('active')){
+            if(i === 0){
+                slide[3].classList.add("active");
+                slide[0].classList.remove("active");
+                slide[0].src = "img/dot.svg";
+                slide[3].src = "img/one_dot.svg";
+                break
+            } else {
+                slide[i-1].classList.add("active");
+                slide[i].classList.remove("active");
+                slide[i].src = "img/dot.svg";
+                slide[i-1].src = "img/one_dot.svg";
+                break
+            }
+
+        }
+    }
+}
 
 
 function openBurger() {
