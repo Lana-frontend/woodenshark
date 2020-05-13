@@ -1652,7 +1652,7 @@ footer .footer_text{
 
 .other_projects{
     display: grid;
-    padding: 5% 10%;
+    padding: 5% 15%;
 
 }
 
@@ -1665,7 +1665,7 @@ footer .footer_text{
 
 .other_projects .projects .project{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
@@ -1682,6 +1682,7 @@ footer .footer_text{
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
     cursor: pointer;
+    justify-self: right;
 }
 
 .other_projects .projects .project span:last-child{
