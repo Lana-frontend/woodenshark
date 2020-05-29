@@ -9,6 +9,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 </head>
 <body style="overflow-x: hidden">
 <div style="overflow-x: hidden; position: relative">
@@ -52,7 +54,7 @@
     <section id="play" class="first_section f_section">
         <div  class="title_page">
             <div style="position: relative; display: grid; margin: 0">
-                <img alt="photo camera" style="width: 100%" src="img/mini_camera_img.png"/>
+                <img id="title_slide" alt="photo camera" style="width: 100%" src="img/mini_camera_img.png"/>
                 <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr" >
                     <img onclick="titleSwipe(0)" class="slid_t active" alt="slider_dot" src="img/one_dot.svg"/>
                     <img onclick="titleSwipe(1)" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
@@ -116,9 +118,9 @@
             </div>
         </div>
 
-        <div  class="photo_camera">
+        <div class="photo_camera">
             <div style="position: relative; display: grid">
-                <img  alt="photo camera" src="img/camera_slice.png"/>
+                <img  id="slider_arrow"  alt="photo camera" src="img/camera_slice.png"/>
                 <div class="dots" >
                     <img class="slid active" alt="slider_dot" src="img/one_dot.svg"/>
                     <img class="slid " alt="slider_dot" src="img/dot.svg"/>
@@ -130,8 +132,8 @@
                 <span></span>
 
                 <div class="buttons">
-                    <img onclick="clickSliderPrev()" alt="arrow prev" src="img/btn_prev.svg">
-                    <img onclick="clickSliderNext()" alt="arrow next" src="img/btn_next.svg">
+                    <img onclick="clickSliderPrev('slid')" alt="arrow prev" src="img/btn_prev.svg">
+                    <img onclick="clickSliderNext('slid')" alt="arrow next" src="img/btn_next.svg">
                 </div>
             </div>
         </div>
@@ -258,6 +260,7 @@
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>
 </div>
+<script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
 <script >let burger_menu = document.getElementById("nav");
 let band = document.getElementById("bands");
 let counter = 1;
@@ -279,6 +282,44 @@ function titleSwipe(index) {
     }
 }
 
+$("#slider_arrow").swipe( {
+    swipeLeft:leftSwipe,
+    swipeRight:rightSwipe,
+    threshold:0
+});
+
+$("#new_photo").swipe( {
+    swipeLeft:leftSwipe3,
+    swipeRight:rightSwipe3,
+    threshold:0
+});
+
+$("#title_slide").swipe( {
+    swipeLeft:leftSwipe1,
+    swipeRight:rightSwipe1,
+    threshold:0
+});
+function leftSwipe(){
+    clickSliderNext('slid')
+}
+function rightSwipe(){
+    clickSliderPrev('slid')
+}
+
+function leftSwipe1(){
+    clickSliderNext('slid_t')
+}
+function rightSwipe1(){
+    clickSliderPrev('slid_t')
+}
+
+function leftSwipe3(){
+    clickSliderNext('dots_two')
+}
+function rightSwipe3(){
+    clickSliderPrev('dots_two')
+}
+
 function sliderTwo(index, src) {
     document.getElementById("new_photo").src = src;
     console.log(src);
@@ -295,14 +336,14 @@ function sliderTwo(index, src) {
 }
 
 
-function clickSliderNext() {
-    let slide = document.getElementsByClassName("slid");
+function clickSliderNext(name) {
+    let slide = document.getElementsByClassName(name);
     for(let i = 0; i < slide.length; i++){
         if(slide[i].classList.contains('active')){
-            if(i === 3){
+            if(i === slide.length - 1){
                 slide[0].classList.add("active");
-                slide[3].classList.remove("active");
-                slide[3].src = "img/dot.svg";
+                slide[slide.length - 1].classList.remove("active");
+                slide[slide.length - 1].src = "img/dot.svg";
                 slide[0].src = "img/one_dot.svg";
                 break
             } else {
@@ -317,15 +358,15 @@ function clickSliderNext() {
     }
 }
 
-function clickSliderPrev() {
-    let slide = document.getElementsByClassName("slid");
+function clickSliderPrev(name) {
+    let slide = document.getElementsByClassName(name);
     for(let i = 0; i < slide.length; i++){
         if(slide[i].classList.contains('active')){
             if(i === 0){
-                slide[3].classList.add("active");
+                slide[slide.length - 1].classList.add("active");
                 slide[0].classList.remove("active");
                 slide[0].src = "img/dot.svg";
-                slide[3].src = "img/one_dot.svg";
+                slide[slide.length - 1].src = "img/one_dot.svg";
                 break
             } else {
                 slide[i-1].classList.add("active");

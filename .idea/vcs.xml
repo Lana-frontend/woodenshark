@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TouchSwipe-Jquery-Plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jquery" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mysomersby-gmail.com" vcs="Git" />
   </component>
 </project>

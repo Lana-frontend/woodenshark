@@ -9,8 +9,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 </head>
-<body style="overflow-x: hidden">
+<body id="body" style="overflow-x: hidden">
     <div style="overflow-x: hidden; position: relative">
 
 
@@ -52,15 +54,13 @@
         <div class="body_content">
     <section id="play" class="first_section">
         <div  class="title_page">
-            <video
-
+            <video controls
                    id="main-video"
-                   playsinline="playsinline"
                    autoplay="autoplay"
                    muted="muted"
                    loop="loop"
                    src="img/Woodenshark%20R&D%20Showreel%202019.mp4"
-                   type="video/mp4"></video>
+                   ></video>
         </div>
     </section>
 
@@ -216,7 +216,7 @@
 
                     <div class="content">
                         <img alt="photo service" src="img/service_photo4.png">
-                        <div class="all_content">
+                        <div class="all_content" style="grid-gap: 20px">
                             <div>
                                 <span class="title">Sourcing/Schedule</span>
                                 <span class="text">Our designated specialists are in charge for selecting components, keeping information on them up-to-date, checking their availability and scheduling delivery dates. They also reveal critical and high-value components and perform additional research on them including replaceability, sourcing, support level, shelf life, lead time and so on.</span>
@@ -226,14 +226,14 @@
                     </div>
 
                     <div class="content">
-                        <div class="all_content">
+                        <div class="all_content" style="grid-gap: 0">
                             <div>
                                 <span class="title">Quality Control Planning</span>
                                 <span class="text">Working out an early strategy for quality control procedures is essential. At this phase the following steps for functional control and assembly testing are accomplished:	 <br>  • development of testing systems and quality control criteria during production stages;	 <br>  • design and manufacturing of JTAG/ICT testing benches; <br> • development of automated or manual testing processes.</span>
                             </div>
                         </div>
 
-                        <div class="all_content">
+                        <div class="all_content" style="grid-gap: 0">
                             <div>
                                 <span class="title">BOM Planning</span>
                                 <span class="text">During prototyping phase BOM usually is subject to continuous change as different concepts are being tested, same parts may be produced by different vendors or even at bench scale e.t.c. But when things settle down and it comes to refining the design then the amount of possible changes drastically reduces, it’s time to create more detailed manufacturing BOM that will provide data for: <br>  • Lead-time for the materials <br>  • Cost of Goods Sold(COGS) <br>  • Manufacturing processes <br>  • Quality of the Design for Assembly <br>  • Supply chain robustness <br>  • Cash flow requirements</span>
@@ -403,7 +403,7 @@
     </section>
         <a name="tell_us" style="margin-bottom: 100px"></a>
 
-    <section class="tell_us_section">
+    <section style="margin-top: 50px" class="tell_us_section">
         <span>Tell us about your project</span>
 
         <form>
@@ -435,7 +435,17 @@
         </div>
 
         <div class="block_one">
-            <img alt="bottles" src="img/block_img_one.png">
+            <div>
+                <div style="position: relative; display: grid; margin: 0">
+                    <img alt="bottles" src="img/block_img_one.png">
+                    <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
+                        <img style="width: auto" onclick="titleSwipe(0, 'slid_t')" class="slid_t active" alt="slider_dot" src="img/one_dot.svg"/>
+                        <img style="width: auto" onclick="titleSwipe(1, 'slid_t')" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
+                        <img style="width: auto" onclick="titleSwipe(2, 'slid_t')" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
+                        <img style="width: auto" onclick="titleSwipe(3, 'slid_t')" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
+                    </div>
+                </div>
+            </div>
 
             <div class="description_block">
                 <div class="description">
@@ -497,13 +507,29 @@
                 </div>
             </div>
 
-            <img alt="boxy" src="img/block_img_two.png">
+            <div style="position: relative; display: grid; margin: 0">
+                <img alt="boxy" src="img/block_img_two.png">
+                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
+                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_2')" class="slid_2 active" alt="slider_dot" src="img/one_dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(1, 'slid_2')" class="slid_2 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(2, 'slid_2')" class="slid_2 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_2')" class="slid_2 " alt="slider_dot" src="img/dot.svg"/>
+                </div>
+            </div>
 
         </div>
 
 
         <div class="block_one">
-            <img alt="boxy" src="img/boxy_1.png">
+            <div style="position: relative; display: grid; margin: 0">
+                <img alt="boxy" src="img/boxy_1.png">
+                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
+                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_3')" class="slid_3 active" alt="slider_dot" src="img/one_dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(1, 'slid_3')" class="slid_3 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(2, 'slid_3')" class="slid_3 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_3')" class="slid_3 " alt="slider_dot" src="img/dot.svg"/>
+                </div>
+            </div>
 
             <div class="description_block">
                 <div class="description">
@@ -534,8 +560,17 @@
         </div>
 
         <div class="block_one block_two">
+            <div style="position: relative; display: grid; margin: 0">
+                <img alt="boxy" src="img/camera.png">
+                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
+                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_4')" class="slid_4 active" alt="slider_dot" src="img/one_dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(1, 'slid_4')" class="slid_4 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(2, 'slid_4')" class="slid_4 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_4')" class="slid_4 " alt="slider_dot" src="img/dot.svg"/>
+                </div>
+            </div>
 
-            <img alt="boxy" src="img/camera.png">
+
 
             <div class="description_block">
                 <div class="description">
@@ -595,7 +630,15 @@
                 </div>
             </div>
 
-            <img alt="boxy" src="img/img_block.png">
+            <div style="position: relative; display: grid; margin: 0">
+                <img alt="boxy" src="img/img_block.png">
+                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
+                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_5')" class="slid_5 active" alt="slider_dot" src="img/one_dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(1, 'slid_5')" class="slid_5 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(2, 'slid_5')" class="slid_5 " alt="slider_dot" src="img/dot.svg"/>
+                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_5')" class="slid_5 " alt="slider_dot" src="img/dot.svg"/>
+                </div>
+            </div>
 
         </div>
 
@@ -611,12 +654,12 @@
                     <img alt="duck icon" src="img/duck_icon.svg">
                 </div>
                 <span class="text">We offer a range of services and specialize in providing complete, turnkey solutions working with startups, entrepreneurs and brands worldwide.</span>
-                <button>Learn more ></button>
+                <a href="contacts.html" style="justify-self: center">  <button>Learn more ></button></a>
             </div>
             <div class="block">
                 <span class="title">Join&nbsp;our&nbsp;team</span>
                 <span class="text">Woodenshark is a team of dedicated designers, technicians and engineers with a passion for innovation.</span>
-                <button>Learn more ></button>
+                <a href="AboutUs.html" style="justify-self: center"> <button>Learn more ></button></a>
             </div>
         </div>
     </section>
@@ -634,7 +677,9 @@
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>
     </div>
-<script >let burger_menu = document.getElementById("nav");
+    <script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
+
+    <script >let burger_menu = document.getElementById("nav");
 let band = document.getElementById("bands");
 let counter = 1;
 let header = document.getElementsByTagName("header")[0];
@@ -642,6 +687,18 @@ let remove_in_scroll = document.getElementsByClassName("scroll_remove");
 let bandOne = document.getElementById("bandOne");
 let bandTwo = document.getElementById("bandTwo");
 let bandThree = document.getElementById("bandThree");
+
+    $("#body").swipe( {
+        swipeLeft:leftSwipe,
+        swipeRight:rightSwipe,
+        threshold:0
+    });
+    function leftSwipe(event){
+        alert('swipe left');
+    }
+    function rightSwipe(event){
+        alert('swipe right');
+    }
 
 
 function openBurger() {
@@ -724,6 +781,19 @@ function play_video() {
 function close_video() {
     let video = document.getElementById("back_video");
     video.style.display = "none"
+}
+
+function titleSwipe(index, num_slider) {
+        let slide = document.getElementsByClassName(num_slider);
+
+    for(let i = 0; i < slide.length; i++){
+        if(slide[i].classList.contains('active')){
+            slide[i].src = "img/dot.svg";
+            slide[index].src = "img/one_dot.svg";
+            slide[i].classList.remove("active");
+            slide[index].classList.add("active");
+        }
+    }
 }
 
 document.getElementById("play").addEventListener("click", play_video)
