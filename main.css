@@ -13,6 +13,49 @@ body{
     display: none;!important;
 }
 
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.slider-wrapper{
+    display: grid !important;
+    grid-template-columns: 1fr;
+}
+
+.slick-slide img{
+    height: 90%;
+    object-fit: cover;
+}
+
+.slider-wrapper > div{
+    height: 90%;
+}
+
+.slick-slider > div div{
+    height: auto;
+}
+
+.slick-dotted.slick-slider{
+    margin-bottom: 0 !important;
+}
+
+.slick-dots{
+    bottom: 15px !important;
+}
+
+.slick-dots li.slick-active button:before{
+    content: url("img/one_dot.svg") !important;
+}
+
+.slick-dots li button:before{
+    content: url("img/dot.svg") !important;
+}
+
 header{
     display: grid;
     grid-template-columns: auto auto ;
@@ -125,7 +168,7 @@ header .mail_header span{
 }
 
 .first_section .title_page{
-    height: calc(95vh - 121px);
+    height: calc(85vh - 121px);
     display: grid;
 
     border: none;
@@ -677,7 +720,7 @@ header .mail_header span{
 .work_with_us_section .blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3%;
+    grid-gap: 30px;
     margin-top: 4%;
 }
 
@@ -689,6 +732,11 @@ header .mail_header span{
     display: grid;
     grid-template-rows: auto 1fr;
     grid-gap: 30px;
+}
+
+.ongoing_production{
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
 }
 
 .work_with_us_section .blocks .block .title{
@@ -2542,10 +2590,6 @@ footer .footer_text{
         grid-gap: 40px;
     }
 
-    .connect .header{
-        padding: 0 16px;
-    }
-
     .bird_iamg{
         width: 70%;
     }
@@ -2620,6 +2664,23 @@ footer .footer_text{
         align-self: center;
     }
     }
+
+@media screen and (max-width: 768px){
+    .ongoing_production{
+        grid-template-rows: unset;
+        grid-gap: 16px;
+    }
+
+    .bird_iamg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .slick-dots{
+        bottom: 0 !important;
+    }
+}
 
 @media screen and (max-width: 370px) {
     .bird_iamg{
