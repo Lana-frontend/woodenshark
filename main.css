@@ -890,8 +890,8 @@ footer .footer_text{
 .how_it_work_sect .title_how_it_work .header_how_it_text{
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 150%;
+    font-size: 20px;
+    line-height: 28px;
     color: #F48777 ;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -900,6 +900,10 @@ footer .footer_text{
     padding: 0 10% 5% 10%;
     display: grid;
     grid-gap: 5%;
+}
+
+.wont_to_work .content .contact a {
+    align-self: end;
 }
 
 .end_sections img{
@@ -2671,8 +2675,33 @@ footer .footer_text{
         grid-gap: 16px;
     }
 
+    .work_with_us_section .blocks .block a {
+        justify-self: start !important;
+    }
+
+    .how_it_work_sect .title_how_it_work {
+        grid-gap: 32px !important;
+    }
+
     .bird_iamg {
         width: 100%;
+    }
+
+    .how_it_work_sect .title_how_it_work .header_how_it_text{
+        font-size: 16px !important;
+        line-height: 150% !important;
+    }
+
+    .our_project_section .block_one .icon_block .icons img{
+        width: 100%;
+    }
+
+    .wont_to_work .content .contact a {
+        align-self: start;
+    }
+
+    .wont_to_work{
+        padding: 0 5%;
     }
 }
 
