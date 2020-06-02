@@ -9,6 +9,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body style="overflow-x: hidden">
 <div style="overflow-x: hidden; position: relative">
@@ -64,13 +67,15 @@
 
         <div class="block_one">
 
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="bottles" src="img/block_img_one.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_4')" class="slid_4 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_4')" class="slid_4 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_4')" class="slid_4 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_4')" class="slid_4 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="bottles" src="img/block_img_one.png">
+                </div>
+                <div>
+                    <img alt="bottles" src="img/block_img_one.png">
+                </div>
+                <div>
+                    <img alt="bottles" src="img/block_img_one.png">
                 </div>
             </div>
 
@@ -135,14 +140,15 @@
                 </div>
             </div>
 
-
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="boxy" src="img/block_img_two.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_5')" class="slid_5 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_5')" class="slid_5 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_5')" class="slid_5 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_5')" class="slid_5 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="boxy" src="img/block_img_two.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/block_img_two.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/block_img_two.png">
                 </div>
             </div>
 
@@ -150,13 +156,16 @@
 
 
         <div class="block_one ">
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="boxy" src="img/boxy_1.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_6')" class="slid_6 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_6')" class="slid_6 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_6')" class="slid_6 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_6')" class="slid_6 " alt="slider_dot" src="img/dot.svg"/>
+
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="boxy" src="img/boxy_1.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/boxy_1.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/boxy_1.png">
                 </div>
             </div>
 
@@ -215,13 +224,15 @@
 
                 </div>
             </div>
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="boxy" src="img/img_block.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_7')" class="slid_7 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_7')" class="slid_7 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_7')" class="slid_7 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_7')" class="slid_7 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="boxy" src="img/img_block.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/img_block.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/img_block.png">
                 </div>
             </div>
 
@@ -229,16 +240,17 @@
         </div>
 
         <div class="block_one block_two">
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="boxy" src="img/camera.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_8')" class="slid_8 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_8')" class="slid_8 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_8')" class="slid_8 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_8')" class="slid_8 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="boxy" src="img/camera.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/camera.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/camera.png">
                 </div>
             </div>
-
 
             <div class="description_block">
                 <div class="description">
@@ -299,31 +311,32 @@
 
                 </div>
             </div>
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="cherry" src="img/cherry_home.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_9')" class="slid_9 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_9')" class="slid_9 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_9')" class="slid_9 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_9')" class="slid_9 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="cherry" src="img/cherry_home.png">
+                </div>
+                <div>
+                    <img alt="cherry" src="img/cherry_home.png">
+                </div>
+                <div>
+                    <img alt="cherry" src="img/cherry_home.png">
                 </div>
             </div>
-
-
         </div>
 
         <div class="block_one ">
 
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="boxy" src="img/eyi_fly.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_10')" class="slid_10 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_10')" class="slid_10 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_10')" class="slid_10 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_10')" class="slid_10 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="boxy" src="img/eyi_fly.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/eyi_fly.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/eyi_fly.png">
                 </div>
             </div>
-
 
             <div class="description_block">
                 <div class="description">
@@ -384,26 +397,31 @@
                 </div>
             </div>
 
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="boxy" src="img/crypto.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_11')" class="slid_11 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_11')" class="slid_11 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_11')" class="slid_11 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_11')" class="slid_11 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="boxy" src="img/crypto.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/crypto.png">
+                </div>
+                <div>
+                    <img alt="boxy" src="img/crypto.png">
                 </div>
             </div>
-
         </div>
 
         <div class="block_one">
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="lightpack" src="img/lightpack.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_12')" class="slid_12 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_12')" class="slid_12 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_12')" class="slid_12 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_12')" class="slid_12 " alt="slider_dot" src="img/dot.svg"/>
+
+
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="lightpack" src="img/lightpack.png">
+                </div>
+                <div>
+                    <img alt="lightpack" src="img/lightpack.png">
+                </div>
+                <div>
+                    <img alt="lightpack" src="img/lightpack.png">
                 </div>
             </div>
             <div class="description_block">
@@ -464,26 +482,30 @@
 
                 </div>
             </div>
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="moeco car" src="img/moecoCar.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_13')" class="slid_13 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_13')" class="slid_13 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_13')" class="slid_13 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_13')" class="slid_13 " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="moeco car" src="img/moecoCar.png">
+                </div>
+                <div>
+                    <img alt="moeco car" src="img/moecoCar.png">
+                </div>
+                <div>
+                    <img alt="moeco car" src="img/moecoCar.png">
                 </div>
             </div>
-
         </div>
 
         <div class="block_one">
-            <div style="position: relative; display: grid; margin: 0">
-                <img alt="sixt" src="img/sixt.png">
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr; position: absolute; bottom: 25px; justify-self: center" >
-                    <img style="width: auto" onclick="titleSwipe(0 , 'slid_14')" class="slid_14 active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(1, 'slid_14')" class="slid_14 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(2, 'slid_14')" class="slid_14 " alt="slider_dot" src="img/dot.svg"/>
-                    <img style="width: auto" onclick="titleSwipe(3 , 'slid_14')" class="slid_14 " alt="slider_dot" src="img/dot.svg"/>
+
+            <div class="slick-slider slider-wrapper">
+                <div>
+                    <img alt="sixt" src="img/sixt.png">
+                </div>
+                <div>
+                    <img alt="sixt" src="img/sixt.png">
+                </div>
+                <div>
+                    <img alt="sixt" src="img/sixt.png">
                 </div>
             </div>
             <div class="description_block">
@@ -553,7 +575,12 @@
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>
 </div>
-<script >let burger_menu = document.getElementById("nav");
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
+
+<script>let burger_menu = document.getElementById("nav");
 let band = document.getElementById("bands");
 let counter = 1;
 let header = document.getElementsByTagName("header")[0];
@@ -606,6 +633,16 @@ window.onscroll = function header_change() {
         }
     }
 };
+
+$(document).ready(function () {
+    $('.slick-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+    });
+})
 
 window.onresize = function( ) {
     if(window.innerWidth <= 1024){
@@ -664,4 +701,5 @@ document.getElementById("bands2").addEventListener("click", close_video)
 </script>
 
 </body>
+
 </html>
