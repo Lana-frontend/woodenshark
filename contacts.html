@@ -83,20 +83,28 @@
                     <img alt="plus" style="justify-self: end" class="plus" src="img/plus.svg"/>
                 </div>
                 <div class="descriptionService descriptionService_two contact_submit" style="border-bottom: 2px solid #00A2D3; ">
-                    <form>
+                    <form
+                            action="https://formspree.io/xoqkddgv"
+                            method="POST"
+                    >
                         <label>
-                            <input placeholder="Email">
+                            <input name="Email" placeholder="Email">
+                        </label>
+
+                        <label class="form_column1">
+                            <input name="FirsName" placeholder="First Name">
                         </label>
 
                         <label>
-                            <input placeholder="First Name">
+                            <input name="LastName" placeholder="Last Name">
                         </label>
 
-                        <label>
-                            <input placeholder="Last Name">
+                        <label style="grid-column: 1/-1; ">
+                            <textarea  style="box-sizing: border-box" placeholder="Message" rows="5"></textarea>
                         </label>
+                        <button style="grid-column: 2" type="submit">Submit ></button>
+
                     </form>
-                    <button>Submit ></button>
                 </div>
             </div>
         </div>

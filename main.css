@@ -23,6 +23,15 @@ body{
     max-width: 100% !important;
 }
 
+.hidden_message{
+    grid-column: 1/-1;
+    display: none;
+}
+
+.hidden_message textarea{
+    resize: none;
+}
+
 img {
     user-drag: none;
     user-select: none;
@@ -47,7 +56,7 @@ img {
 }
 
 .slick-slider > div div{
-    height: auto;
+    height: 100%;
 }
 
 .slick-dotted.slick-slider{
@@ -215,6 +224,7 @@ header .mail_header span{
 }
 
 .idea_section{
+    max-width: 100% !important;
     background: #F2F8FC;
     text-align: center;
     display: grid;
@@ -222,6 +232,14 @@ header .mail_header span{
     grid-gap: 50px;
     border-top: 2px solid #00A2D3;
     border-bottom: 2px solid #00A2D3;
+}
+
+.idea_section > *{
+    width: 1600px;
+}
+
+.idea_section > div{
+    margin: auto;
 }
 
 .idea_section .header_idea_sec{
@@ -472,10 +490,18 @@ header .mail_header span{
 
 .tell_us_section{
     background: #FEF9F8;
-    padding: 4% 15%;
+    padding: 4% 0;
     display: grid;
     border-top: 2px solid #F48777;
     border-bottom: 2px solid #F48777;
+}
+
+.tell_us_section > * {
+    max-width: 1600px;
+}
+
+.tell_us_section form {
+    margin: auto;
 }
 
 .tell_us_section span{
@@ -493,10 +519,11 @@ header .mail_header span{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 5%;
-    margin-top: 4%;
+    padding-top: 4%;
 }
 
-.tell_us_section form label input {
+.tell_us_section form label input,
+.tell_us_section form label textarea{
     width: 100%;
     padding: 20px;
     color: rgba(244, 135, 119, 1);
@@ -506,7 +533,8 @@ header .mail_header span{
     box-sizing: border-box;
 }
 
-.tell_us_section form label input::placeholder{
+.tell_us_section form label input::placeholder,
+.tell_us_section form label textarea::placeholder{
     color: rgba(244, 135, 119, 0.7);
 }
 
@@ -571,13 +599,13 @@ header .mail_header span{
 
 .our_project_section .block_one{
     background: #E4F1F9;
-    padding: 0 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.our_project_section .block_one img{
+.our_project_section .block_one .slick-slider img{
     width: 100%;
+    height: 100%;
 }
 
 .our_project_section .block_one .description_block{
@@ -667,9 +695,16 @@ header .mail_header span{
 
 }
 
+.our_project_section .block_one .icon_block .icons a,
 .our_project_section .block_one .icon_block .icons img{
-    width: 70%;
     justify-self: end;
+}
+
+.our_project_section .block_one .icon_block .icons a img {
+    margin-left: auto;
+    display: grid;
+    width: 50%;
+
 }
 
 .our_project_section .block_two{
@@ -1030,7 +1065,6 @@ footer .footer_text{
 .descriptionService_two{
     border-bottom: 2px solid #F1B642;
     background: #FFF6DC;
-    grid-template-columns: 1.5fr 1fr!important;
 }
 
 .descriptionService_two form{
@@ -1147,6 +1181,12 @@ footer .footer_text{
     padding: 0 10% 0 10%;
     background: #F2F8FC;
     margin-bottom: 5%;
+    max-width: 100% !important;
+}
+
+.flag > div {
+    width: 1600px;
+    margin: auto;
 }
 
 .our_team{
@@ -1394,9 +1434,11 @@ footer .footer_text{
     display: grid;
     grid-gap: 30px;
     margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
 }
 
-.contact_submit form input{
+.contact_submit form input,
+.contact_submit form textarea{
     background: #B5D7E5;
     border: none;
     font-style: normal;
@@ -1407,9 +1449,11 @@ footer .footer_text{
     color: #FFFFFF;
     width: 100%;
     padding: 10px 20px;
+    resize: none;
 }
 
-.contact_submit form input::placeholder{
+.contact_submit form input::placeholder,
+.contact_submit form textarea::placeholder{
     color: white;
 }
 
@@ -1565,6 +1609,10 @@ footer .footer_text{
     line-height: 32px;
     font-family: 'Ubuntu', sans-serif;
     color: #4CB9E1;
+}
+
+.form_column1{
+    grid-column: 1;
 }
 
 .concept .buttons{
@@ -1807,8 +1855,23 @@ footer .footer_text{
 }
 
 @media (max-width: 2590px) {
+
+    .tell_us_section > * {
+        max-width: 820px;
+    }
+
+    .flag > div {
+        width: 820px;
+        margin: auto;
+    }
+
     .first_section .title_page video{
         width: 100%;
+    }
+
+
+    .idea_section > *{
+        width: 820px;
     }
 
     header nav{
@@ -1821,7 +1884,7 @@ footer .footer_text{
 
     .our_project_section .block_one .description_block .description{
         grid-template-rows: auto ;
-        grid-gap: 0;
+        grid-gap: 12px;
     }
 
     #shark{
@@ -1857,7 +1920,8 @@ footer .footer_text{
         font-size: 13px;
     }
 
-    .tell_us_section form label input{
+    .tell_us_section form label input,
+    .tell_us_section form label textarea{
         padding: 10px;
         font-size: 18px;
     }
@@ -2035,7 +2099,7 @@ footer .footer_text{
 @media screen and (max-width: 1750px) {
     .our_project_section .block_one .description_block .description{
         grid-template-rows: auto;
-        grid-gap: 0px;
+        grid-gap: 12px;
     }
 }
 
@@ -2044,10 +2108,40 @@ footer .footer_text{
         display: none;
     }
 
+    .form_column1{
+        grid-column: unset;
+    }
+
+    .descriptionService_two button{
+        grid-column: unset !important;
+    }
+
+    .contact_submit form{
+        grid-template-columns: 1fr;
+    }
+
+    .flag > div {
+        width: 375px;
+        margin: auto;
+    }
+
     .body_content section,
     .page_wrapper section{
         max-width: 375px;
     }
+
+    .tell_us_section > * {
+        max-width: 375px;
+    }
+
+    .tell_us_section > * {
+        max-width: 375px;
+    }
+
+    .tell_us_section form {
+        margin: auto;
+    }
+
 
     .work_with_us_section .blocks {
         grid-template-columns: 1fr;
@@ -2131,7 +2225,8 @@ footer .footer_text{
         grid-gap: 30px;
     }
 
-    .tell_us_section form label input {
+    .tell_us_section form label input,
+    .tell_us_section form label textarea{
         box-sizing: border-box;
     }
 
@@ -2433,7 +2528,8 @@ footer .footer_text{
         font-size: 24px;
     }
 
-    .contact_submit form input{
+    .contact_submit form input,
+    .contact_submit form textarea{
         font-size: 24px;
     }
 
