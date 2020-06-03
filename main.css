@@ -2108,6 +2108,10 @@ footer .footer_text{
         display: none;
     }
 
+    .idea_section > *{
+        width: 375px;
+    }
+
     .form_column1{
         grid-column: unset;
     }
@@ -2158,7 +2162,7 @@ footer .footer_text{
     }
 
     .idea_section {
-        padding: 4% 2%;
+        padding: 4% 1%;
     }
 
     .first_section .title_page {
