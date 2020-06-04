@@ -2657,6 +2657,16 @@ footer .footer_text{
 
     .flag{
         margin: 0 16px;
+        padding: 0;
+    }
+
+    .how_it_work_sect .descriptions{
+        justify-items: start;
+    }
+
+    .services_section .list .list_item .descriptionService .content .all_content{
+        grid-template-rows: auto !important;
+        grid-gap: 35px !important;
     }
 
     .our_team{
@@ -2702,7 +2712,7 @@ footer .footer_text{
     }
 
     .end_sections {
-        padding: 0 16px 5% 16px;
+        padding: 5% 16px 5% 16px;
         grid-gap: 75px;
     }
 
