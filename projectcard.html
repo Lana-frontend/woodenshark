@@ -55,16 +55,11 @@
     <div style="display: grid;">
     <div class="body_content" style="max-width: 1912px;justify-self: center">
     <section id="play" class="first_section f_section">
-        <div  class="title_page">
-            <div style="position: relative; display: grid; margin: 0">
-                <img id="title_slide" alt="photo camera" style="width: 100%" src="img/mini_camera_img.png"/>
-                <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr" >
-                    <img onclick="titleSwipe(0)" class="slid_t active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img onclick="titleSwipe(1)" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
-                    <img onclick="titleSwipe(2)" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
+            <div class="slick-slider slider-wrapper slider1">
+                <div>
+                    <img alt="boxy" src="img/ReseroImg.jpg">
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="two_section" >
@@ -100,46 +95,46 @@
         <div >
             <span class="title">/01</span><br>
             <span class="title">Concept</span>
+            <div class="description">
+
+
+                <div>
+                    <div class="text">
+                        <img alt="icon lamp" src="img/icon_lamp.svg"/>
+                        <img alt="icon list" src="img/icon_three.svg"/>
+                        <span>Wireless Sensors attached to a wall or set on a horizontal surface (bookshelf, table). Security sensor is autonomous, but it can be connected via USB or another type of wire to a power source.</span>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+            <div class="photo_camera">
+                <div style="position: relative; display: grid">
+                    <img  id="slider_arrow"  alt="photo camera" src="img/camera_slice.png"/>
+                    <div class="dots" >
+                        <img class="slid active" alt="slider_dot" src="img/one_dot.svg"/>
+                        <img class="slid " alt="slider_dot" src="img/dot.svg"/>
+                        <img class="slid " alt="slider_dot" src="img/dot.svg"/>
+                        <img class="slid " alt="slider_dot" src="img/dot.svg"/>
+                    </div>
+                </div>
+                <div class="number_slide">
+                    <span></span>
+
+                    <div class="buttons">
+                        <img onclick="clickSliderPrev('slid')" alt="arrow prev" src="img/btn_prev.svg">
+                        <img onclick="clickSliderNext('slid')" alt="arrow next" src="img/btn_next.svg">
+                    </div>
+                </div>
+            </div>
         </section>
 
     <section class="concept">
 
-        <div class="description">
 
 
-            <div>
-                <div class="text">
-                    <img alt="icon lamp" src="img/icon_lamp.svg"/>
-                    <span>Wireless Sensors attached to a wall or set on a horizontal surface (bookshelf, table).</span>
-                </div>
 
-                <div class="text">
-                    <img alt="icon list" src="img/icon_three.svg"/>
-                    <span>Security sensor is autonomous, but it can be connected via USB or another type of wire to a power source.</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo_camera">
-            <div style="position: relative; display: grid">
-                <img  id="slider_arrow"  alt="photo camera" src="img/camera_slice.png"/>
-                <div class="dots" >
-                    <img class="slid active" alt="slider_dot" src="img/one_dot.svg"/>
-                    <img class="slid " alt="slider_dot" src="img/dot.svg"/>
-                    <img class="slid " alt="slider_dot" src="img/dot.svg"/>
-                    <img class="slid " alt="slider_dot" src="img/dot.svg"/>
-                </div>
-            </div>
-            <div class="number_slide">
-                <span></span>
-
-                <div class="buttons">
-                    <img onclick="clickSliderPrev('slid')" alt="arrow prev" src="img/btn_prev.svg">
-                    <img onclick="clickSliderNext('slid')" alt="arrow next" src="img/btn_next.svg">
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="development">
@@ -271,6 +266,109 @@ let remove_in_scroll = document.getElementsByClassName("scroll_remove");
 let bandOne = document.getElementById("bandOne");
 let bandTwo = document.getElementById("bandTwo");
 let bandThree = document.getElementById("bandThree");
+
+
+$(document).ready(function () {
+    console.log(Math.random())
+    console.log(document.getElementsByClassName('slider1'))
+    if (document.getElementsByClassName('slider1')[0].children.length > 1) {
+        $('.slider1').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+    } else {
+        $('.slider1').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+        document.getElementsByClassName('slider1')[0].children[0].style.height = "100%"
+    }
+
+    if (document.getElementsByClassName('slider2')[0].children.length > 1) {
+        $('.slider2').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+    } else {
+        $('.slider2').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+        document.getElementsByClassName('slider2')[0].children[0].style.height = "100%"
+    }
+
+    if (document.getElementsByClassName('slider3')[0].children.length > 1) {
+        $('.slider3').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+    } else {
+        $('.slider3').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+        document.getElementsByClassName('slider3')[0].children[0].style.height = "100%"
+
+    }
+    if (document.getElementsByClassName('slider4')[0].children.length > 1) {
+        $('.slider4').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+    } else {
+        $('.slider4').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+        document.getElementsByClassName('slider4')[0].children[0].style.height = "100%"
+
+    }
+
+    if (document.getElementsByClassName('slider5')[0].children.length > 1) {
+        $('.slider5').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+    } else {
+        $('.slider5').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+        document.getElementsByClassName('slider5')[0].children[0].style.height = "100%"
+
+    }
+})
+
 
 function titleSwipe(index) {
     let slide = document.getElementsByClassName("slid_t")

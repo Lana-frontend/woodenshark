@@ -14,6 +14,11 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body style="overflow-x: hidden">
 <div style="overflow-x: hidden; position: relative">
@@ -35,7 +40,7 @@
         <div id="bands">
             <img id="bandOne" alt="band" src="img/band.svg">
             <img id="bandTwo" alt="band" src="img/band.svg">
-            <img  id="bandThree" alt="band" src="img/band.svg">
+            <img id="bandThree" alt="band" src="img/band.svg">
         </div>
         <div id="nav" class="navbar">
             <nav>
@@ -50,48 +55,52 @@
                 <span class="scroll_remove">hi@woodenshark.com</span>
             </a>
         </div>
-        <img  id="shark" alt="shark" src="img/header_scroll.svg">
+        <img id="shark" alt="shark" src="img/header_scroll.svg">
     </header>
-    <div style="display: grid;">
+    <div class="project_card" style="display: grid;">
         <div class="body_content" style="max-width: 1912px;justify-self: center">
-            <section id="play" class="first_section f_section">
-                <div  class="title_page">
-                    <div style="position: relative; display: grid; margin: 0">
-                        <img id="title_slide" alt="photo camera" style="width: 100%" src="img/mini_camera_img.png"/>
-                        <div class="dots" style="margin: 0; grid-template-columns: 1fr 1fr 1fr" >
-                            <img onclick="titleSwipe(0)" class="slid_t active" alt="slider_dot" src="img/one_dot.svg"/>
-                            <img onclick="titleSwipe(1)" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
-                            <img onclick="titleSwipe(2)" class="slid_t " alt="slider_dot" src="img/dot.svg"/>
-                        </div>
+            <section style="height: 515px" id="play" class="first_section f_section">
+                <div style="height: 100%" class="slick-slider slider-wrapper slider1">
+                    <div>
+                        <img alt="boxy" src="img/LightpackImg.jpg">
+                    </div>
+                    <div>
+                        <img alt="boxy" src="img/lightpackImg2.jpg">
+                    </div>
+                    <div>
+                        <img alt="boxy" src="img/lightpackImg3.jpg">
                     </div>
                 </div>
             </section>
 
-            <section class="two_section" >
+            <section class="two_section">
                 <div class="description">
-                    <div class="title_desc">
+                    <div class="title_desc timeline_services">
                         <div>
                             <span>Timeline:</span><br>
-                            <span class="bold">2017</span>
+                            <span class="bold">2016</span>
                         </div>
                         <div class="text">
                             <span>Services:</span><br>
                             <span class="bold">> Idea</span><br>
                             <span class="bold">> Proof of Concept</span><br>
+                            <span class="bold">> Prototyping</span><br>
                             <span class="bold">> Factory Search and Selection</span><br>
                             <span class="bold">> Production Setup</span><br>
-                            <span class="bold">> Ongoing Production</span>
+                            <span class="bold">> Ongoing Production</span><br>
+                            <span class="bold">> After Production</span><br>
+                            <span class="bold">> Promotion</span><br>
                         </div>
                     </div>
                     <div class="description_two">
                         <div class="title_desc">
-                            <span style="justify-self: end">minimini.com</span>
+                            <a href="https://lightpack.tv/" style="justify-self: end">lightpack.tv</a>
                         </div>
                         <div class="title_desc two_desc">
-                            <span>It is a mini device that with amazing functions</span>
+                            <span>Lightpack</span>
 
                         </div>
-                        <span class="text">Wifi Module IP Pinhole Spy Hidden Camera Mini MW06 is a magic and powerful that is quite beyond your imagination! As to this spy camera, it is in meticulous design based on highly advanced technology and reliable materials, so you can trustingly apply in to your action. Besides, this spy camera supports wireless connection, quite convenient to use. It ia highly compatible with iOS and Android system.</span>
+                        <span class="text">Lightpack is a lighting set that brings you a whole new experience while watching movies by lightening the background of your TV and room. Lightpack uses complex, patented algorithms to process the input video signal and conduct this ambient backlight orchestra.</span>
 
                     </div>
                 </div>
@@ -99,7 +108,7 @@
 
 
             <section class="development">
-                <div class="many_title" >
+                <div class="many_title">
                     <div class="title">
                         <div>
                             <span class="title" style="color: #00A2D3;">/01</span><br>
@@ -131,26 +140,17 @@
                     </div>
                 </div>
 
-                <span class="slider_desc">Wireless Sensors attached to a wall or set on a horizontal surface (bookshelf, table). Security sensor is autonomous, but it can be connected via USB or another type of wire to a power source. Wireless Sensors attached to a wall or set on a horizontal surface (bookshelf, table). Security sensor is autonomous, but it can be connected via USB or another type of wire to a power source. Wireless Sensors attached to a wall or set on a horizontal surface (bookshelf, table). Security sensor is autonomous, but it can be connected via USB or another type of wire to a power source. Wireless Sensors attached to a wall or set on a horizontal surface (bookshelf, table). Security sensor is autonomous, but it can be connected via USB or another type of wire to a power source. Wireless Sensors attached to a wall or set on a horizontal surface (bookshelf, table).</span>
+                <span class="slider_desc">Smart lighting for your living room that improves and gaming experience drastically-all while being easy on eyes. The Lightpack 2 now works with any TV screen and only requires just a power source and an HDMI connection. Lightpack can be used as an intelligent lighting system even when your TV is off.</span>
 
-                <div class="slider">
-                    <div style="position: relative; display: grid">
-                    <img id="new_photo"  alt="camera photo" src="img/camera_slice.png">
-                        <div class="dots" >
-                            <img class="dots_two active" alt="slider_dot" src="img/one_dot.svg"/>
-                            <img class="dots_two active" alt="slider_dot" src="img/dot.svg"/>
-                            <img class="dots_two active" alt="slider_dot" src="img/dot.svg"/>
-                            <img class="dots_two active" alt="slider_dot" src="img/dot.svg"/>
-                        </div>
-                    </div>
-                    <div class="number_slide" style="grid-template-columns: auto">
-                        <div class="buttons small_slider">
-                            <img onclick="sliderTwo(0, this.src)" alt="small img" src="img/camera_slice.png">
-                            <img onclick="sliderTwo(1, this.src)" alt="small img" src="img/camera_slice.png">
-                            <img onclick="sliderTwo(2, this.src)" alt="small img" src="img/camera_slice.png">
-                            <img onclick="sliderTwo(3, this.src)" alt="small img" src="img/camera_slice.png">
-                        </div>
-                    </div>
+                <div style="height: 500px" class="slick-slider slider-wrapper slider2">
+                        <img alt="boxy" src="img/lightpackImg2_1.jpg">
+                        <img alt="boxy" src="img/lightpackImg2_2.jpg">
+                        <img alt="boxy" src="img/lightpackImg2_3.jpg">
+                </div>
+                <div style="height: 160px" class="slick-slider slider-wrapper slider3">
+                        <img alt="boxy" src="img/lightpackImg2_1.jpg">
+                        <img alt="boxy" src="img/lightpackImg2_2.jpg">
+                        <img alt="boxy" src="img/lightpackImg2_3.jpg">
                 </div>
             </section>
 
@@ -159,7 +159,7 @@
                     <div class="project">
                         <div class="title">
                             <span>> Jump to</span><br>
-                            <span>Cherry Home</span>
+                            <span>TapTap</span>
                         </div>
                         <img alt="photo project" src="img/other_project.png">
                     </div>
@@ -167,20 +167,21 @@
                     <div class="project">
                         <div class="title">
                             <span>> Jump to</span><br>
-                            <span>Lightpack</span>
+                            <span>Moeco People Counter</span>
                         </div>
                         <img alt="photo project" src="img/other_project.png">
                     </div>
                 </div>
             </section>
             <section class="services_section project_card_end" style="margin-bottom: 50px">
-                <div  class="list list_two">
+                <div class="list list_two">
                     <div id="list_item_one" class="list_item">
                         <div onclick="openService(0)" style="grid-gap: 0" class="lock lock_two">
-                            <span style="color: #F1B642; font-size: 50px" class="text_form_close"> Want to work with us? </span>
+                            <span style="color: #F1B642; font-size: 50px"
+                                  class="text_form_close"> Want to work with us? </span>
                             <img alt="plus" style="justify-self: end" class="plus" src="img/plus_yellow.svg"/>
                         </div>
-                        <div class="descriptionService descriptionService_two">
+                        <div style="margin-top: 0" class="descriptionService descriptionService_two">
                             <form
                                     action="https://formspree.io/xoqkddgv"
                                     method="POST"
@@ -209,9 +210,14 @@
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
 
-<script >let burger_menu = document.getElementById("nav");
+<script>let burger_menu = document.getElementById("nav");
 let band = document.getElementById("bands");
 let counter = 1;
 let header = document.getElementsByTagName("header")[0];
@@ -220,23 +226,56 @@ let bandOne = document.getElementById("bandOne");
 let bandTwo = document.getElementById("bandTwo");
 let bandThree = document.getElementById("bandThree");
 
-$("#title_slide").swipe( {
-    swipeLeft:leftSwipe1,
-    swipeRight:rightSwipe1,
-    threshold:0
+$(document).ready(function () {
+    console.log(Math.random())
+    console.log(document.getElementsByClassName('slider1'))
+    $('.slider1').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+    });
+
+
+    $('.slider2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider3'
+    });
+    $('.slider3').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider2',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
+
+})
+
+
+$("#title_slide").swipe({
+    swipeLeft: leftSwipe1,
+    swipeRight: rightSwipe1,
+    threshold: 0
 });
 
-function leftSwipe1(){
+function leftSwipe1() {
     clickSliderNext('slid_t')
 }
-function rightSwipe1(){
+
+function rightSwipe1() {
     clickSliderPrev('slid_t')
 }
 
 function titleSwipe(index) {
     let slide = document.getElementsByClassName("slid_t")
-    for(let i = 0; i < slide.length; i++){
-        if(slide[i].classList.contains('active')){
+    for (let i = 0; i < slide.length; i++) {
+        if (slide[i].classList.contains('active')) {
             slide[i].src = "img/dot.svg";
             slide[index].src = "img/one_dot.svg";
             slide[i].classList.remove("active");
@@ -249,8 +288,8 @@ function sliderTwo(index, src) {
     document.getElementById("new_photo").src = src;
     console.log(src);
     let dot = document.getElementsByClassName("dots_two");
-    for(let i = 0; i < dot.length; i++){
-        if(dot[i].classList.contains('active')){
+    for (let i = 0; i < dot.length; i++) {
+        if (dot[i].classList.contains('active')) {
             dot[i].src = "img/dot.svg";
             dot[index].src = "img/one_dot.svg";
             dot[i].classList.remove("active");
@@ -262,14 +301,14 @@ function sliderTwo(index, src) {
 
 
 function openBurger() {
-    if(counter === 1) {
+    if (counter === 1) {
         burger_menu.classList.remove("nonactive_burger");
         burger_menu.classList.add("active_burger");
         bandTwo.classList.add("bandTwo");
         bandOne.classList.add("bandOne");
         bandThree.classList.add("bandThree");
         counter = 0
-    }else{
+    } else {
         burger_menu.classList.add("nonactive_burger");
         burger_menu.classList.remove("active_burger");
         bandTwo.classList.remove("bandTwo");
@@ -284,7 +323,7 @@ band.addEventListener("click", openBurger);
 
 window.onscroll = function header_change() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if(window.innerWidth >= 1024 && document.documentElement.scrollTop > 20) {
+    if (window.innerWidth >= 1024 && document.documentElement.scrollTop > 20) {
         header.classList.add("scroll_header");
         for (let i = 0; i < remove_in_scroll.length; i++) {
             remove_in_scroll[i].style.display = "none"
@@ -304,12 +343,12 @@ window.onscroll = function header_change() {
     }
 };
 
-window.onresize = function( ) {
-    if(window.innerWidth <= 1024){
+window.onresize = function () {
+    if (window.innerWidth <= 1024) {
         header.classList.remove("scroll_header");
         document.getElementById("small_text").style.display = "none";
         document.getElementById("shark").style.display = "block";
-    }else if(window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
+    } else if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
         document.getElementById("small_text").style.display = "block";
         document.getElementById("shark").style.display = "none";
     }
@@ -317,19 +356,19 @@ window.onresize = function( ) {
 
 function clickSliderNext(name) {
     let slide = document.getElementsByClassName(name);
-    for(let i = 0; i < slide.length; i++){
-        if(slide[i].classList.contains('active')){
-            if(i === slide.length - 1){
+    for (let i = 0; i < slide.length; i++) {
+        if (slide[i].classList.contains('active')) {
+            if (i === slide.length - 1) {
                 slide[0].classList.add("active");
                 slide[slide.length - 1].classList.remove("active");
                 slide[slide.length - 1].src = "img/dot.svg";
                 slide[0].src = "img/one_dot.svg";
                 break
             } else {
-                slide[i+1].classList.add("active");
+                slide[i + 1].classList.add("active");
                 slide[i].classList.remove("active");
                 slide[i].src = "img/dot.svg";
-                slide[i+1].src = "img/one_dot.svg";
+                slide[i + 1].src = "img/one_dot.svg";
                 break
             }
 
@@ -339,19 +378,19 @@ function clickSliderNext(name) {
 
 function clickSliderPrev(name) {
     let slide = document.getElementsByClassName(name);
-    for(let i = 0; i < slide.length; i++){
-        if(slide[i].classList.contains('active')){
-            if(i === 0){
+    for (let i = 0; i < slide.length; i++) {
+        if (slide[i].classList.contains('active')) {
+            if (i === 0) {
                 slide[slide.length - 1].classList.add("active");
                 slide[0].classList.remove("active");
                 slide[0].src = "img/dot.svg";
                 slide[slide.length - 1].src = "img/one_dot.svg";
                 break
             } else {
-                slide[i-1].classList.add("active");
+                slide[i - 1].classList.add("active");
                 slide[i].classList.remove("active");
                 slide[i].src = "img/dot.svg";
-                slide[i-1].src = "img/one_dot.svg";
+                slide[i - 1].src = "img/one_dot.svg";
                 break
             }
 
@@ -359,16 +398,17 @@ function clickSliderPrev(name) {
     }
 }
 
-$("#new_photo").swipe( {
-    swipeLeft:leftSwipe3,
-    swipeRight:rightSwipe3,
-    threshold:0
+$("#new_photo").swipe({
+    swipeLeft: leftSwipe3,
+    swipeRight: rightSwipe3,
+    threshold: 0
 });
 
-function leftSwipe3(){
+function leftSwipe3() {
     clickSliderNext('dots_two')
 }
-function rightSwipe3(){
+
+function rightSwipe3() {
     clickSliderPrev('dots_two')
 }
 
@@ -377,11 +417,11 @@ let description = document.getElementsByClassName("descriptionService");
 let plus = document.getElementsByClassName("plus");
 
 
-function openService( num) {
-    if(!description[num].classList.contains('open_service')) {
+function openService(num) {
+    if (!description[num].classList.contains('open_service')) {
         description[num].classList.add("open_service")
         plus[num].src = "img/minus_yellow.svg"
-    }else{
+    } else {
         description[num].classList.remove("open_service")
         plus[num].src = "img/plus_yellow.svg"
     }

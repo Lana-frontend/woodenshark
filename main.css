@@ -55,6 +55,26 @@ img {
     height: 90%;
 }
 
+.project_card .slider-wrapper > div {
+    height: 100%;
+}
+
+.project_card .slider3 {
+    margin-top: 24px;
+}
+
+.slider3 .slick-dots {
+    bottom: -30px !important;
+}
+
+.slider3 img {
+    margin-right: 24px;
+}
+
+.project_card .slider2 {
+    margin-top: 50px;
+}
+
 .slick-slider > div div{
     height: 100%;
 }
@@ -1507,7 +1527,7 @@ footer .footer_text{
 .two_section .description .title_desc{
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 34px;
     color: #00A2D3;
     font-family: 'Ubuntu', sans-serif;
@@ -1530,8 +1550,8 @@ footer .footer_text{
 .two_section .description_two .two_desc span{
     font-style: normal;
     font-weight: normal;
-    font-size: 46px;
-    line-height: 70px;
+    font-size: 40px;
+    line-height: 50px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
 }
@@ -1555,11 +1575,10 @@ footer .footer_text{
 .two_section .description_two .text{
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
-    margin-top: 24px;
 }
 
 .first_section .description .text{
@@ -1568,38 +1587,39 @@ footer .footer_text{
 
 .concept{
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
-    padding: 5% 10%;
+    grid-template-columns: 2fr 3fr;
+    padding: 5% 0;
     grid-gap: 30px;
 }
 
 .concept .title{
     font-style: normal;
     font-weight: normal;
-    font-size: 46px;
-    line-height: 64px;
+    font-size: 42px;
+    line-height: 42px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
 }
 
 .concept .description .text{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 40px;
-    margin-top: 10%;
+    grid-template-columns: 60px 60px 1fr;
+    grid-gap: 16px;
+    margin-top: 16px;
 }
 
 .concept .description .text span{
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
+    grid-column: 1/-1;
 }
 
 .concept .description .text img{
-    width: 85%;
+    width: 100%;
 }
 
 .concept img{
@@ -1634,15 +1654,12 @@ footer .footer_text{
     cursor: pointer;
 }
 
-.development{
-    padding: 0 10% ;
-}
 
 .development .title, .development .description .text{
     font-style: normal;
     font-weight: normal;
-    font-size: 46px;
-    line-height: 64px;
+    font-size: 32px;
+    line-height: 40px;
     font-family: 'Ubuntu', sans-serif;
     color: #F1B642;
 }
@@ -1779,7 +1796,7 @@ footer .footer_text{
 .other_projects .projects{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5%;
+    grid-gap: 42px;
     padding: 0 2% ;
 }
 
@@ -1787,6 +1804,7 @@ footer .footer_text{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    text-align: end;
 }
 
 
@@ -1797,7 +1815,7 @@ footer .footer_text{
 .other_projects .projects .project span{
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 50px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
@@ -1839,15 +1857,35 @@ footer .footer_text{
     cursor: pointer;
 }
 
+.timeline_services{
+    grid-gap: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #00A2D2;
+}
+
+.project_card .slick-slide img{
+    width: 100%;
+    height: 100%;
+}
+
 .f_section , .f_section .title_page{
     height: auto;!important;
-    padding: 2%;
+    padding: 2% 0;
 }
 
 .many_title{
     display: grid;
-    grid-template-columns: auto auto auto 0.5fr;
+    grid-template-columns: auto auto auto;
     margin: 50px 0;
+    grid-gap: 64px;
+}
+
+.project_card .slider2,
+.project_card .slider3{
+    display: block !important;
 }
 
 .first_section .title_page video{
