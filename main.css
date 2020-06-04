@@ -16,7 +16,7 @@ body{
 .body_content section,
 .page_wrapper section{
     max-width: 1600px;
-    margin: auto;
+    margin: 32px auto;
 }
 
 .tell_us_section{
@@ -187,7 +187,7 @@ header .mail_header span{
 }
 
 .first_section .title_page{
-    height: calc(85vh - 121px);
+    height: 500px;
     display: grid;
 
     border: none;
@@ -200,7 +200,7 @@ header .mail_header span{
 
 .first_section .title_page video{
     justify-self: center;
-    height: auto;
+    height: 100%;
     align-self: center;
 }
 
