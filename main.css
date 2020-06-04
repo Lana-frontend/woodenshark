@@ -200,7 +200,7 @@ header .mail_header span{
 
 .first_section .title_page video{
     justify-self: center;
-    height: 80%;
+    height: auto;
     align-self: center;
 }
 
@@ -293,13 +293,13 @@ header .mail_header span{
 .how_it_work_sect .title_how_it_work , .services_section .title_services_section{
     font-style: normal;
     font-weight: bold;
-    font-size: 56px;
+    font-size: 50px;
     justify-content: center;
     font-family: 'Ubuntu', sans-serif;
     color: #F48777;
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 60px!important;
+    grid-gap: 20px!important;
 }
 
 .how_it_work_sect .title_how_it_work span{
@@ -326,6 +326,7 @@ header .mail_header span{
 
 .how_it_work_sect .descriptions{
     margin-top: 4%;
+    justify-items: center;
 }
 
 .how_it_work_sect .descriptions .description .cube{
@@ -404,6 +405,7 @@ header .mail_header span{
 }
 
 .services_section .list .list_item .descriptionService{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0;
@@ -422,14 +424,15 @@ header .mail_header span{
 .services_section .list .list_item .descriptionService .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 35px;
     margin-top: 5%;
 }
 
 .services_section .list .list_item .descriptionService .three_block{
     display: grid;
     margin-top: 5%;
-    grid-gap: 50px;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .services_section .list .list_item .descriptionService .content img{
@@ -438,7 +441,7 @@ header .mail_header span{
 }
 
 .services_section .list .list_item .descriptionService .content .all_content{
-    grid-gap: 50px;
+    grid-gap: 35px;
 }
 
 .services_section .list .list_item .descriptionService .content .all_content{
@@ -450,7 +453,7 @@ header .mail_header span{
 
 .services_section .list .list_item .descriptionService .content .all_content div{
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
     align-content: start;
 
 }
@@ -458,8 +461,9 @@ header .mail_header span{
 .services_section .list .list_item .descriptionService .content .title , .services_section .list .list_item .descriptionService .three_block .title{
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
     color: #636466;
     font-family: 'Ubuntu', sans-serif;
     align-self: start;
@@ -467,10 +471,9 @@ header .mail_header span{
 
 .services_section .list .list_item .descriptionService .content .text , .services_section .list .list_item .descriptionService .three_block .text{
     font-style: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 20px;
     color: #B1B3B6;    font-family: 'Ubuntu', sans-serif;
-    margin-top: 20px;
     align-self: start;
 }
 
@@ -478,10 +481,9 @@ header .mail_header span{
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 24px;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
-    justify-self: center;
 }
 
 .icon_small{
@@ -780,8 +782,8 @@ header .mail_header span{
 }
 
 .ongoing_production{
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0;
+    grid-template-rows: 1fr 1fr !important;
+    grid-gap: 35px;
 }
 
 .work_with_us_section .blocks .block .title{
@@ -1132,7 +1134,7 @@ footer .footer_text{
 .about_us_section .about_us_text span:last-child{
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 150%;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
@@ -1303,6 +1305,14 @@ footer .footer_text{
     padding: 5% 5% 0 5%;
 }
 
+.connect a{
+    margin: auto;
+}
+
+.careers a{
+    margin: auto;
+}
+
 .connect .title{
     font-style: normal;
     font-weight: bold;
@@ -1347,7 +1357,7 @@ footer .footer_text{
 
 .connect .header{
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 12px;
     padding: 0 13%;
     width: 355px;
     justify-self: center;
@@ -1370,8 +1380,8 @@ footer .footer_text{
 .careers{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5% 5% 0 5%;
-    grid-gap: 5%;
+    padding: 24px 5% 0 5%;
+    grid-gap: 24px;
 }
 
 .careers img{
@@ -1381,7 +1391,7 @@ footer .footer_text{
 .careers .title{
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 50px;
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
@@ -1398,7 +1408,7 @@ footer .footer_text{
 
 .careers .descrip{
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 24px;
 }
 
 .careers .descrip button{
@@ -1840,6 +1850,10 @@ footer .footer_text{
     margin: 50px 0;
 }
 
+.first_section .title_page video{
+    width: auto;
+}
+
 .slider_desc{
     font-size: 20px;
     line-height: 28px;
@@ -1847,14 +1861,13 @@ footer .footer_text{
     color: #636466;
 
 }
-@media (max-width: 2590px) {
+
+
+@media (max-width: 2559px) {
     .body_content section,
     .page_wrapper section{
         max-width: 820px;
     }
-}
-
-@media (max-width: 2590px) {
 
     .tell_us_section > * {
         max-width: 820px;
@@ -2108,6 +2121,25 @@ footer .footer_text{
         display: none;
     }
 
+    .connect a{
+        margin: unset;
+    }
+
+    .careers a{
+        margin: unset;
+    }
+
+    .our_project_section .block_one .icon_block .icons img{
+        width: 80% !important;
+    }
+    .ongoing_production{
+        grid-template-rows: auto auto !important;
+    }
+
+    .slick-slider > div div{
+        width: 100% !important;
+    }
+
     .idea_section > *{
         width: 375px;
     }
@@ -2242,9 +2274,9 @@ footer .footer_text{
     }
 
     .our_project_section .title_our_project_section {
+        margin: 0 30px !important;
         font-size: 36px;
         line-height: normal;
-        margin-right: 0;
         justify-content: center;
         grid-template-columns: auto 1fr;
         padding: 0 2%;
@@ -2406,6 +2438,7 @@ footer .footer_text{
 
     .our_project_page_text {
         grid-template-columns: 1fr;
+        margin: 0 30px;
     }
 
     .our_project_page_text span {
@@ -2427,8 +2460,11 @@ footer .footer_text{
     }
 
     .our_project_page {
-        padding: 0 5% !important;
-        margin-top: 100px;
+        margin-top: 50px !important;
+    }
+
+    .our_project_section .block_one .icon_block .icons a img{
+        margin-left: unset;
     }
 
     .about_us_section .about_us_text {
@@ -2441,7 +2477,7 @@ footer .footer_text{
     }
 
     .about_us_section .about_us_text span:last-child {
-        font-size: 24px!important;
+        font-size: 20px!important;
         line-height: 150%;
     }
 
@@ -2829,9 +2865,6 @@ footer .footer_text{
         line-height: 150% !important;
     }
 
-    .our_project_section .block_one .icon_block .icons img{
-        width: 100%;
-    }
 
     .wont_to_work .content .contact a {
         align-self: start;

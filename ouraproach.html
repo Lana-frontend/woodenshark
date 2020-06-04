@@ -32,9 +32,9 @@
         </div>
         <div id="nav" class="navbar">
             <nav>
-                <a href="AboutUs.html">About us</a>
+                <a href="aboutus.html">About us</a>
                 <a style="color: #00A2D2">Our Approach</a>
-                <a href="ourProjects.html">Our Projects</a>
+                <a href="ourprojects.html">Our Projects</a>
                 <a href="contacts.html">Contacts</a>
             </nav>
 
@@ -63,8 +63,8 @@
     </section>
 
     <section class="how_it_work_sect">
-        <div style="display: grid; grid-template-columns: 1fr auto">
-            <div class="title_how_it_work mobile_approach" style="grid-template-columns: 300px 1fr; border-bottom: 2px solid #00A2D2; padding-bottom: 50px; margin-bottom: 55px">
+        <div style="display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto">
+            <div class="title_how_it_work mobile_approach" style="grid-template-columns: 300px 1fr; border-bottom: 2px solid #00A2D2; padding-bottom: 50px; margin-bottom: 55px; grid-column: 1/-1">
 
                 <div class="header_how_it">
                     <span style="color: #08A9D8; align-self: start">Our </span>
@@ -72,7 +72,7 @@
                 </div>
                 <span class="header_how_it_text mobile_text" style="color: #636466">We connect functional products to users on an emotional level. While offering a range of services, Woodenshark specializes in providing complete, turnkey solutions working with startups, entrepreneurs, and brands.</span>
             </div>
-                <img alt="bird" class="bird_img" src="img/racet.svg" style="width: 70%; align-self: end; margin-top: 110px">
+                <img alt="bird" class="bird_img" src="img/racet.svg" style="width: 70%; align-self: end; margin-top: -100px;grid-row: 2; grid-column: 2; margin-left: auto">
         </div>
         <div class="title_how_it_work mobile_approach" style="grid-template-columns: 300px 1fr;">
 
@@ -254,8 +254,8 @@
                             <span class="title">Quality Control System Approval</span>
                             <span class="text">All that was done during the QC planning  stage, should be clarified with the potential contract manufacturer. You must be sure that the selected manufacturer has a capability to establish a QC control system appropriate for your product.</span>
                         </div>
+                        <img style="justify-self: center" alt="birds" src="img/birds.svg">
                     </div>
-                    <img style="justify-self: center" alt="birds" src="img/birds.svg">
                 </div>
             </div>
 
@@ -431,15 +431,13 @@
 </div>
     <footer>
         <div class="logo">
-            <img alt="logotype" src="img/footer_logo.svg">
-            <div class="text_logo">
-                <span>WOODENSHARK</span>
-                <span>Dream Engineering</span>
-            </div>
+            <img alt="logotype" src="img/logo_footer.svg">
         </div>
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 <script >let burger_menu = document.getElementById("nav");
 let band = document.getElementById("bands");
 let counter = 1;
@@ -521,6 +519,14 @@ function openService( num) {
     }
 
 }
+
+$('#main-video').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
 
 function play_video() {
     let video = document.getElementById("back_video")

@@ -33,9 +33,9 @@
         </div>
         <div id="nav" class="navbar">
             <nav>
-                <a href="AboutUs.html">About us</a>
-                <a href="ourAproach.html">Our Approach</a>
-                <a href="ourProjects.html">Our Projects</a>
+                <a href="aboutus.html">About us</a>
+                <a href="ouraproach.html">Our Approach</a>
+                <a href="ourprojects.html">Our Projects</a>
                 <a style="color: #00A2D2">Contacts</a>
             </nav>
 
@@ -57,8 +57,10 @@
             </div>
             <span class="text">We appreciate you considering us as a partner for your project.</span>
             <div class="small_btn_submit">
+                <a style="cursor: pointer" onclick="openServiceOnclick(0)" href="#form_contacts">
                 <button>Submit&nbsp;></button>
-                <img alt="icon duck" class="duck2" src="img/icon_duck_2.svg"/>
+                </a>
+                    <img alt="icon duck" class="duck2" src="img/icon_duck_2.svg"/>
             </div>
         </div>
         <img class="photo" alt="photo product" src="img/photo_connect.png">
@@ -70,11 +72,13 @@
             <img alt="team photo" src="img/team_photo2.png">
             <span class="title">> Careers</span>
             <span class="text">Woodenshark is a small team of motivated and creative individuals who use research, design, prototyping, and engineering problem-solving approaches to create technology products for our clients. If this sounds like the place for you, please contact to us.</span>
+            <a style="cursor: pointer" onclick="openServiceOnclick(0)" href="#form_contacts">
             <button>Get in Touch ></button>
+            </a>
         </div>
     </section>
 
-<div class="blue_form" style="padding: 0 20%; background: #F2F8FC; margin-bottom: 50px">
+<div class="blue_form" id="form_contacts"  style="padding: 0 20%; background: #F2F8FC; margin-bottom: 50px">
     <section class="services_section" style="padding: 0">
         <div  class="list" style="background: #F2F8FC">
             <div id="list_item_one" class="list_item" style=" background: #F2F8FC;">
@@ -115,11 +119,7 @@
 </div>
     <footer>
         <div class="logo">
-            <img alt="logotype" src="img/footer_logo.svg">
-            <div class="text_logo">
-                <span>WOODENSHARK</span>
-                <span>Dream Engineering</span>
-            </div>
+            <img alt="logotype" src="img/logo_footer.svg">
         </div>
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>
@@ -193,6 +193,14 @@ function openService( num) {
         plus[num].src = "img/plus.svg"
     }
 
+}
+
+function openServiceOnclick( num) {
+    if(!description[num].classList.contains('open_service')) {
+
+        description[num].classList.add("open_service")
+        plus[num].src = "img/minus.svg"
+    }
 }
 
 window.onresize = function( ) {
