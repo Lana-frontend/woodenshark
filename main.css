@@ -32,6 +32,10 @@ body{
     resize: none;
 }
 
+.slick-slider img {
+    cursor: pointer;
+}
+
 img {
     user-drag: none;
     user-select: none;
@@ -69,6 +73,14 @@ img {
 
 .slider3 img {
     margin-right: 24px;
+}
+
+#play{
+    height: 515px;
+}
+
+.project_card .slick-dots{
+    bottom: -30px !important;
 }
 
 .project_card .slider2 {
@@ -226,7 +238,7 @@ header .mail_header span{
 
 .all_content_two{
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: repeat(3, max-content);
 }
 
 .first_section .title_page{
@@ -265,7 +277,7 @@ header .mail_header span{
 .idea_section .header_idea_sec{
     font-style: normal;
     font-weight: normal;
-    font-size: 42px;
+    font-size: 38px;
     line-height: 120%;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
@@ -275,7 +287,7 @@ header .mail_header span{
 .idea_section .icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5%;}
+}
 
 .idea_section .icons div{
     display: grid;
@@ -297,7 +309,6 @@ header .mail_header span{
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    margin-top: 5%;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
     justify-self: center;
@@ -425,7 +436,6 @@ header .mail_header span{
 }
 
 .services_section .list .list_item .descriptionService{
-    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0;
@@ -433,10 +443,15 @@ header .mail_header span{
     overflow: hidden;
 }
 
+ul{
+    margin: 0;
+}
+
 #description1{
 }
 
 .open_service{
+    margin-top: 20px;
     height: auto!important;
     padding:0 10% 50px 10%!important;
 }
@@ -677,7 +692,8 @@ header .mail_header span{
 }
 
 
-.our_project_section .block_one .description_block .description button{
+.our_project_section .block_one .description_block .description button,
+.our_project_section .block_one .description_block .to_card{
     border: 2px solid #4CB9E1;
     font-style: normal;
     font-weight: 300;
@@ -690,6 +706,8 @@ header .mail_header span{
     background: transparent;
     align-self: end;
     cursor: pointer;
+    text-align: center;
+    justify-self: start !important;
 }
 
 .our_project_section .block_one .icon_block .text_services{
@@ -729,6 +747,14 @@ header .mail_header span{
 
 }
 
+.slick-main{
+    height: 500px;
+}
+
+.slick-nav{
+    height: 160px;
+}
+
 .our_project_section .block_two{
     background: #FEF9F8;
 }
@@ -741,9 +767,9 @@ header .mail_header span{
     color: #F48777;
 }
 
-.our_project_section .block_one .description_block .description .button_two{
-    color: #F48777;
-    border: 2px solid #F48777;
+.our_project_section .block_one .button_two{
+    color: #F48777 !important;
+    border: 2px solid #F48777 !important;
 }
 
 .our_project_section .button_portfolio{
@@ -913,6 +939,10 @@ footer .footer_text{
     margin-left: -10%;
     width: 120vw;
 
+}
+
+.mobile_button {
+    display: none;
 }
 
 #bands{
@@ -1654,6 +1684,10 @@ footer .footer_text{
     cursor: pointer;
 }
 
+.idea_section img {
+    width: 150px;
+    height: 150px;
+}
 
 .development .title, .development .description .text{
     font-style: normal;
@@ -1962,9 +1996,11 @@ a {
     }
 
 
-    .our_project_section .block_one .description_block .description button{
+    .our_project_section .block_one .description_block .description button,
+    .our_project_section .block_one .description_block .to_card
+    {
         font-size: 13px;
-        height: 35px;
+        height: 30px;
     }
 
     .our_project_section .block_one .description_block .description .timeline{
@@ -2159,6 +2195,23 @@ a {
         display: none;
     }
 
+    #play{
+        height: 215px;
+        margin-top: 100px;
+    }
+
+    .mobile_button {
+        display: grid;
+    }
+
+    .slick-main{
+        height: 250px;
+    }
+
+    .slick-nav{
+        height: 100px;
+    }
+
     .connect a{
         margin: unset;
     }
@@ -2172,10 +2225,6 @@ a {
     }
     .ongoing_production{
         grid-template-rows: auto auto !important;
-    }
-
-    .slick-slider > div div{
-        width: 100% !important;
     }
 
     .idea_section > *{
@@ -2312,7 +2361,7 @@ a {
     }
 
     .our_project_section .title_our_project_section {
-        margin: 0 30px !important;
+        margin: 0 30px 20px !important;
         font-size: 36px;
         line-height: normal;
         justify-content: center;
@@ -2337,13 +2386,14 @@ a {
         padding: 0;
     }
 
+
     .our_project_section .block_one .icon_block .text_services, .our_project_section .block_one .icon_block .icons img {
         justify-self: start;
         font-size: 18px;
     }
 
     .our_project_section .block_one .icon_block .icons {
-        padding: 5% 0;
+        padding: 0;
     }
 
     .our_project_section .block_one .description_block {
@@ -2351,7 +2401,8 @@ a {
         grid-row: 2;
     }
 
-    .our_project_section .block_one .description_block .description button {
+    .our_project_section .block_one .description_block .description button,
+    .our_project_section .block_one .description_block .description a{
         display: none;
     }
 
@@ -2727,6 +2778,8 @@ a {
 
     .connect .header{
         grid-gap: 15px;
+        width: auto;
+        padding: 0;
     }
 
     .connect .small_btn_submit, .our_project_page_text, .wont_to_work .content .contact{
@@ -2786,7 +2839,7 @@ a {
     }
 
     .title_our_project_section{
-        margin: 30px;
+        margin: 0 30px 30px;
     }
 
     .services_section .list{
@@ -2801,6 +2854,10 @@ a {
     }
 
 
+    .development {
+        padding: 0px 3% 0 3% !important;
+    }
+
     .services_section .list .list_item span{
         line-height: normal;
     }
@@ -2813,6 +2870,7 @@ a {
         grid-template-columns: auto;
         justify-content: center;
         grid-gap: 40px;
+        margin: 0 0 50px;
     }
 
     .bird_iamg{
@@ -2824,7 +2882,8 @@ a {
     }
 
     .our_project_section .block_one .icon_block{
-        margin-top: 40px;
+        margin-top: 25px;
+        grid-gap: 20px;
     }
 
     #shark{
