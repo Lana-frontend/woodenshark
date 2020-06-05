@@ -1570,6 +1570,8 @@ footer .footer_text{
 
 .two_section .description_two{
     display: grid;
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 32px;
 }
 
 .two_section .description_two .title_desc{
@@ -1844,6 +1846,7 @@ footer .footer_text{
 
 .other_projects .projects .project img{
     width: 100%;
+    height: 150px;
 }
 
 .other_projects .projects .project span{
