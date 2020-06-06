@@ -73,6 +73,7 @@ img {
 
 .slider3 img {
     margin-right: 24px;
+    object-fit: cover;
 }
 
 #play{
@@ -2364,7 +2365,7 @@ a {
     }
 
     .our_project_section .title_our_project_section {
-        margin: 0 30px 20px !important;
+        margin: 0 30px 32px !important;
         font-size: 36px;
         line-height: normal;
         justify-content: center;
@@ -2552,7 +2553,7 @@ a {
     }
 
     .our_project_page {
-        margin-top: 50px !important;
+        margin-top: 75px !important;
     }
 
     .our_project_section .block_one .icon_block .icons a img{
@@ -2677,6 +2678,7 @@ a {
 
     .two_section .description_two{
         grid-row: 1;
+        grid-gap: 24px;
     }
 
     .two_section .description_two .title_desc span:first-child{
@@ -2886,7 +2888,7 @@ a {
 
     .our_project_section .block_one .icon_block{
         margin-top: 25px;
-        grid-gap: 20px;
+        grid-gap: 32px;
     }
 
     #shark{
@@ -2925,6 +2927,10 @@ a {
     .two_section .description .title_desc {
         line-height: 150%;
         margin-top: 25px;
+    }
+
+    .project_card .two_section .description .title_desc {
+        margin-top: 0 !important;
     }
 
     .two_section .description .title_desc{
