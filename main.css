@@ -34,6 +34,7 @@ body{
 
 .slick-slider img {
     cursor: pointer;
+    object-fit: cover;
 }
 
 img {
@@ -753,7 +754,7 @@ ul{
 }
 
 .slick-nav{
-    height: 160px;
+    height: 160px !important;
 }
 
 .our_project_section .block_two{
@@ -2197,6 +2198,11 @@ a {
 @media screen and (max-width: 820px) {
     #small_text {
         display: none;
+    }
+
+    .other_projects .projects .project img{
+        width: 250px;
+        margin-left: auto;
     }
 
     #play{
