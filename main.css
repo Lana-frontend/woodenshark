@@ -37,6 +37,19 @@ body{
     object-fit: cover;
 }
 
+.project_card #play img {
+    width: 100%;
+}
+
+.project_card #play img {
+    animation: 1s appearImg forwards;
+}
+
+@keyframes appearImg {
+    0%   { width: 0; height: 0 }
+    100% { width: 100%; height: 100% }
+}
+
 img {
     user-drag: none;
     user-select: none;
@@ -72,13 +85,17 @@ img {
     bottom: -30px !important;
 }
 
+.slider3 .slick-list{
+    margin: 0 -12px;
+}
+
 .slider3 img {
-    margin-right: 24px;
+    margin: 0 12px;
     object-fit: cover;
 }
 
 #play{
-    height: 515px;
+    height: 800px;
 }
 
 .project_card .slick-dots{
@@ -257,15 +274,52 @@ header .mail_header span{
     margin-bottom: 20%;
 }
 
+.idea_content {
+    background-image: url("img/main_section_background.png");
+    padding: 8% 8% 4%;
+    background-size: cover;
+    background-position: top;
+}
+
+.idea_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 54px;
+}
+
+.idea_grid span {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    color: #00A2D3;
+}
+
+.idea_content > div > span {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #636466;
+}
+
+.idea_content > div {
+    margin-top: 164px;
+}
+
+.our_project_section .description > div a {
+    display: block !important;
+}
+
 .idea_section{
+    background-size: cover;
     max-width: 100% !important;
     background: #F2F8FC;
-    text-align: center;
     display: grid;
     padding: 4%;
     grid-gap: 50px;
-    border-top: 2px solid #00A2D3;
-    border-bottom: 2px solid #00A2D3;
 }
 
 .idea_section > *{
@@ -278,9 +332,9 @@ header .mail_header span{
 
 .idea_section .header_idea_sec{
     font-style: normal;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 120%;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 69px;
     color: #00A2D2;
     font-family: 'Ubuntu', sans-serif;
     justify-self: center;
@@ -701,15 +755,15 @@ ul{
     font-weight: 300;
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 28px;
-    width: 50%;
-    height: 50px;
     color: #08A9D8;
     background: transparent;
     align-self: end;
     cursor: pointer;
     text-align: center;
     justify-self: start !important;
+    padding: 10px 40px;
+    height: max-content !important;
+    line-height: 16px;
 }
 
 .our_project_section .block_one .icon_block .text_services{
@@ -746,16 +800,16 @@ ul{
 .our_project_section .block_one .icon_block .icons a img {
     margin-left: auto;
     display: grid;
-    width: 50%;
+    width: 100%;
 
 }
 
 .slick-main{
-    height: 500px;
+    height: 800px;
 }
 
 .slick-nav{
-    height: 160px !important;
+    height: 255px !important;
 }
 
 .our_project_section .block_two{
@@ -1850,6 +1904,7 @@ footer .footer_text{
 .other_projects .projects .project img{
     width: 100%;
     height: 150px;
+    object-fit: cover;
 }
 
 .other_projects .projects .project span{
@@ -1942,9 +1997,25 @@ a {
 
 
 @media (max-width: 2559px) {
+    .our_project_section .block_one .icon_block .icons a img {
+        width: 50%;
+    }
+
+    #play {
+        height: 515px;
+    }
+
     .body_content section,
     .page_wrapper section{
         max-width: 820px;
+    }
+
+    .slick-main{
+        height: 410px;
+    }
+
+    .slick-nav {
+        height: 160px !important;
     }
 
     .tell_us_section > * {
@@ -2220,7 +2291,7 @@ a {
     }
 
     .slick-nav{
-        height: 100px;
+        height: 100px !important;
     }
 
     .connect a{
@@ -2300,9 +2371,36 @@ a {
     }
 
     .idea_section .header_idea_sec {
-        font-size: 24px;
+        font-size: 34px;
         line-height: normal;
         margin-top: 40px;
+    }
+
+    .idea_section {
+        margin-top: 48px !important;
+    }
+
+    .idea_content > div {
+        margin-top: 100px;
+    }
+
+    .idea_content {
+        padding: 4%;
+        background-position-y: -100px;
+        background-repeat: no-repeat;
+        background-color: #F2F2F2;
+    }
+
+    .idea_content > div > span {
+        font-size: 19px;
+    }
+
+    .idea_grid span {
+        font-size: 17px;
+    }
+
+    .idea_grid {
+        grid-gap: 24px;
     }
 
     .idea_section .icons {
@@ -2969,6 +3067,31 @@ a {
     .ongoing_production{
         grid-template-rows: unset;
         grid-gap: 16px;
+    }
+
+    .idea_content > div {
+        width: auto;
+        padding: 3%;
+    }
+
+    .idea_content {
+        padding: 0;
+    }
+
+    .idea_content > div > span {
+        font-size: 16px;
+    }
+
+    .idea_section .header_idea_sec {
+        font-size: 32px;
+    }
+
+    .idea_grid span{
+        font-size: 16px;
+    }
+
+    .idea_content > div {
+        margin-top: 70px;
     }
 
     .work_with_us_section .blocks .block a {
