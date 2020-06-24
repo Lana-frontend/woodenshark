@@ -305,8 +305,12 @@ header .mail_header span{
     color: #636466;
 }
 
-.idea_content > div {
-    margin-top: 164px;
+.idea_content > div:first-child {
+    margin-top: 20px;
+}
+
+.idea_content > div:last-child {
+    margin-top: 100px;
 }
 
 .our_project_section .description > div a {
