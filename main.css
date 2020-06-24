@@ -276,9 +276,9 @@ header .mail_header span{
 
 .idea_content {
     background-image: url("img/main_section_background.png");
-    padding: 8% 8% 4%;
+    padding: 0% 8% 1%;
     background-size: cover;
-    background-position: top;
+    background-position-y: -70px;
 }
 
 .idea_grid {
@@ -306,11 +306,11 @@ header .mail_header span{
 }
 
 .idea_content > div:first-child {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .idea_content > div:last-child {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .our_project_section .description > div a {
