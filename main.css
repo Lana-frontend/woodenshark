@@ -276,7 +276,7 @@ header .mail_header span{
 
 .idea_content {
     background-image: url("img/main_section_background.png");
-    padding: 0% 8% 24px;
+    padding: 0 128px 24px;
     background-size: cover;
     background-position-y: -60px;
     background-repeat: no-repeat;
@@ -2125,6 +2125,16 @@ a {
     }
 }
 
+@media screen and (max-width: 1200px){
+    .idea_content {
+        padding: 0 0 24px;
+        background-size: auto;
+        background-position-y: -60px;
+        background-position-x: -180px;
+        background-repeat: no-repeat;
+    }
+}
+
 @media screen and (max-width: 1024px) {
 
     @keyframes open_burger {
@@ -2392,6 +2402,7 @@ a {
     .idea_content {
         padding: 4%;
         background-position-y: -100px;
+        background-position-x: center;
         background-repeat: no-repeat;
         background-color: #F2F2F2;
     }
