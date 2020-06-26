@@ -285,7 +285,7 @@ header .mail_header span{
 .idea_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 54px;
+    margin-top: 44px;
 }
 
 .idea_grid span {
@@ -311,7 +311,8 @@ header .mail_header span{
 }
 
 .idea_content > div:last-child {
-    margin-top: 70px;
+    max-width: 700px;
+    margin-top: 80px;
 }
 
 .our_project_section .description > div a {
@@ -422,6 +423,7 @@ header .mail_header span{
 }
 
 .how_it_work_sect .descriptions .description .cube{
+    align-self: center;
     width: 30px;
     height: 30px;
     background: linear-gradient(90deg, #FFCB4E 0%, #FCC74C 41.46%, #F4BB45 86.5%, #F1B642 100%);
@@ -532,8 +534,10 @@ ul{
 }
 
 .services_section .list .list_item .descriptionService .content img{
-    width: 100%;
     align-self: start;
+    width: 50%;
+    height: auto;
+    margin: auto;
 }
 
 .services_section .list .list_item .descriptionService .content .all_content{
@@ -1000,7 +1004,7 @@ footer .footer_text{
     display: none;
     margin-left: -10%;
     width: 120vw;
-
+    margin-top: -20px;
 }
 
 .mobile_button {
@@ -2006,6 +2010,17 @@ a {
         width: 50%;
     }
 
+    .services_section .list .list_item .descriptionService .content img{
+        width: 100%;
+        align-self: start;
+        margin: unset;
+        height: unset;
+    }
+
+    .idea_content > div:last-child{
+        max-width: unset;
+    }
+
     #play {
         height: 515px;
     }
@@ -2056,6 +2071,7 @@ a {
 
     #shark{
         width: auto;
+        margin-top: unset;
     }
 
     header{
@@ -2610,6 +2626,7 @@ a {
 
     .services_section .list .list_item .descriptionService .content .title, .services_section .list .list_item .descriptionService .three_block .title {
         font-size: 24px;
+        line-height: 24px;
     }
 
     .first_section .title_page video {
