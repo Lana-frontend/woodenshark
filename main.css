@@ -41,13 +41,25 @@ body{
     width: 100%;
 }
 
-.project_card #play img {
+.project_card #play .slick_photo1 {
     animation: 1s appearImg forwards;
+}
+
+.project_card #play .slick_photo2,
+.project_card #play .slick_photo3,
+.project_card #play .slick_photo4 {
+    animation: 2s disappear forwards !important;
 }
 
 @keyframes appearImg {
     0%   { width: 0; height: 0 }
     100% { width: 100%; height: 100% }
+}
+
+@keyframes disappear {
+    0%   { opacity: 0; }
+    50% {opacity: 0;}
+    100% { opacity: 1; }
 }
 
 img {
@@ -81,15 +93,15 @@ img {
     margin-top: 24px;
 }
 
-.slider3 .slick-dots {
+.project_card .slider3 .slick-dots {
     bottom: -30px !important;
 }
 
-.slider3 .slick-list{
+.project_card .slider3 .slick-list{
     margin: 0 -12px;
 }
 
-.slider3 img {
+.project_card .slider3 img {
     margin: 0 12px;
     object-fit: cover;
 }
