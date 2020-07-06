@@ -71,10 +71,6 @@ img {
     -ms-user-select: none;
 }
 
-.slider-wrapper{
-    display: grid !important;
-    grid-template-columns: 1fr;
-}
 
 .slick-slide img{
     height: 90%;
@@ -298,6 +294,10 @@ header .mail_header span{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 44px;
+}
+
+.slider1, .slider2, .slider3 {
+    display: none;
 }
 
 .idea_grid span {
@@ -2156,9 +2156,9 @@ a {
 @media screen and (max-width: 1200px){
     .idea_content {
         padding: 0 0 24px;
-        background-size: auto;
-        background-position-y: -60px;
-        background-position-x: -180px;
+        background-size: cover;
+        background-position-y: 0;
+        background-position-x: -120px;
         background-repeat: no-repeat;
     }
 }
@@ -2230,7 +2230,7 @@ a {
         text-decoration: none;
     }
 
-    header .text_logo img {
+    header .text_logo img:first-child {
         margin-top: 17px;
     }
 
@@ -2429,7 +2429,7 @@ a {
 
     .idea_content {
         padding: 4%;
-        background-position-y: -100px;
+        background-position-y: -50px;
         background-position-x: center;
         background-repeat: no-repeat;
     }

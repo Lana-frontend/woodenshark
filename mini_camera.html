@@ -15,7 +15,13 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -82,17 +88,17 @@
                         </div>
                         <div class="text">
                             <span>Services:</span><br>
-                            <a class="bold" href="/#services_list">
+                            <a class="bold" href="https://woodenshark.com/#services_list">
                                 > Idea
                             </a>
                             <br>
-                            <a class="bold" href="/#services_list">> Proof of Concept</a>
+                            <a class="bold" href="https://woodenshark.com/#services_list">> Proof of Concept</a>
                             <br>
-                            <a class="bold" href="/#services_list">> Prototyping</a>
+                            <a class="bold" href="https://woodenshark.com/#services_list">> Prototyping</a>
                             <br>
-                            <a class="bold" href="/#services_list">> Factory Search and Selection</a>
+                            <a class="bold" href="https://woodenshark.com/#services_list">> Factory Search and Selection</a>
                             <br>
-                            <a class="bold" href="/#services_list">> Production Setup</a>
+                            <a class="bold" href="https://woodenshark.com/#services_list">> Production Setup</a>
                             <br>
                         </div>
                     </div>
@@ -118,10 +124,10 @@
                             <span class="title" style="color: #00A2D3;">/01</span><br>
                             <span class="title" style="color: #00A2D3;">Concept</span>
                         </div>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/lamp3.svg"/>
                         </a>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/icon_2.svg"/>
                         </a>
                     </div>
@@ -131,10 +137,10 @@
                             <span class="title">/02</span><br>
                             <span class="title">Development</span>
                         </div>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/icon_yellow_four.svg"/>
                         </a>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/icon_yellow_two.svg"/>
                         </a>
 
@@ -145,16 +151,16 @@
                             <span class="title" style="color: #F48777;">/03</span><br>
                             <span class="title" style="color: #F48777;">Production</span>
                         </div>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/icon_red_five.svg"/>
                         </a>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/icon_red_seven.svg"/>
                         </a>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/icon_red_six.svg"/>
                         </a>
-                        <a class="bold" href="/#services_list">
+                        <a class="bold" href="https://woodenshark.com/#services_list">
                             <img alt="icon" src="img/icon_red_eight.svg"/>
                         </a>
                     </div>
@@ -196,13 +202,13 @@
                     method="POST"
             >
                 <label>
-                    <input name="YourName" placeholder="Your Name">
+                    <input name="YourName" required placeholder="Your Name">
                 </label>
                 <label>
-                    <input name="ProjectName" placeholder="Project Name">
+                    <input name="ProjectName" required placeholder="Project Name">
                 </label>
                 <label>
-                    <input type="email" name="Email" placeholder="E-mail">
+                    <input type="email" name="Email" required placeholder="E-mail">
                 </label>
 
                 <label class="hidden_message">
@@ -237,6 +243,28 @@ let remove_in_scroll = document.getElementsByClassName("scroll_remove");
 let bandOne = document.getElementById("bandOne");
 let bandTwo = document.getElementById("bandTwo");
 let bandThree = document.getElementById("bandThree");
+
+
+function openBurger() {
+    if (counter === 1) {
+        burger_menu.classList.remove("nonactive_burger");
+        burger_menu.classList.add("active_burger");
+        bandTwo.classList.add("bandTwo");
+        bandOne.classList.add("bandOne");
+        bandThree.classList.add("bandThree");
+        counter = 0
+    } else {
+        burger_menu.classList.add("nonactive_burger");
+        burger_menu.classList.remove("active_burger");
+        bandTwo.classList.remove("bandTwo");
+        bandOne.classList.remove("bandOne");
+        bandThree.classList.remove("bandThree");
+        counter = 1
+    }
+
+}
+
+band.addEventListener("click", openBurger);
 
 $(document).ready(function () {
     console.log(Math.random())
@@ -310,28 +338,6 @@ function sliderTwo(index, src) {
         }
     }
 }
-
-
-function openBurger() {
-    if (counter === 1) {
-        burger_menu.classList.remove("nonactive_burger");
-        burger_menu.classList.add("active_burger");
-        bandTwo.classList.add("bandTwo");
-        bandOne.classList.add("bandOne");
-        bandThree.classList.add("bandThree");
-        counter = 0
-    } else {
-        burger_menu.classList.add("nonactive_burger");
-        burger_menu.classList.remove("active_burger");
-        bandTwo.classList.remove("bandTwo");
-        bandOne.classList.remove("bandOne");
-        bandThree.classList.remove("bandThree");
-        counter = 1
-    }
-
-}
-
-band.addEventListener("click", openBurger);
 
 window.onscroll = function header_change() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
