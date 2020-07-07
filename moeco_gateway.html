@@ -66,7 +66,7 @@
     <div class="project_card" style="display: grid;">
         <div class="body_content" style="max-width: 1912px;justify-self: center">
             <section id="play" class="first_section f_section">
-                <div style="height: 100%" class="slick-slider slider-wrapper slider1">
+                <div style="height: 100%" class="slick-slider slick-load1 slider-wrapper slider1">
                     <div>
                         <img alt="boxy" class="slick_photo1" src="img/gateway1.jpg">
                     </div>
@@ -261,31 +261,37 @@ band.addEventListener("click", openBurger);
 $(document).ready(function () {
     console.log(Math.random())
     console.log(document.getElementsByClassName('slider1'))
-    $('.slider1').slick({
+    $('.slick-load1').slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false
     });
+    $('.slick-load1').show()
 
 
-    $('.slider2').slick({
+    $('.slick-load2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider3'
+        asNavFor: '.slick-load3'
     });
-    $('.slider3').slick({
+
+
+    $('.slick-load2').show()
+
+    $('.slick-load3').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.slider2',
+        asNavFor: '.slick-load2',
         arrows: false,
         dots: true,
         focusOnSelect: true
     });
 
+    $('.slick-load3').show()
 
 })
 

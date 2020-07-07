@@ -66,7 +66,7 @@
     <div class="project_card" style="display: grid;">
         <div class="body_content" style="max-width: 1912px;justify-self: center">
             <section id="play" class="first_section f_section">
-                <div style="height: 100%" class="slick-slider slider-wrapper slider1">
+                <div style="height: 100%" class="slick-slider slick-load1 slider-wrapper slider1">
                     <div>
                         <img alt="boxy" class="slick_photo1" src="img/LightpackImg.jpg">
                     </div>
@@ -174,13 +174,13 @@
 
                 <span class="slider_desc">Smart lighting for your living room that improves and gaming experience drastically-all while being easy on eyes. The Lightpack 2 now works with any TV screen and only requires just a power source and an HDMI connection. Lightpack can be used as an intelligent lighting system even when your TV is off.</span>
 
-                <div class="slick-slider slick-main slider-wrapper slider2">
+                <div class="slick-slider slick-load2 slick-main slider-wrapper slider2">
                         <img alt="boxy" src="img/lightpackImg2_1.jpg">
                         <img alt="boxy" src="img/lightpackImg2_2.jpg">
                         <img alt="boxy" src="img/lightpackImg2_3.jpg">
                     <img alt="boxy" src="img/lightpackImg2_4.jpg">
                 </div>
-                <div class="slick-slider slick-nav slider-wrapper slider3">
+                <div class="slick-slider slick-nav slick-load3 slider-wrapper slider3">
                         <img alt="boxy" src="img/lightpackImg2_1.jpg">
                         <img alt="boxy" src="img/lightpackImg2_2.jpg">
                         <img alt="boxy" src="img/lightpackImg2_3.jpg">
@@ -290,7 +290,7 @@ band.addEventListener("click", openBurger);
 $(document).ready(function () {
     console.log(Math.random())
     console.log(document.getElementsByClassName('slider1'))
-    $('.slider1').slick({
+    $('.slick-load1').slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
@@ -298,28 +298,28 @@ $(document).ready(function () {
         arrows: false
     });
 
-    $('.slider1').show()
+    $('.slick-load1').show()
 
-    $('.slider2').slick({
+    $('.slick-load2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider3'
+        asNavFor: '.slick-load3'
     });
 
-    $('.slider2').show()
+    $('.slick-load2').show()
 
-    $('.slider3').slick({
+    $('.slick-load3').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.slider2',
+        asNavFor: '.slick-load2',
         arrows: false,
         dots: true,
         focusOnSelect: true
     });
 
-    $('.slider3').show()
+    $('.slick-load3').show()
 
 })
 
