@@ -296,7 +296,7 @@ header .mail_header span{
     margin-top: 44px;
 }
 
-.slider1, .slider2, .slider3 {
+.slick-load1, .slick-load2, .slick-load3 {
     display: none;
 }
 
