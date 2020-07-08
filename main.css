@@ -300,6 +300,18 @@ header .mail_header span{
     display: none;
 }
 
+.slick-load1, .slick-load2, .slick-load3 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.slick-load1.slick-initialized, .slick-load2.slick-initialized, .slick-load3.slick-initialized {
+    visibility: visible;
+    opacity: 1;
+}
+
 .idea_grid span {
     font-family: Ubuntu;
     font-style: normal;
