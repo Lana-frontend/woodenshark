@@ -300,6 +300,10 @@ header .mail_header span{
     display: none;
 }
 
+#small_text {
+    margin-top: 6px;
+}
+
 .slick-load1, .slick-load2, .slick-load3 {
     opacity: 0;
     visibility: hidden;
