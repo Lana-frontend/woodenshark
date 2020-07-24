@@ -35,8 +35,8 @@
     <header>
 
         <div class="logo">
-            <img class="scroll_remove" alt="logotype" src="img/Group.svg">
             <a href="/">
+            <img class="scroll_remove" alt="logotype" src="img/Group.svg">
                 <div class="text_logo">
                     <img alt="text logo" src="img/top_logo.svg">
                     <img id="small_text" alt="text logo" src="img/bottom_logo.svg">
@@ -211,6 +211,7 @@
 
             <form
                     action="https://formspree.io/xoqkddgv"
+                    target="_blank"
                     method="POST"
             >
                 <label>
@@ -227,9 +228,11 @@
                     <textarea placeholder="Message" name="Message" rows="5"></textarea>
                 </label>
                 <div class="buttons_tell_us">
-                    <button type="button"
-                            onclick="document.getElementsByClassName('hidden_message')[0].style.display = 'block'">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more
-                    </button>
+                    <button id="more_button" type="button" onclick="
+                    (function(){
+                        document.getElementsByClassName('hidden_message')[0].style.display = 'block'
+                        document.getElementById('more_button').style.display = 'none'
+                    })();">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more</button>
                     <button type="submit">Say&nbsp;Hey</button>
                 </div>
             </form>
@@ -237,7 +240,9 @@
     </div>
     <footer>
         <div class="logo">
-            <img alt="logotype" src="img/logo_footer.svg">
+            <a href="/">
+                <img alt="logotype" src="img/logo_footer.svg">
+            </a>
         </div>
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>

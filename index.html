@@ -34,8 +34,8 @@
     <header>
 
         <div class="logo">
-            <img class="scroll_remove" alt="logotype" src="img/Group.svg">
             <a href="#">
+            <img class="scroll_remove" alt="logotype" src="img/Group.svg">
                 <div class="text_logo">
                     <img alt="text logo" src="img/top_logo.svg">
                     <img id="small_text" alt="text logo" src="img/bottom_logo.svg">
@@ -197,7 +197,7 @@
                                         <span class="text">Modern design means that all aspects are taken into account: the technical issues as well as the appearance and ergonomics.</span>
                                         <span class="text">Our team of designers, technicians and engineers ensures the optimal solution for both the form and the content of the device. We go all the way from sketches, 3D-modeling, and visualization to production-ready samples.</span>
                                     </div>
-                                    <div class="content">
+                                    <div style="margin-top: 0" class="content">
                                         <div>
                                             <span class="title">Engineering Expertise</span><br>
                                             <span class="text">Our specialists analyse prototypes and countertypes of the new design in accordance with customer specifications and the latest market trends.</span>
@@ -462,6 +462,7 @@
 
                 <form
                         action="https://formspree.io/xoqkddgv"
+                        target="_blank"
                         method="POST"
                 >
                     <label>
@@ -478,7 +479,11 @@
                         <textarea placeholder="Message" name="Message" rows="5"></textarea>
                     </label>
                     <div class="buttons_tell_us">
-                        <button type="button" onclick="document.getElementsByClassName('hidden_message')[0].style.display = 'block'">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more</button>
+                        <button id="more_button" type="button" onclick="
+                    (function(){
+                        document.getElementsByClassName('hidden_message')[0].style.display = 'block'
+                        document.getElementById('more_button').style.display = 'none'
+                    })();">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more</button>
                         <button type="submit">Say&nbsp;Hey</button>
                     </div>
                 </form>
@@ -942,8 +947,10 @@
     </div>
     <footer>
         <div class="logo">
-            <img alt="logotype" src="img/logo_footer.svg">
-        </div>
+            <a href="/">
+                <img alt="logotype" src="img/logo_footer.svg">
+            </a>
+         </div>
         <span class="footer_text">© Woodenshark, LLC 2020</span>
     </footer>
 </div>

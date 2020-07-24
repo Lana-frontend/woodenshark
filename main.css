@@ -155,7 +155,7 @@ header .text_logo{
 }
 
 header a{
-    display: grid;
+    display: flex;
     align-content: center;
     margin-left: 15px;
 }
@@ -280,6 +280,10 @@ header .mail_header span{
 .first_section .title_page div{
     align-self: end;
     margin-bottom: 20%;
+}
+
+.our_project_section .slick-slider img {
+    cursor: default !important;
 }
 
 .idea_content {
