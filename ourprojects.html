@@ -925,9 +925,11 @@
                 <textarea name="Message" placeholder="Message" rows="5"></textarea>
             </label>
             <div class="buttons_tell_us">
-                <button type="button"
-                        onclick="document.getElementsByClassName('hidden_message')[0].style.display = 'block'">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more
-                </button>
+                <button id="more_button" type="button" onclick="
+                    (function(){
+                        document.getElementsByClassName('hidden_message')[0].style.display = 'block'
+                        document.getElementById('more_button').style.display = 'none'
+                    })();">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more</button>
                 <button type="submit">Say&nbsp;Hey</button>
             </div>
         </form>
