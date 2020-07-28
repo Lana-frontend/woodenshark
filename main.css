@@ -285,8 +285,8 @@ header .mail_header span{
     padding: 0.5em;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     pointer-events: none;
-    transition: 1s;
     z-index: 9999999;
+    font-family: Ubuntu;
 }
 
 [data-tooltip]:hover::after {
