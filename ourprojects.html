@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TRWGV4Z');</script>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TRWGV4Z');</script>
 
     <meta charset="UTF-8">
     <title>Woodenshark</title>
@@ -26,15 +34,17 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body style="overflow-x: hidden">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRWGV4Z"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRWGV4Z"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <div style="overflow-x: hidden; position: relative">
 
 
     <header>
         <div class="logo">
             <a href="/">
-            <img class="scroll_remove" alt="logotype" src="img/Group.svg">
+                <img class="scroll_remove" alt="logotype" src="img/Group.svg">
                 <div class="text_logo">
                     <img alt="text logo" src="img/top_logo.svg">
                     <img id="small_text" alt="text logo" src="img/bottom_logo.svg">
@@ -94,43 +104,59 @@
                             <span class="timeline">Timeline: 2017</span>
 
                             <div>
-                                <a  href='lightpack'>
-                                <span class="title_block_one first">Lightpack</span>
+                                <a href='lightpack'>
+                                    <span class="title_block_one first">Lightpack</span>
                                 </a>
                             </div>
 
                             <span class="text_description">Lightpack  is a lighting set that brings you a whole new experience while watching movies by lightening the background of your TV and room. Lightpack uses complex, patented algorithms to process the input video signal and conduct this ambient backlight orchestra.</span>
 
-                                    <a class="to_card" href='lightpack'>
-                                        More&nbsp;>
-                                    </a>
+                            <a class="to_card" href='lightpack'>
+                                More&nbsp;>
+                            </a>
                         </div>
 
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '0')
+                                })();" data-tooltip='Idea' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/lamp3.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_2.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
-                                <a data-tooltip='Promotion' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '7')
+                                })();" data-tooltip='Promotion' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_8.svg">
                                 </a>
                             </div>
@@ -148,8 +174,8 @@
                             <span class="timeline timeline_two">Timeline: 2016</span>
 
                             <div>
-                                <a  href='taptap'>
-                                <span class="title_block_one title_block_two  first">TapTap</span>
+                                <a href='taptap'>
+                                    <span class="title_block_one title_block_two  first">TapTap</span>
                                 </a>
                             </div>
 
@@ -163,28 +189,45 @@
                         <div class="icon_block">
                             <span class="text_services text_services_two">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '0')
+                                })();" data-tooltip='Idea' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_one.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_two.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_five.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_six.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_seven.svg">
                                 </a>
-                                <a data-tooltip='Promotion' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '7')
+                                })();" data-tooltip='Promotion' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_eight.svg">
                                 </a>
                             </div>
@@ -218,7 +261,7 @@
 
                             <div>
                                 <a href='resero_whistle'>
-                                <span class="title_block_one  first">Resero Whistle</span>
+                                    <span class="title_block_one  first">Resero Whistle</span>
                                 </a>
                             </div>
 
@@ -232,16 +275,25 @@
                         <div class="icon_block">
                             <span class="text_services ">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
                             </div>
@@ -259,9 +311,9 @@
                             <span class="timeline timeline_three">Timeline: 2019</span>
 
                             <div>
-                                <a  href='moeco_counter'>
-                                <span class="title_block_one title_block_three first">Moeco </span> <br> <span
-                                    class="title_block_one title_block_three">People Counter</span>
+                                <a href='moeco_counter'>
+                                    <span class="title_block_one title_block_three first">Moeco </span> <br> <span
+                                        class="title_block_one title_block_three">People Counter</span>
                                 </a>
                             </div>
 
@@ -275,22 +327,35 @@
                         <div class="icon_block">
                             <span class="text_services text_services_three">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '0')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_two.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_five.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_six.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_seven.svg">
                                 </a>
                             </div>
@@ -321,7 +386,8 @@
 
                             <div>
                                 <a href='moeco_car_insurance'>
-                                <span class="title_block_one first">Moeco </span> <br> <span class="title_block_one">Car Insurance Sticker </span>
+                                    <span class="title_block_one first">Moeco </span> <br> <span
+                                        class="title_block_one">Car Insurance Sticker </span>
                                 </a>
                             </div>
 
@@ -335,22 +401,35 @@
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '0')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_2.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
                             </div>
@@ -378,13 +457,20 @@
                         <div class="icon_block">
                             <span class="text_services text_services_two">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_five.svg">
                                 </a>
                             </div>
@@ -412,8 +498,8 @@
                             <span class="timeline ">Timeline: 2017</span>
 
                             <div>
-                                <a  href='nimb'>
-                                <span class="title_block_one first">NIMB </span>
+                                <a href='nimb'>
+                                    <span class="title_block_one first">NIMB </span>
                                 </a>
                             </div>
 
@@ -427,13 +513,19 @@
                         <div class="icon_block">
                             <span class="text_services ">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '0')
+                                })();" data-tooltip='Idea' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/lamp3.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_2.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
                             </div>
@@ -453,7 +545,7 @@
 
                             <div>
                                 <a href='beer_button'>
-                                <span class="title_block_one title_block_three first">Beer Button</span>
+                                    <span class="title_block_one title_block_three first">Beer Button</span>
                                 </a>
                             </div>
 
@@ -467,13 +559,20 @@
                         <div class="icon_block">
                             <span class="text_services text_services_three">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_two.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_four.svg">
                                 </a>
                             </div>
@@ -504,7 +603,7 @@
 
                             <div>
                                 <a href='soundsight'>
-                                <span class="title_block_one first">SoundSight </span>
+                                    <span class="title_block_one first">SoundSight </span>
                                 </a>
                             </div>
 
@@ -519,28 +618,45 @@
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '0')
+                                })();" data-tooltip='Idea' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/lamp3.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_2.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
-                                <a data-tooltip='Promotion' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '7')
+                                })();" data-tooltip='Promotion' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_8.svg">
                                 </a>
                             </div>
@@ -558,7 +674,7 @@
 
                             <div>
                                 <a href='mini_camera'>
-                                <span class="title_block_one title_block_two first">Mini Camera</span>
+                                    <span class="title_block_one title_block_two first">Mini Camera</span>
                                 </a>
                             </div>
 
@@ -572,16 +688,25 @@
                         <div class="icon_block">
                             <span class="text_services text_services_two">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '0')
+                                })();" data-tooltip='Idea' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_one.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '1')
+                                })();" data-tooltip='Proof of concept' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_two.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_four.svg">
                                 </a>
                             </div>
@@ -609,8 +734,8 @@
                             <span class="timeline">Timeline: 2017</span>
 
                             <div>
-                                <a  href='oriense.html'>
-                                <span class="title_block_one first">Oriense</span>
+                                <a href='oriense.html'>
+                                    <span class="title_block_one first">Oriense</span>
                                 </a>
                             </div>
 
@@ -624,19 +749,30 @@
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
                             </div>
@@ -653,7 +789,7 @@
 
                             <div>
                                 <a href='cherry_home'>
-                                <span class="title_block_one title_block_three first">Cherry Home</span>
+                                    <span class="title_block_one title_block_three first">Cherry Home</span>
                                 </a>
                             </div>
 
@@ -667,19 +803,30 @@
                         <div class="icon_block">
                             <span class="text_services text_services_three">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_five.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_six.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_seven.svg">
                                 </a>
                             </div>
@@ -707,8 +854,9 @@
                             <span class="timeline">Timeline: 2018</span>
 
                             <div>
-                                <a  href='moeco_gateway'>
-                                    <span class="title_block_one first">Moeco </span> <br> <span class="title_block_one">LoRa Gatewa</span>
+                                <a href='moeco_gateway'>
+                                    <span class="title_block_one first">Moeco </span> <br> <span
+                                        class="title_block_one">LoRa Gatewa</span>
                                 </a>
                             </div>
 
@@ -722,19 +870,30 @@
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
                             </div>
@@ -751,7 +910,7 @@
 
                             <div>
                                 <a href='vaikai'>
-                                <span class="title_block_one title_block_two first">Vaikai</span>
+                                    <span class="title_block_one title_block_two first">Vaikai</span>
                                 </a>
                             </div>
 
@@ -765,19 +924,30 @@
                         <div class="icon_block">
                             <span class="text_services text_services_two">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_five.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_six.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_red_seven.svg">
                                 </a>
                             </div>
@@ -794,11 +964,7 @@
                 </div>
 
 
-
-
-
-
-                    <div class="block_one">
+                <div class="block_one">
 
                     <div class="slick-slider slider-wrapper slider15">
                         <div>
@@ -810,7 +976,7 @@
                             <span class="timeline">Timeline: 2017</span>
 
                             <div>
-                                <a  href='cinemood'>
+                                <a href='cinemood'>
                                     <span class="title_block_one first">Cinemood</span>
                                 </a>
                             </div>
@@ -825,19 +991,30 @@
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
                             </div>
@@ -855,7 +1032,7 @@
 
                             <div>
                                 <a href='cappasity'>
-                                <span class="title_block_one title_block_three first">Cappasity</span>
+                                    <span class="title_block_one title_block_three first">Cappasity</span>
                                 </a>
                             </div>
 
@@ -869,19 +1046,30 @@
                         <div class="icon_block">
                             <span class="text_services text_services_three">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '2')
+                                })();" data-tooltip='Prototyping' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_three.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '3')
+                                })();" data-tooltip='Factory search and selection'
+                                   href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '4')
+                                })();" data-tooltip='Producing setup' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_five.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '5')
+                                })();" data-tooltip='Ongoing production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_six.svg">
                                 </a>
-                                <a data-tooltip='After production' href="https://woodenshark.com/#services_list">
+                                <a onclick="(function(){
+                                    localStorage.setItem('service', '6')
+                                })();" data-tooltip='After production' href="https://woodenshark.com/#services_list">
                                     <img alt="icon" src="img/icon_yellow_seven.svg">
                                 </a>
                             </div>
@@ -918,7 +1106,7 @@
                 <input name="ProjectName" required placeholder="Project Name">
             </label>
             <label>
-                <input name="Email" type="email"required placeholder="E-mail">
+                <input name="Email" type="email" required placeholder="E-mail">
             </label>
 
             <label class="hidden_message">
@@ -929,7 +1117,8 @@
                     (function(){
                         document.getElementsByClassName('hidden_message')[0].style.display = 'block'
                         document.getElementById('more_button').style.display = 'none'
-                    })();">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more</button>
+                    })();">I&nbsp;want&nbsp;to&nbsp;tell&nbsp;more
+                </button>
                 <button type="submit">Say&nbsp;Hey</button>
             </div>
         </form>

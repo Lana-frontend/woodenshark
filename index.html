@@ -162,7 +162,7 @@
 
                 <div class="list">
                     <div id="list_item_one" class="list_item">
-                        <div onclick="openService(0)" class="lock">
+                        <div onclick="closeAndOpenService(0)" class="lock">
                             <img alt="icon_lamp" src="img/lamp3.svg"/>
                             <span>> IDEA</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -192,7 +192,7 @@
                     </div>
 
                     <div class="list_item">
-                        <div onclick="openService(1)" class="lock">
+                        <div onclick="closeAndOpenService(1)" class="lock">
                             <img alt="icon_lamp" src="img/icon_2.svg"/>
                             <span>> PROOF OF CONCEPT</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -224,7 +224,7 @@
                     </div>
 
                     <div class="list_item">
-                        <div onclick="openService(2)" class="lock">
+                        <div onclick="closeAndOpenService(2)" class="lock">
                             <img alt="icon_lamp" src="img/icon_3.svg"/>
                             <span>> PROTOTYPING</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -294,7 +294,7 @@
                     </div>
 
                     <div class="list_item">
-                        <div onclick="openService(3)" class="lock">
+                        <div onclick="closeAndOpenService(3)" class="lock">
                             <img alt="icon_lamp" src="img/icon_4.svg"/>
                             <span>> FACTORY SEARCH AND SELECTION</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -323,7 +323,7 @@
                     </div>
 
                     <div class="list_item">
-                        <div onclick="openService(4)" class="lock">
+                        <div onclick="closeAndOpenService(4)" class="lock">
                             <img alt="icon_lamp" src="img/icon_5.svg"/>
                             <span>> PRODUCING SETUP</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -353,7 +353,7 @@
                     </div>
 
                     <div class="list_item">
-                        <div onclick="openService(5)" class="lock">
+                        <div onclick="closeAndOpenService(5)" class="lock">
                             <img alt="icon_lamp" src="img/icon_6.svg"/>
                             <span>> ONGOING PRODUCTION</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -391,7 +391,7 @@
                     </div>
 
                     <div class="list_item">
-                        <div onclick="openService(6)" class="lock">
+                        <div onclick="closeAndOpenService(6)" class="lock">
                             <img alt="icon_lamp" src="img/icon_7.svg"/>
                             <span>> AFTER PRODUCTION</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -418,7 +418,7 @@
                     </div>
 
                     <div class="list_item">
-                        <div onclick="openService(7)" class="lock">
+                        <div onclick="closeAndOpenService(7)" class="lock">
                             <img alt="icon_lamp" src="img/micro3.svg"/>
                             <span>> PROMOTION</span>
                             <img alt="plus" class="plus" src="img/plus.svg"/>
@@ -539,28 +539,44 @@
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(0)
+                                })();" data-tooltip='Idea' href="#services_list">
                                     <img alt="icon" src="img/lamp3.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(1)
+                                })();" data-tooltip='Proof of concept' href="#services_list">
                                     <img alt="icon" src="img/icon_2.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(2)
+                                })();" data-tooltip='Prototyping' href="#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(3)
+                                })();" data-tooltip='Factory search and selection' href="#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(4)
+                                })();" data-tooltip='Producing setup' href="#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(5)
+                                })();" data-tooltip='Ongoing production' href="#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(6)
+                                })();" data-tooltip='After production' href="#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
-                                <a data-tooltip='Promotion' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(7)
+                                })();" data-tooltip='Promotion' href="#services_list">
                                     <img alt="icon" src="img/icon_8.svg">
                                 </a>
                             </div>
@@ -593,29 +609,45 @@
                         <div class="icon_block">
                             <span class="text_services text_services_two">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(0)
+                                })();" data-tooltip='Idea' href="#services_list">
                                     <img alt="icon" src="img/icon_red_one.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(1)
+                                })();" data-tooltip='Proof of concept' href="#services_list">
                                     <img alt="icon" src="img/icon_red_two.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(2)
+                                })();" data-tooltip='Prototyping' href="#services_list">
                                     <img alt="icon" src="img/icon_red_three.svg">
                                 </a>
-                                <a href="#services_list">
-                                    <img alt="icon" data-tooltip='Factory search and selection'
+                                <a onclick="(function(){
+                                    openService(3)
+                                })();"  data-tooltip='Factory search and selection' href="#services_list">
+                                    <img alt="icon"
                                          src="img/icon_red_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(4)
+                                })();" data-tooltip='Producing setup' href="#services_list">
                                     <img alt="icon" src="img/icon_red_five.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(5)
+                                })();" data-tooltip='Ongoing production' href="#services_list">
                                     <img alt="icon" src="img/icon_red_six.svg">
                                 </a>
-                                <a  data-tooltip='After production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(6)
+                                })();"  data-tooltip='After production' href="#services_list">
                                     <img alt="icon"src="img/icon_red_seven.svg">
                                 </a>
-                                <a data-tooltip='Promotion' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(7)
+                                })();" data-tooltip='Promotion' href="#services_list">
                                     <img alt="icon" src="img/icon_red_eight.svg">
                                 </a>
                             </div>
@@ -661,20 +693,30 @@
                         <div class="icon_block">
                             <span class="text_services ">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Factory search and selection' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(3)
+                                })();" data-tooltip='Factory search and selection' href="#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(4)
+                                })();" data-tooltip='Producing setup' href="#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(5)
+                                })();" data-tooltip='Ongoing production' href="#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(6)
+                                })();" data-tooltip='After production' href="#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
                             </div>
-                            <a class="mobile_button to_card" href='resero_whistle'>
+                            <a onclick="(function(){
+                                    openService(7)
+                                })();" class="mobile_button to_card" href='resero_whistle'>
                                 More&nbsp;>
                             </a>
                         </div>
@@ -704,23 +746,35 @@
                         <div class="icon_block">
                             <span class="text_services text_services_three">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Proof of concept' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(1)
+                                })();" data-tooltip='Proof of concept' href="#services_list">
                                     <img alt="icon" src="img/icon_yellow_two.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(2)
+                                })();" data-tooltip='Prototyping' href="#services_list">
                                     <img alt="icon" src="img/icon_yellow_three.svg">
                                 </a>
-                                <a href="#services_list">
-                                    <img alt="icon" data-tooltip='Factory search and selection'
+                                <a onclick="(function(){
+                                    openService(3)
+                                })();"  data-tooltip='Factory search and selection' href="#services_list">
+                                    <img alt="icon"
                                          src="img/icon_yellow_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(4)
+                                })();" data-tooltip='Producing setup' href="#services_list">
                                     <img alt="icon" src="img/icon_yellow_five.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(5)
+                                })();" data-tooltip='Ongoing production' href="#services_list">
                                     <img alt="icon" src="img/icon_yellow_six.svg">
                                 </a>
-                                <a data-tooltip='After production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(6)
+                                })();" data-tooltip='After production' href="#services_list">
                                     <img alt="icon" src="img/icon_yellow_seven.svg">
                                 </a>
                             </div>
@@ -764,22 +818,34 @@
                         <div class="icon_block">
                             <span class="text_services">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Proof of concept' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(1)
+                                })();" data-tooltip='Proof of concept' href="#services_list">
                                     <img alt="icon" src="img/icon_2.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(2)
+                                })();" data-tooltip='Prototyping' href="#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
-                                <a data-tooltip='Factory search and selection' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(3)
+                                })();" data-tooltip='Factory search and selection' href="#services_list">
                                     <img alt="icon" src="img/icon_4.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(4)
+                                })();" data-tooltip='Producing setup' href="#services_list">
                                     <img alt="icon" src="img/icon_5.svg">
                                 </a>
-                                <a data-tooltip='Ongoing production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(5)
+                                })();" data-tooltip='Ongoing production' href="#services_list">
                                     <img alt="icon" src="img/icon_6.svg">
                                 </a>
-                                <a data-tooltip='After production' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(6)
+                                })();" data-tooltip='After production' href="#services_list">
                                     <img alt="icon" src="img/icon_7.svg">
                                 </a>
                             </div>
@@ -807,14 +873,20 @@
                         <div class="icon_block">
                             <span class="text_services text_services_two">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Prototyping' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(2)
+                                })();" data-tooltip='Prototyping' href="#services_list">
                                     <img alt="icon" src="img/icon_red_three.svg">
                                 </a>
-                                <a href="#services_list">
-                                    <img alt="icon" data-tooltip='Factory search and selection'
+                                <a onclick="(function(){
+                                    openService(3)
+                                })();" data-tooltip='Factory search and selection' href="#services_list">
+                                    <img alt="icon"
                                          src="img/icon_red_four.svg">
                                 </a>
-                                <a data-tooltip='Producing setup' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(4)
+                                })();" data-tooltip='Producing setup' href="#services_list">
                                     <img alt="icon" src="img/icon_red_five.svg">
                                 </a>
                             </div>
@@ -856,13 +928,19 @@
                         <div class="icon_block">
                             <span class="text_services ">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Idea' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(0)
+                                })();" data-tooltip='Idea' href="#services_list">
                                     <img alt="icon" src="img/lamp3.svg">
                                 </a>
-                                <a data-tooltip='Proof of concept' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(1)
+                                })();" data-tooltip='Proof of concept' href="#services_list">
                                     <img alt="icon" src="img/icon_2.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(2)
+                                })();" data-tooltip='Prototyping' href="#services_list">
                                     <img alt="icon" src="img/icon_3.svg">
                                 </a>
                             </div>
@@ -895,14 +973,20 @@
                         <div class="icon_block">
                             <span class="text_services text_services_three">Services:</span>
                             <div class="icons">
-                                <a data-tooltip='Proof of concept' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(1)
+                                })();" data-tooltip='Proof of concept' href="#services_list">
                                     <img alt="icon" src="img/icon_yellow_two.svg">
                                 </a>
-                                <a data-tooltip='Prototyping' href="#services_list">
+                                <a onclick="(function(){
+                                    openService(2)
+                                })();" data-tooltip='Prototyping' href="#services_list">
                                     <img alt="icon" src="img/icon_yellow_three.svg">
                                 </a>
-                                <a href="#services_list">
-                                    <img alt="icon" data-tooltip='Factory search and selection'
+                                <a onclick="(function(){
+                                    openService(3)
+                                })();" data-tooltip='Factory search and selection' href="#services_list">
+                                    <img alt="icon"
                                          src="img/icon_yellow_four.svg">
                                 </a>
                             </div>
@@ -972,6 +1056,13 @@ let bandOne = document.getElementById("bandOne");
 let bandTwo = document.getElementById("bandTwo");
 let bandThree = document.getElementById("bandThree");
 
+$(document).ready(function () {
+    if (localStorage.getItem('service')) {
+        window.scrollBy(0, 90 * Number(localStorage.getItem('service')));
+        openService(Number(localStorage.getItem('service')))
+        localStorage.removeItem('service')
+    }
+})
 
 function openBurger() {
     if (counter === 1) {
@@ -1205,6 +1296,20 @@ let plus = document.getElementsByClassName("plus");
 console.log(description[1])
 
 function openService(num) {
+    for (let i = 0; i < 8; i++) {
+        description[i].classList.remove('open_service');
+        plus[num].src = 'img/plus.svg'
+    }
+    if (!description[num].classList.contains('open_service')) {
+        description[num].classList.add("open_service")
+        plus[num].src = "img/minus.svg"
+        setTimeout(() => {
+            window.scrollBy(0, 90 * num)
+        })
+    }
+}
+
+function closeAndOpenService(num) {
     if (!description[num].classList.contains('open_service')) {
         description[num].classList.add("open_service")
         plus[num].src = "img/minus.svg"
@@ -1212,7 +1317,6 @@ function openService(num) {
         description[num].classList.remove("open_service")
         plus[num].src = "img/plus.svg"
     }
-
 }
 
 function play_video() {
