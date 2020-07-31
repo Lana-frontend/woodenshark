@@ -1258,7 +1258,6 @@ band.addEventListener("click", openBurger);
 
 window.onscroll = function header_change() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scrollTop)
     if (window.innerWidth >= 1024 && document.documentElement.scrollTop > 20) {
         header.classList.add("scroll_header");
         for (let i = 0; i < remove_in_scroll.length; i++) {
@@ -1293,7 +1292,6 @@ window.onresize = function () {
 
 let description = document.getElementsByClassName("descriptionService");
 let plus = document.getElementsByClassName("plus");
-console.log(description[1])
 
 function openService(num) {
     for (let i = 0; i < 8; i++) {
