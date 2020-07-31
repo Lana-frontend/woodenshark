@@ -527,20 +527,17 @@ header .mail_header span{
 .services_section .list{
     background: #F2F8FC;
     margin-top: 4%;
-
-
 }
 
 .services_section .list .list_item .lock{
     padding: 1% 10%;
-    border-top: 2px solid #00A2D3;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 100px;
     justify-content: center;
 }
 
-.services_section .list .list_item{
+.services_section .list .lock{
     cursor: pointer;
 }
 
@@ -1230,16 +1227,12 @@ footer .footer_text{
     border: none;
 }
 
-
-
 .services_section .list .list_item .lock_two{
-    border-top: 2px solid #F1B642;
     background: #FFF6DC;
     padding: 4% 5% !important;
 }
 
 .descriptionService_two{
-    border-bottom: 2px solid #F1B642;
     background: #FFF6DC;
 }
 
@@ -2060,6 +2053,11 @@ a {
     font-family: 'Ubuntu', sans-serif;
     color: #636466;
 
+}
+
+.blue_form {
+    border-bottom: 2px solid #00A2D3;
+    border-top: 2px solid #00A2D3;
 }
 
 
