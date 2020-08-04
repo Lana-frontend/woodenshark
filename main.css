@@ -273,6 +273,7 @@ header .mail_header span{
 }
 
 [data-tooltip]::after {
+    height: max-content;
     content: attr(data-tooltip);
     position: absolute;
     width: max-content;
@@ -287,6 +288,8 @@ header .mail_header span{
     pointer-events: none;
     z-index: 9999999;
     font-family: Ubuntu;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 [data-tooltip]:hover::after {
@@ -533,6 +536,7 @@ header .mail_header span{
     padding: 1% 10%;
     display: grid;
     grid-template-columns: auto 1fr auto;
+    border-top: 2px solid #00A2D3;
     grid-gap: 100px;
     justify-content: center;
 }
