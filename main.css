@@ -9,6 +9,13 @@ body{
     max-width: 100vw;
 }
 
+button,
+.to_card{
+    font-size: 18px !important;
+    line-height: 24px !important;
+    padding: 7px 30px !important;
+}
+
 .ui-loader{
     display: none;!important;
 }
@@ -444,7 +451,10 @@ header .mail_header span{
     padding: 4% 15%;
 }
 
-.how_it_work_sect .title_how_it_work , .services_section .title_services_section{
+.how_it_work_sect .title_how_it_work ,
+.how_it_work_sect .title_how_it_work h1,
+.how_it_work_sect .title_how_it_work h2,
+.services_section .title_services_section{
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
@@ -465,12 +475,36 @@ header .mail_header span{
     grid-template-rows: auto 1fr;
 }
 
-.how_it_work_sect .title_how_it_work .header_how_it span:first-child{
+.how_it_work_sect .title_how_it_work .header_how_it span:first-child,
+.how_it_work_sect .title_how_it_work .header_how_it h2:first-child{
     align-self: end;
 }
 
-.how_it_work_sect .title_how_it_work .header_how_it span:last-child{
+.how_it_work_sect .title_how_it_work .header_how_it span:last-child,
+.how_it_work_sect .title_how_it_work .header_how_it h2:last-child{
     align-self: start;
+}
+
+.about_us_section .about_us_text h1:first-child,
+.connect .title,
+.how_it_work_sect .title_how_it_work h1,
+.how_it_work_sect .title_how_it_work h2,
+.our_project_section .title_our_project_section h1,
+.our_project_section .block_one .description_block .description .title_block_one,
+.services_section .list .list_item h3,
+.our_project_section .title_our_project_section h2,
+.services_section .title_services_section h2,
+.how_it_work_sect .title_how_it_work .header_how_it h2{
+    margin: 0 !important;
+}
+
+.services_section .title_services_section h2,
+.how_it_work_sect .title_how_it_work h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #F48777;
 }
 
 .how_it_work_sect img{
@@ -539,6 +573,7 @@ header .mail_header span{
     border-top: 2px solid #00A2D3;
     grid-gap: 100px;
     justify-content: center;
+    align-items: center;
 }
 
 .services_section .list .lock{
@@ -549,6 +584,7 @@ header .mail_header span{
     align-self: center;
 }
 
+.services_section .list .list_item h3,
 .services_section .list .list_item span{
     font-style: normal;
     font-size: 24px;
@@ -734,6 +770,8 @@ ul{
     display: grid;
 }
 
+.our_project_section .title_our_project_section h2,
+.our_project_section .title_our_project_section h1,
 .our_project_section .title_our_project_section{
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -744,7 +782,6 @@ ul{
     display: grid;
     margin-bottom: 30px;
     grid-template-columns: auto auto;
-
 }
 
 .our_project_section .title_our_project_section div {
@@ -1055,13 +1092,13 @@ footer .footer_text{
     width: 100%;
     box-sizing: border-box;
     background: white;
-    padding: 1% 10%;
+    padding: 1% 8%;
 }
 
 #shark{
     position: fixed;
     display: none;
-    margin-left: -10%;
+    margin-left: -8%;
     width: 120vw;
     margin-top: -20px;
 }
@@ -1251,7 +1288,6 @@ footer .footer_text{
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    line-height: 46px;
     color: white!important;
     font-family: 'Ubuntu', sans-serif;
     padding: 2%;
@@ -1293,7 +1329,7 @@ footer .footer_text{
     padding: 7% 10%;
 }
 
-.about_us_section .about_us_text span:first-child{
+.about_us_section .about_us_text h1:first-child{
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
@@ -1624,12 +1660,11 @@ footer .footer_text{
     border: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 46px;
+    padding: 10px;
+    font-size: 18px;
     font-family: 'Ubuntu', sans-serif;
     color: #FFFFFF;
     width: 100%;
-    padding: 10px 20px;
     resize: none;
 }
 
@@ -2144,7 +2179,7 @@ a {
     }
 
     .our_project_section .block_one .description_block .description .text_description{
-        font-size: 13px;
+        font-size: 14px;
         line-height: normal;
     }
 
@@ -2860,7 +2895,7 @@ a {
 
     .contact_submit form input,
     .contact_submit form textarea{
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .connect .small_btn_submit{
