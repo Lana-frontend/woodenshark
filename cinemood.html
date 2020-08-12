@@ -252,8 +252,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
-<script type="text/javascript" src="TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js"></script>
 
 <script>let burger_menu = document.getElementById("nav");
 let band = document.getElementById("bands");
@@ -323,46 +321,6 @@ $(document).ready(function () {
 })
 
 
-$("#title_slide").swipe({
-    swipeLeft: leftSwipe1,
-    swipeRight: rightSwipe1,
-    threshold: 0
-});
-
-function leftSwipe1() {
-    clickSliderNext('slid_t')
-}
-
-function rightSwipe1() {
-    clickSliderPrev('slid_t')
-}
-
-function titleSwipe(index) {
-    let slide = document.getElementsByClassName("slid_t")
-    for (let i = 0; i < slide.length; i++) {
-        if (slide[i].classList.contains('active')) {
-            slide[i].src = "img/dot.svg";
-            slide[index].src = "img/one_dot.svg";
-            slide[i].classList.remove("active");
-            slide[index].classList.add("active");
-        }
-    }
-}
-
-function sliderTwo(index, src) {
-    document.getElementById("new_photo").src = src;
-    console.log(src);
-    let dot = document.getElementsByClassName("dots_two");
-    for (let i = 0; i < dot.length; i++) {
-        if (dot[i].classList.contains('active')) {
-            dot[i].src = "img/dot.svg";
-            dot[index].src = "img/one_dot.svg";
-            dot[i].classList.remove("active");
-            dot[index].classList.add("active");
-
-        }
-    }
-}
 
 window.onscroll = function header_change() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -396,93 +354,6 @@ window.onresize = function () {
         document.getElementById("shark").style.display = "none";
     }
 };
-
-function clickSliderNext(name) {
-    let slide = document.getElementsByClassName(name);
-    for (let i = 0; i < slide.length; i++) {
-        if (slide[i].classList.contains('active')) {
-            if (i === slide.length - 1) {
-                slide[0].classList.add("active");
-                slide[slide.length - 1].classList.remove("active");
-                slide[slide.length - 1].src = "img/dot.svg";
-                slide[0].src = "img/one_dot.svg";
-                break
-            } else {
-                slide[i + 1].classList.add("active");
-                slide[i].classList.remove("active");
-                slide[i].src = "img/dot.svg";
-                slide[i + 1].src = "img/one_dot.svg";
-                break
-            }
-
-        }
-    }
-}
-
-function clickSliderPrev(name) {
-    let slide = document.getElementsByClassName(name);
-    for (let i = 0; i < slide.length; i++) {
-        if (slide[i].classList.contains('active')) {
-            if (i === 0) {
-                slide[slide.length - 1].classList.add("active");
-                slide[0].classList.remove("active");
-                slide[0].src = "img/dot.svg";
-                slide[slide.length - 1].src = "img/one_dot.svg";
-                break
-            } else {
-                slide[i - 1].classList.add("active");
-                slide[i].classList.remove("active");
-                slide[i].src = "img/dot.svg";
-                slide[i - 1].src = "img/one_dot.svg";
-                break
-            }
-
-        }
-    }
-}
-
-$("#new_photo").swipe({
-    swipeLeft: leftSwipe3,
-    swipeRight: rightSwipe3,
-    threshold: 0
-});
-
-function leftSwipe3() {
-    clickSliderNext('dots_two')
-}
-
-function rightSwipe3() {
-    clickSliderPrev('dots_two')
-}
-
-
-let description = document.getElementsByClassName("descriptionService");
-let plus = document.getElementsByClassName("plus");
-
-
-function openService(num) {
-    if (!description[num].classList.contains('open_service')) {
-        description[num].classList.add("open_service")
-        plus[num].src = "img/minus_yellow.svg"
-    } else {
-        description[num].classList.remove("open_service")
-        plus[num].src = "img/plus_yellow.svg"
-    }
-
-}
-
-function play_video() {
-    let video = document.getElementById("back_video")
-    video.style.display = "grid"
-}
-
-function close_video() {
-    let video = document.getElementById("back_video");
-    video.style.display = "none"
-}
-
-document.getElementById("play").addEventListener("click", play_video)
-document.getElementById("bands2").addEventListener("click", close_video)
 
 </script>
 
