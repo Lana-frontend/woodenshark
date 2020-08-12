@@ -197,30 +197,6 @@ window.onscroll = function header_change() {
 };
 
 
-
-let description = document.getElementsByClassName("descriptionService");
-let plus = document.getElementsByClassName("plus");
-console.log(description[1])
-
-function openService( num) {
-    if(!description[num].classList.contains('open_service')) {
-        description[num].classList.add("open_service")
-        plus[num].src = "img/minus.svg"
-    }else{
-        description[num].classList.remove("open_service")
-        plus[num].src = "img/plus.svg"
-    }
-
-}
-
-function openServiceOnclick( num) {
-    if(!description[num].classList.contains('open_service')) {
-
-        description[num].classList.add("open_service")
-        plus[num].src = "img/minus.svg"
-    }
-}
-
 window.onresize = function( ) {
     if(window.innerWidth <= 1024){
         header.classList.remove("scroll_header");
@@ -231,21 +207,6 @@ window.onresize = function( ) {
         document.getElementById("shark").style.display = "none";
     }
 };
-
-
-function play_video() {
-    let video = document.getElementById("back_video")
-    video.style.display = "grid"
-}
-
-function close_video() {
-    let video = document.getElementById("back_video");
-    video.style.display = "none"
-}
-
-document.getElementById("play").addEventListener("click", play_video)
-document.getElementById("bands2").addEventListener("click", close_video)
-
 </script>
 
 </body>

@@ -512,6 +512,16 @@ header .mail_header span{
     margin-top: 4%;
 }
 
+img:not([src]) {
+    visibility: hidden;
+}
+
+@-moz-document url-prefix() {
+    img:-moz-loading {
+        visibility: hidden;
+    }
+}
+
 .how_it_work_sect .descriptions{
     margin-top: 4%;
     justify-items: center;
@@ -3262,14 +3272,6 @@ a {
     .bird_iamg{
         width: 130%;
     }
-}
-
-
-@charset 'UTF-8';
-/* Slider */
-.slick-loading .slick-list
-{
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
