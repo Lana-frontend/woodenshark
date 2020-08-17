@@ -2558,10 +2558,19 @@ a {
         padding: 48px 2%;
     }
 
+    .services_section .title_services_section h2,
+    .how_it_work_sect .title_how_it_work h2,
     .how_it_work_sect .title_how_it_work, .services_section .title_services_section {
         font-size: 36px;
         grid-gap: 20px !important;
         justify-content: center;
+    }
+
+    .our_project_section .title_our_project_section h2,
+    .our_project_section .title_our_project_section h1,
+    .our_project_section .title_our_project_section {
+        line-height: 52px;
+        font-size: 38px;
     }
 
     .services_section .title_services_section {
@@ -2712,6 +2721,7 @@ a {
         padding: 5% 3%;
     }
 
+    .services_section .list .list_item h3,
     .services_section .list .list_item span {
         font-size: 14px;
     }
@@ -2806,9 +2816,9 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .about_us_section .about_us_text span:first-child {
+    .about_us_section .about_us_text h1:first-child{
         font-size: 48px;
-        margin-top: 50px;
+        margin-top: 50px !important;
     }
 
     .about_us_section .about_us_text span:last-child {
@@ -2847,7 +2857,7 @@ a {
 
     .connect .title {
         font-size: 48px;
-        margin-top: 50px;
+        margin-top: 50px !important;
     }
 
     .connect .business span {
@@ -3105,6 +3115,7 @@ a {
         padding: 0px 3% 0 3% !important;
     }
 
+    .services_section .list .list_item h3,
     .services_section .list .list_item span{
         line-height: normal;
     }
