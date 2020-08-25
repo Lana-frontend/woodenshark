@@ -2109,6 +2109,13 @@ a {
     border-top: 2px solid #00A2D3;
 }
 
+#tablet {
+    display: none;
+}
+
+footer img {
+    width: 250px;
+}
 
 @media (max-width: 2559px) {
     .our_project_section .block_one .icon_block .icons a img {
@@ -2176,7 +2183,7 @@ a {
 
     #shark{
         width: auto;
-        margin-top: unset;
+        margin-top: 16px;
     }
 
     header{
@@ -2257,6 +2264,13 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+    #tablet {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
 
     @keyframes open_burger {
         from {
@@ -2312,6 +2326,7 @@ a {
         left: -185px;
         margin-left: 10%;
         padding: 0;
+        margin-top: 0;
     }
 
     header nav a {
@@ -2525,6 +2540,7 @@ a {
         background-position-y: -50px;
         background-position-x: center;
         background-repeat: no-repeat;
+        background-size: auto 110%;
     }
 
     .idea_content > div > span {

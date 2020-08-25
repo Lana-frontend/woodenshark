@@ -8,7 +8,8 @@
     })(window,document,'script','dataLayer','GTM-TRWGV4Z');</script>
 
     <meta charset="UTF-8">
-    <title>Woodenshark</title>
+    <title>Woodenshark — Our Approach</title>
+    <meta name="description" content="">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=BioRhyme|Lato|Source+Sans+Pro&display=swap" rel="stylesheet">
     <meta name="viewport"
@@ -31,13 +32,11 @@
 
     <header>
         <div class="logo">
-            <a href="/">
-            <img class="scroll_remove" alt="logotype" src="img/Group.svg">
-            <div class="text_logo">
-                <img alt="text logo" src="img/top_logo.svg">
-                <img id="small_text" alt="text logo" src="img/bottom_logo.svg">
-            </div>
+            <a href="#">
+                <img class="scroll_remove" id="desktop" width="225" alt="logotype" src="img/Group.svg">
+                <img  id="tablet" width="180" alt="logotype" src="img/woodenshark_no_logo.svg">
             </a>
+
         </div>
 
         <div id="bands">
@@ -500,37 +499,43 @@ function openBurger() {
 
 band.addEventListener("click", openBurger);
 
+
 window.onscroll = function header_change() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scrollTop)
-    if(window.innerWidth >= 1024 && document.documentElement.scrollTop > 20) {
+    if (window.innerWidth >= 1024 && document.documentElement.scrollTop > 20) {
         header.classList.add("scroll_header");
         for (let i = 0; i < remove_in_scroll.length; i++) {
             remove_in_scroll[i].style.display = "none"
         }
-        document.getElementById("small_text").style.display = "none";
-        document.getElementById("shark").style.display = "block";
         document.getElementsByClassName("body_content")[0].style.marginTop = "110px"
+        document.getElementById("shark").style.display = "block";
+        document.getElementById("desktop").style.display = "none";
+        document.getElementById("tablet").style.display = "block";
     }
     if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
         header.classList.remove("scroll_header");
-        document.getElementById("small_text").style.display = "block";
-        document.getElementById("shark").style.display = "none";
         document.getElementsByClassName("body_content")[0].style.marginTop = "0"
+        document.getElementById("shark").style.display = "none";
+        document.getElementById("desktop").style.display = "block";
+        document.getElementById("tablet").style.display = "none";
         for (let i = 0; i < remove_in_scroll.length; i++) {
             remove_in_scroll[i].style.display = "block"
         }
     }
 };
 
-window.onresize = function( ) {
-    if(window.innerWidth <= 1024){
+window.onresize = function () {
+    if (window.innerWidth <= 1024) {
         header.classList.remove("scroll_header");
         document.getElementById("small_text").style.display = "none";
         document.getElementById("shark").style.display = "block";
-    }else if(window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
+        document.getElementById("desktop").style.display = "none";
+        document.getElementById("tablet").style.display = "block";
+    } else if (window.innerWidth >= 1024 && document.documentElement.scrollTop <= 20) {
         document.getElementById("small_text").style.display = "block";
         document.getElementById("shark").style.display = "none";
+        document.getElementById("desktop").style.display = "block";
+        document.getElementById("tablet").style.display = "none";
     }
 };
 
